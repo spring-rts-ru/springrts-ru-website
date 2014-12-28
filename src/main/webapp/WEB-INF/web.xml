@@ -5,14 +5,17 @@
           http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
 
-    <servlet>
-        <servlet-name>my servlet</servlet-name>
-        <servlet-class>com.earldouglas.xwptemplate.XwpTemplateServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>my servlet</servlet-name>
+    <display-name>springrts.ru</display-name>
+    <filter>
+        <filter-name>SpringrtsRuApplication</filter-name>
+        <filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+        <init-param>
+            <param-name>applicationClassName</param-name>
+            <param-value>springrtsru.SpringrtsRuApplication</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>SpringrtsRuApplication</filter-name>
         <url-pattern>/*</url-pattern>
-    </servlet-mapping>
-
+    </filter-mapping>
 </web-app>

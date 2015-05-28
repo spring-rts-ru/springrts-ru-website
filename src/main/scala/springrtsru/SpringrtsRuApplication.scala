@@ -8,14 +8,14 @@ import org.apache.wicket.request.{IRequestHandler, Url}
 import org.apache.wicket.request.component.IRequestablePage
 import org.apache.wicket.request.mapper.info.PageComponentInfo
 import org.apache.wicket.request.mapper.parameter.PageParametersEncoder
-import springrtsru.pages.{WidgetsPacks, AboutPage}
+import springrtsru.pages.{GameDeveliomentCompleteGuide, WidgetsPacks, AboutPage}
 
 class SpringrtsRuApplication extends WebApplication {
   override def getHomePage: Class[_ <: Page] = classOf[AboutPage]
 
-
   override def init(): Unit = {
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/widgetsPacks", classOf[WidgetsPacks]))
+    getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/GameDeveliomentCompleteGuide", classOf[GameDeveliomentCompleteGuide]))
   }
 
   private class MountedMapperWithoutPageComponentInfo(mountPath: String, pageClass: Class[_ <: IRequestablePage])

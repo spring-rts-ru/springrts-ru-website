@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
 <body>
 <wicket:extend>
     <br/><br/><br/>
@@ -318,7 +318,7 @@
     <img src="https://springrts.com/mediawiki/images/7/76/Upspr_7.png"/><br/><br/>
     
     Вот и ваша модель. Выглядит маленькой и без текстур. Справа выберите "Objects" вкладку.<br/>
-    <img src="https://springrts.com/wiki/File:Upspr_8.png"/><br/><br/>
+    <img src="https://springrts.com/mediawiki/images/0/02/Upspr_8.png"/><br/><br/>
     
     Вы можете видеть иерархию кусочков модели. Эта иерархия определяет: какие куски движатся, когда двигают другие куски. 
     Например, мы хотим, чтобы ствол двигался, когда мы двигаем башню. И мы хотим, чтобы ствол и башня двигались, когда мы 
@@ -363,7 +363,224 @@
     
     Теперь сохраните все в формате s3o (File -> Save model as -> "tank.s3o"). Вот и все! Модель юнита готова! Теперь поместим ее в игру!<br/><br/>
     
-    
+    <b>Добавляем юнит в игру</b><br/><br/>
+
+    Движок Spring использует ".sdz" и ".sd7" форматы файлов для данных игры. Это просто переименованные ".zip" и ".7z" архивы соответственно.
+    Просто переименуйте их и распакуйте. Так же, движок Spring позволяет вам не упаковывать вовсе. Просто положите директорию с
+    игрой в папку %spring%/games и переименуйте ее так, чтобы имя оканчивалось на ".sdd". <br/><br/>
+
+    Лучше всего начать со скачивания <a target="_blank" href="http://www.springfiles.com/show_file.php?id=2820">игры-примера</a>.
+    Скачайте ее и распакуйте в директорию "EmptyMod.sdd", а затем поместите эту директорию в поддиректорию "games" каталога, куда
+    установлен Spring. <br/><br/>
+
+    Чтобы увидеть юнит в игре, вам надо положить s3o файл в папку "objects3d", текстуру в папку "unittextures". И еще,
+    файл "unitdef" в "units". Этого unitdef у нас еще нет. Положите текстуру и модель в соответствующие директории. <br/><br/>
+
+    А файл unitdef(описание юнита), мы сейчас будем создавать.<br/><br/>
+
+    Существует 2 способа это делать: 1) старый, в стиле игры Total Annihilation 2) новый, в формате .lua. Старый - это
+    текстовый файл в формате FBI, в котором перечислен список переменных. Новый это так же текстовый файл, с расширением .lua,
+    в нем так же перечисленны переменные, просто используется немного другой синтаксис. Мы будем использовать .lua вариант.<br/><br/>
+
+<pre><code class="lua">
+    local unitName  =  "tank"
+
+    local unitDef  =  {
+    --Internal settings
+    BuildPic = "filename.bmp",
+    Category = "TANK SMALL NOTAIR NOTSUB",
+    ObjectName = "tank3.s3o",
+    name = "Generic Tank",
+    Side = "TANKS",
+    TEDClass = "TANK",
+    UnitName = "tank",
+    script = "tankscript.lua",
+
+    --Unit limitations and properties
+    BuildTime = 1000,
+    Description = "A generic tank unit.",
+    MaxDamage = 800,
+    RadarDistance = 0,
+    SightDistance = 400,
+    SoundCategory = "TANK",
+    Upright = 0,
+
+    --Energy and metal related
+    BuildCostEnergy = 100,
+    BuildCostMetal = 0,
+
+    --Pathfinding and related
+    Acceleration = 0.15,
+    BrakeRate = 0.1,
+    FootprintX = 2,
+    FootprintZ = 2,
+    MaxSlope = 15,
+    MaxVelocity = 2.0,
+    MaxWaterDepth = 20,
+    MovementClass = "Default2x2",
+    TurnRate = 900,
+
+    --Abilities
+    Builder = 0,
+    CanAttack = 1,
+    CanGuard = 1,
+    CanMove = 1,
+    CanPatrol = 1,
+    CanStop = 1,
+    LeaveTracks = 0,
+    Reclaimable = 0,
+
+    --Hitbox
+    --    collisionVolumeOffsets    =  "0 0 0",
+    --    collisionVolumeScales     =  "20 20 20",
+    --    collisionVolumeTest       =  1,
+    --    collisionVolumeType       =  "box",
+
+    --Weapons and related
+    BadTargetCategory = "NOTAIR",
+    ExplodeAs = "TANKDEATH",
+    NoChaseCategory = "AIR",
+
+    }
+
+    return lowerkeys({ [unitName]  =  unitDef })
+</code></pre>
+    Просмотрите весь этот текст. Постарайтесь понять, что означает каждая переменная. Описание всех этих переменных уже
+    выходит за рамки этой статьи, документацию можно посмотреть <a target="_blank" href="https://springrts.com/wiki/Gamedev:UnitDefs">здесь</a>.<br/><br/>
+
+    Вам нужно изменить ObjectName, укажите здесь имя вашего файла-модели. Так же, можете поменять имя юнита (unitName). Далее,
+    сохраните этот файл как tank.lua, например, и положите его в "units" директорию.<br/><br/>
+
+    Далее, откройте файл "/gamedata/sidedata.lua" и замените эту строчку 'startunit = "cube"' на эту: 'startunit = "tank".<br/><br/>
+
+    Откройте SpringLobby. Это приложение, которое устанавливается с движком Spring. Затем перейдите на вкладку "Single Player"(одиночная игра)
+    и выберите любую карту и игру "Example Mod". Добавьте бота, например AAI, и запустите игру. Попробуйте найти свой танк. <br/>
+    <img src="https://springrts.com/mediawiki/images/e/ec/Mod_2.png"><br/><br/>
+
+    Вы должны иметь возможность выделить его и погонять по местности, нажимая правой кнопкой мыши. Он все еще не может стрелять, но
+    все будем делать постепенно. <br/><br/>
+
+    Мы сделаем так, чтобы танк стрелял маленькими оранжевыми шарами. Для этого, нам надо 3 вещи: картинка оранжевого шара,
+    скрипт анимации юнита, описание оружия в unitdef файле.<br/><br/>
+
+    В качестве картинки с оранжевым шаром, мы возьмем файлик из игры "Evolution RTS". Кстати, хорошая игра, рекомендуется познакомиться.
+    Этот файл мы уже скачали за вас и положили в "bitmaps" директорию. Чтобы движку Spring сказать, где находится этот файл,
+    мы вставим эту строчку: "flame = 'flame.tga' " в файл gamedata/resources.lua (внутри секции projectiletextures). <br/><br/>
+
+    Откройте файл unitdef, который вы создавали и сохраняли ранее (tank.lua или как-то так). И замените его сорержимое на это:<br/>
+    <pre>
+        <code class="lua">
+            local unitName  =  "tank"
+
+            local unitDef  =  {
+            --Internal settings
+            BuildPic = "filename.bmp",
+            Category = "TANK SMALL NOTAIR NOTSUB",
+            ObjectName = "tank3.s3o",
+            name = "Generic Tank",
+            Side = "TANKS",
+            TEDClass = "TANK",
+            UnitName = "tank",
+            script = "tankscript.lua",
+
+            --Unit limitations and properties
+            BuildTime = 1000,
+            Description = "A generic tank unit.",
+            MaxDamage = 800,
+            RadarDistance = 0,
+            SightDistance = 400,
+            SoundCategory = "TANK",
+            Upright = 0,
+
+            --Energy and metal related
+            BuildCostEnergy = 100,
+            BuildCostMetal = 0,
+
+            --Pathfinding and related
+            Acceleration = 0.15,
+            BrakeRate = 0.1,
+            FootprintX = 2,
+            FootprintZ = 2,
+            MaxSlope = 15,
+            MaxVelocity = 2.0,
+            MaxWaterDepth = 20,
+            MovementClass = "Default2x2",
+            TurnRate = 900,
+
+            --Abilities
+            Builder = 0,
+            CanAttack = 1,
+            CanGuard = 1,
+            CanMove = 1,
+            CanPatrol = 1,
+            CanStop = 1,
+            LeaveTracks = 0,
+            Reclaimable = 0,
+
+            --Hitbox
+            --    collisionVolumeOffsets    =  "0 0 0",
+            --    collisionVolumeScales     =  "20 20 20",
+            --    collisionVolumeTest       =  1,
+            --    collisionVolumeType       =  "box",
+
+            --Weapons and related
+            BadTargetCategory = "NOTAIR",
+            ExplodeAs = "TANKDEATH",
+            NoChaseCategory = "AIR",
+
+            weapons = {
+            [1] = {
+            def = "orangeblob",
+            },
+            },
+            }
+
+            local weaponDefs = {
+            orangeblob = {
+            name = "Orange Plasma Cannon",
+            weapontype = "Cannon",
+            accuracy = 10,
+            areaofeffect = 100,
+            avoidfeature = false,
+            avoidfriendly = true,
+            canattackground = true,
+            collidefriendly = true,
+            collisionsize = 8,
+            commandfire = false,
+            craterboost = 0,
+            cratermult = 0,
+            edgeeffectiveness = 0.1,
+            explosionspeed = 128,
+            impulseboost = 0,
+            impulsefactor = 0,
+            intensity = 1,
+            noselfdamage = true,
+            size = 4,
+            --        soundstart = "tank_fire",
+            --        soundhit = "explo01",
+            range = 250,
+            reloadtime = 1.5,
+            rgbcolor = "1.0 1.0 1.0",
+            turret = true,
+            texture1 = "flame",
+            weaponvelocity = 400,
+            --		explosiongenerator = "custom:TANKGUN_FX",
+            damage =
+            {
+            default = 55,
+            },
+            },
+            }
+
+
+            unitDef.weaponDefs = weaponDefs
+            return lowerkeys({ [unitName]  =  unitDef })
+        </code>
+    </pre>
+
+    Опять же, обновите имя файла с юнитом, как вы делали это раньше. <br/>
+    Заметьте, что мы добавили секцию с описанием оружия "weaponDefs".<br/><br/>
+
 
 </wicket:extend>
 

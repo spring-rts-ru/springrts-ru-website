@@ -1,0 +1,6 @@
+сделать секцию blog и вести блог
+добавить RSS везде
+
+добавить на сайт ссылку на исходники (гитхаб)
+
+https://drive.google.com/file/d/0B9FQjbVMFgL2STZfamtOeUEyNTA/view

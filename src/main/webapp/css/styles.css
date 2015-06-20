@@ -1,11 +1,27 @@
-.base-contents {
-    padding-top: 50px;
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding-top: 5px;
+}
+
+.navbar-fixed-top .navbar-brand img {
+    height: 40px;
+    padding-right: 10px;
 }
 
 .carousel-inner > .item > img {
 /*    position: absolute; */
-    top: 50px;
     left: 0;
     min-width: 100%;
     height: auto;
+}
+
+.sidebar {
+    background-color: #e9e6df;
+}
+
+.ftr {
+    margin-top: 50px;
 }

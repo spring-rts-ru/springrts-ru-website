@@ -1,0 +1,11 @@
+.base-contents {
+    padding-top: 50px;
+}
+
+.carousel-inner > .item > img {
+/*    position: absolute; */
+    top: 50px;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}

@@ -17,6 +17,7 @@ class SpringrtsRuApplication extends WebApplication {
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/widgetsPacks", classOf[WidgetsPacks]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/media", classOf[MediaPage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/news", classOf[NewsPage]))
+    getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/howto", classOf[HowToPlayPage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/GameDeveliomentCompleteGuide", classOf[GameDeveliomentCompleteGuide]))
   }
 

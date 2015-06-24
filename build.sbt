@@ -14,4 +14,4 @@ libraryDependencies += "org.postgresql" % "postgresql" % "9.3-1102-jdbc41"
 
 publishArtifact in (Compile, packageBin) := false
 
-unmanagedResourceDirectories in Compile <+= (sourceDirectory in Compile)(_ / "scala")
+//unmanagedResourceDirectories in Compile <+= (sourceDirectory in Compile)(_ / "resources")

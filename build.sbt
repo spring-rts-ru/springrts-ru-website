@@ -18,4 +18,3 @@ libraryDependencies += "org.slf4j" % "slf4j-simple" % "1.7.5"
 
 publishArtifact in (Compile, packageBin) := false
 
-//unmanagedResourceDirectories in Compile <+= (sourceDirectory in Compile)(_ / "resources")

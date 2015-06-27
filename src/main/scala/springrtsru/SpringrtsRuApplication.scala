@@ -1,6 +1,6 @@
 package springrtsru
 
-import org.apache.wicket.Page
+import org.apache.wicket.{Application, RuntimeConfigurationType, Page}
 import org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler
 import org.apache.wicket.core.request.mapper.MountedMapper
 import org.apache.wicket.protocol.http.WebApplication
@@ -21,6 +21,9 @@ class SpringrtsRuApplication extends WebApplication {
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/howto", classOf[HowToInstallPage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/GameDeveliomentCompleteGuide", classOf[GameDeveliomentCompleteGuide]))
   }
+
+
+  override def getConfigurationType: RuntimeConfigurationType = RuntimeConfigurationType.DEPLOYMENT
 
   private class MountedMapperWithoutPageComponentInfo(mountPath: String, pageClass: Class[_ <: IRequestablePage])
     extends MountedMapper(mountPath, pageClass, new PageParametersEncoder()) {

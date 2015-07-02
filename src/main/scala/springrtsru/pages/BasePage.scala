@@ -27,6 +27,7 @@ abstract class BasePage extends WebPage {
     case News => newsLink.add(new AttributeModifier("class", "active"))
     case HowToInstall => howToPlayLink.add(new AttributeModifier("class", "active"))
     case Media => mediaLink.add(new AttributeModifier("class", "active"))
+    case _ =>
   }
 
   add(new Label("title", getTitle).setRenderBodyOnly(true))

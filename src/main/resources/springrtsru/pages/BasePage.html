@@ -29,9 +29,6 @@
     <![endif]-->
 
     <link rel="stylesheet" href="/highlight/styles/default.css">
-    <script src="/highlight/highlight.pack.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 <style>
     /* http://avexdesigns.com/responsive-youtube-embed/ */
     .video-container {
@@ -127,10 +124,19 @@
 </div>
 
 
+<script src="/highlight/highlight.pack.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
+<script>
+    $(function() {
+        $(".carousel").carousel({
+//            interval: 4000
+        })
+    });
+</script>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

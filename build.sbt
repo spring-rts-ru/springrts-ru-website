@@ -8,7 +8,7 @@ jetty()
 
 libraryDependencies += "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided"
 
-libraryDependencies += "org.apache.wicket" % "wicket" % "7.0.0"
+libraryDependencies += "org.apache.wicket" % "wicket" % "7.1.0"
 
 libraryDependencies += "org.postgresql" % "postgresql" % "9.4-1201-jdbc41"
 

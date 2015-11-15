@@ -5,7 +5,7 @@ springrts.ru website
 springrts.ru website sources
 
 to run use:
-sbt -> container:start
+sbt -> ~jetty:start
 
 other "build" related instructions: https://github.com/earldouglas/xsbt-web-plugin
 

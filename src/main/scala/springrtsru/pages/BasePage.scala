@@ -7,6 +7,7 @@ import org.apache.wicket.markup.html.basic.Label
 trait PageIndex
 case object Home extends PageIndex
 case object News extends PageIndex
+case object History extends PageIndex
 case object HowToInstall extends PageIndex
 case object Media extends PageIndex
 case object About extends PageIndex
@@ -18,6 +19,10 @@ abstract class BasePage extends WebPage {
 
   val newsLink = new WebMarkupContainer("newsLink")
   add(newsLink)
+
+  val historyLink = new WebMarkupContainer("historyLink")
+  add(historyLink)
+
   val howToPlayLink = new WebMarkupContainer("howToPlayLink")
   add(howToPlayLink)
   val mediaLink = new WebMarkupContainer("mediaLink")
@@ -25,6 +30,7 @@ abstract class BasePage extends WebPage {
 
   getPageIndex match {
     case News => newsLink.add(new AttributeModifier("class", "active"))
+    case History => historyLink.add(new AttributeModifier("class", "active"))
     case HowToInstall => howToPlayLink.add(new AttributeModifier("class", "active"))
     case Media => mediaLink.add(new AttributeModifier("class", "active"))
     case _ =>

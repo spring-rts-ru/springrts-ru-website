@@ -19,5 +19,7 @@ this document describes how to build/run this website on a local machine
 6. Build it using SBT to test that sbt and java are installed correctly
     6.1. open terminal and go to springrts-ru-website directory
     6.2. run command: sbt clean package
-
+7. Open project in Intellij Idea. 
+    7.1. Open project in idea (import sbt project)
+    7.2. To run the website locally use built in terminal: run "sbt" command and then run "~jetty:start" command inside of sbt
 

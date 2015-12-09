@@ -11,7 +11,7 @@ this document describes how to build/run this website on a local machine
     3.1. download from here: https://www.jetbrains.com/idea/download/
     3.2. install
     3.3. run it
-    3.4. install "wicket" and "Scala" plugins
+    3.4. install "wicket forge" and "Scala" plugins
 4. Install git
     4.1. if you have windows - then use this: https://git-scm.com/downloads if you use linux - just use package manager
 5. Clone "springrts-ru-website" project into your local drive

@@ -22,4 +22,6 @@ this document describes how to build/run this website on a local machine
 7. Open project in Intellij Idea. 
     7.1. Open project in idea (import sbt project)
     7.2. To run the website locally use built in terminal: run "sbt" command and then run "~jetty:start" command inside of sbt
+8. Open website in a browser
+    8.1. Open http://localhost:8080 in a browser
 

@@ -80,38 +80,39 @@
                     </ul>
                 </li>
 
-                <!--               Дробдауны Игры и howto(Требует доработки) -->
-                <li class="dropdown">
+                <li wicket:id="gamesLink" class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Игры <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/BAPage">Balanced Annihilation</a></li>
-                        <li><a href="/zero-kPage">Zero-k</a></li>
-                        <li><a href="/NOTAPage">NOTA</a></li>
-                        <li><a href="/1944Page">1944</a></li>
+                        <li><a href="/games/ba">Balanced Annihilation</a></li>
+                        <li><a href="/games/zerok">Zero-k</a></li>
+                        <li><a href="/games/nota">NOTA</a></li>
+
+                        <!-- TODO: Add 1944 game page -->
+                        <!--<li><a href="/games/1944">1944</a></li>-->
                     </ul>
                 </li>
 
-                <li class="dropdown">
+                <li wicket:id="howToLink" class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Инструкции <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/InstallBAPage">Как установить BA</a></li>
-                        <li><a href="/InstallNOTAPage">Как установить NOTA</a></li>
-                        <li><a href="/UnitDevPage">Как создать свой юнит</a></li>
+                        <li><a href="/howto/install/ba">Как установить BA</a></li>
+                        <li><a href="/howto/install/nota">Как установить NOTA</a></li>
+
+                        <!-- мы не показываем статью по созданию юнита до публикации на хабре -->
+                        <!--<li><a href="/UnitDevPage">Как создать свой юнит</a></li>-->
                     </ul>
                 </li>
 
-
-                <!--<li><a href="#about">История</a></li>-->
                 <!--<li><a href="#widgets">Виджеты</a></li>-->
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ссылки <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="http://vk.com/taspring">Группа вконтакте</a></li>
-                        <li><a href="https://springrts.com">Англоязычный сайт</a></li>
+                        <li><a target="_blank" href="http://vk.com/taspring">Группа вконтакте</a></li>
+                        <li><a target="_blank" href="https://springrts.com">Англоязычный сайт</a></li>
                         <!-- Добавил ссылки на сайты zero-k и nota-->
-                        <li><a href="http://zero-k.info/">Сайт NOTA</a></li>
-                        <li><a href="http://nota.machys.net/">Сайт Zero-k</a></li>
+                        <li><a target="_blank" href="http://nota.machys.net/">Сайт NOTA</a></li>
+                        <li><a target="_blank" href="http://zero-k.info/">Сайт Zero-k</a></li>
                     </ul>
                 </li>
             </ul>

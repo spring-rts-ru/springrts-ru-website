@@ -12,6 +12,8 @@ case object HowToInstall extends PageIndex
 case object Media extends PageIndex
 case object About extends PageIndex
 case object Widgets extends PageIndex
+case object Games extends PageIndex
+case object HowTo extends PageIndex
 
 abstract class BasePage extends WebPage {
   def getTitle: String
@@ -25,14 +27,23 @@ abstract class BasePage extends WebPage {
 
   val howToPlayLink = new WebMarkupContainer("howToPlayLink")
   add(howToPlayLink)
+
   val mediaLink = new WebMarkupContainer("mediaLink")
   add(mediaLink)
+
+  val gamesLink = new WebMarkupContainer("gamesLink")
+  add(gamesLink)
+
+  val howToLink = new WebMarkupContainer("howToLink")
+  add(howToLink)
 
   getPageIndex match {
     case News => newsLink.add(new AttributeModifier("class", "active"))
     case History => historyLink.add(new AttributeModifier("class", "active"))
     case HowToInstall => howToPlayLink.add(new AttributeModifier("class", "active"))
     case Media => mediaLink.add(new AttributeModifier("class", "active"))
+    case Games => gamesLink.add(new AttributeModifier("class", "active"))
+    case HowTo => howToLink.add(new AttributeModifier("class", "active"))
     case _ =>
   }
 

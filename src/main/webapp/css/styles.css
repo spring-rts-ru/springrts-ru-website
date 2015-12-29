@@ -25,3 +25,14 @@ body {
 .ftr {
     margin-top: 50px;
 }
+
+.intro {
+    margin-left: -30px;
+}
+
+.bighr {
+    color: #1b1818;
+    background: #1b1818;
+    width: 100%;
+    height: 3px;
+}

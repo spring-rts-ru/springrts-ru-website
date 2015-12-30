@@ -1,8 +1,8 @@
 package springrtsru.pages.games
 
-import springrtsru.pages.{Games, PageIndex, BasePage}
+import springrtsru.pages.{BaseContentPage, Games, PageIndex}
 
-class BAGamePage extends BasePage {
+class BAGamePage extends BaseContentPage {
   override def getTitle: String = "Balanced Annihilation RTS"
 
   override def getPageIndex: PageIndex = Games

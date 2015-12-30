@@ -1,6 +1,6 @@
 package springrtsru.pages
 
-class HistoryPage extends BasePage {
+class HistoryPage extends BaseContentPage {
   override def getTitle: String = "История"
 
   override def getPageIndex: PageIndex = History

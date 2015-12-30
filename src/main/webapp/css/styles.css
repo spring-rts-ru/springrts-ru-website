@@ -36,3 +36,13 @@ body {
     width: 100%;
     height: 3px;
 }
+
+.center-text {
+    text-align: center;
+}
+
+.main-page-intro {
+    width: 80%;
+    min-width: 1170px;
+    margin: 0 auto;
+}

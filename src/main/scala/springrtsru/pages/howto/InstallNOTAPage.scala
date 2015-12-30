@@ -1,8 +1,8 @@
 package springrtsru.pages.howto
 
-import springrtsru.pages.{HowTo, PageIndex, BasePage}
+import springrtsru.pages.{BaseContentPage, HowTo, PageIndex}
 
-class InstallNOTAPage extends BasePage {
+class InstallNOTAPage extends BaseContentPage {
   override def getTitle: String = "Как установить игру NOTA"
 
   override def getPageIndex: PageIndex = HowTo

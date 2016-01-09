@@ -17,7 +17,6 @@ class SpringrtsRuApplication extends WebApplication {
 
   override def init(): Unit = {
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/widgetsPacks", classOf[WidgetsPacks]))
-    getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/media", classOf[MediaPage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/videos", classOf[VideosPage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/news", classOf[MainPage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/history", classOf[HistoryPage]))

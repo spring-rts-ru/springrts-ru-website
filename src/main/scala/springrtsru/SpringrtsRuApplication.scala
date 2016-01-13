@@ -9,7 +9,7 @@ import org.apache.wicket.request.component.IRequestablePage
 import org.apache.wicket.request.mapper.info.PageComponentInfo
 import org.apache.wicket.request.mapper.parameter.PageParametersEncoder
 import springrtsru.pages._
-import springrtsru.pages.games.{I944GamePage, NOTAGamePage, ZerokGamePage, BAGamePage}
+import springrtsru.pages.games._
 import springrtsru.pages.howto.{InstallNOTAPage, InstallBAPage}
 
 class SpringrtsRuApplication extends WebApplication {
@@ -27,6 +27,7 @@ class SpringrtsRuApplication extends WebApplication {
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/games/zerok", classOf[ZerokGamePage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/games/nota", classOf[NOTAGamePage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/games/1944", classOf[I944GamePage]))
+    getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/games/ta", classOf[TechAnnihilationGamePage]))
 
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/howto/install/ba", classOf[InstallBAPage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/howto/install/nota", classOf[InstallNOTAPage]))

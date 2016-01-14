@@ -28,6 +28,7 @@ class SpringrtsRuApplication extends WebApplication {
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/games/nota", classOf[NOTAGamePage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/games/1944", classOf[I944GamePage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/games/ta", classOf[TechAnnihilationGamePage]))
+    getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/games/xta", classOf[XTAGamePage]))
 
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/howto/install/ba", classOf[InstallBAPage]))
     getRootRequestMapperAsCompound.add(new MountedMapperWithoutPageComponentInfo("/howto/install/nota", classOf[InstallNOTAPage]))

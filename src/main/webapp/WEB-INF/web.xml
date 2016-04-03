@@ -6,16 +6,66 @@
          version="3.0">
 
     <display-name>springrts.ru</display-name>
+
+    <!--<servlet>-->
+        <!--<servlet-name>wicket</servlet-name>-->
+        <!--<servlet-class>org.apache.wicket.protocol.http.WicketServlet</servlet-class>-->
+        <!--<init-param>-->
+            <!--<param-name>applicationFactoryClassName</param-name>-->
+            <!--<param-value>org.apache.wicket.spring.SpringWebApplicationFactory</param-value>-->
+        <!--</init-param>-->
+        <!--<init-param>-->
+            <!--<param-name>applicationBean</param-name>-->
+            <!--<param-value>wicketApplication</param-value>-->
+        <!--</init-param>-->
+        <!--<load-on-startup>1</load-on-startup>-->
+    <!--</servlet>-->
     <filter>
-        <filter-name>SpringrtsRuApplication</filter-name>
-        <filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
-        <init-param>
-            <param-name>applicationClassName</param-name>
-            <param-value>springrtsru.SpringrtsRuApplication</param-value>
-        </init-param>
+        <filter-name>openEntityManagerInViewFilter</filter-name>
+        <filter-class>
+            org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter
+        </filter-class>
     </filter>
     <filter-mapping>
-        <filter-name>SpringrtsRuApplication</filter-name>
+        <filter-name>openEntityManagerInViewFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+
+    <!--<filter>-->
+        <!--<filter-name>SpringrtsRuApplication</filter-name>-->
+        <!--<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>-->
+        <!--<init-param>-->
+            <!--<param-name>applicationClassName</param-name>-->
+            <!--<param-value>springrtsru.SpringrtsRuApplication</param-value>-->
+        <!--</init-param>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>SpringrtsRuApplication</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
+
+    <filter>
+        <filter-name>wicket.filter</filter-name>
+        <filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+        <init-param>
+            <param-name>applicationFactoryClassName</param-name>
+            <param-value>
+                org.apache.wicket.spring.SpringWebApplicationFactory
+            </param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>wicket.filter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/applicationContext.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
 </web-app>

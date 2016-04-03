@@ -3,6 +3,10 @@ package springrtsru.pages
 import org.apache.wicket.AttributeModifier
 import org.apache.wicket.markup.html.{WebMarkupContainer, WebPage}
 import org.apache.wicket.markup.html.basic.Label
+import org.apache.wicket.spring.injection.annot.SpringBean
+import springrtsru.repository.NewsRepository
+
+import scala.beans.BeanProperty
 
 trait PageIndex
 case object Home extends PageIndex
@@ -17,6 +21,10 @@ case object HowTo extends PageIndex
 abstract class BasePage extends WebPage {
   def getTitle: String
   def getPageIndex: PageIndex
+
+  @SpringBean
+  @BeanProperty
+  var repo : NewsRepository = _
 
   val newsLink = new WebMarkupContainer("newsLink")
   add(newsLink)

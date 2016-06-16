@@ -53,7 +53,7 @@ class SpringrtsRuApplication extends WebApplication {
 //    getComponentInstantiationListeners add new SpringComponentInjector(this)
   }
 
-  override def getConfigurationType: RuntimeConfigurationType = RuntimeConfigurationType.DEPLOYMENT
+  override def getConfigurationType: RuntimeConfigurationType = RuntimeConfigurationType.DEVELOPMENT
 
   private class MountedMapperWithoutPageComponentInfo(mountPath: String, pageClass: Class[_ <: IRequestablePage])
     extends MountedMapper(mountPath, pageClass, new PageParametersEncoder()) {

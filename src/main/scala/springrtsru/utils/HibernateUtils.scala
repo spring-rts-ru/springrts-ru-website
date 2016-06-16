@@ -9,7 +9,7 @@ import springrtsru.model.News
 import scala.collection.JavaConversions._
 
 object HibernateUtils {
-  var entityManagerFactory: EntityManagerFactory = Persistence.createEntityManagerFactory( "com.natalinobusa.jpa.HibernateJpaScalaTutorial" )
+  var entityManagerFactory: EntityManagerFactory = Persistence.createEntityManagerFactory( "ru.springrts.persistence" )
   var entityManager: EntityManager = entityManagerFactory.createEntityManager()
 
   def main( args : Array[String]) {

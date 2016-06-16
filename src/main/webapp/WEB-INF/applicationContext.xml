@@ -36,8 +36,7 @@
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
           p:dataSource-ref="dataSource" p:jpaVendorAdapter-ref="jpaAdapter">
         <property name="loadTimeWeaver">
-            <bean
-                    class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver" />
+            <bean class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver" />
         </property>
         <property name="persistenceUnitName" value="ru.springrts.persistence"/>
     </bean>

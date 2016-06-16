@@ -14,6 +14,7 @@ this document describes how to build/run this website on a local machine
     3.4. install "wicket forge" and "Scala" plugins
 4. Install git
     4.1. if you have windows - then use this: https://git-scm.com/downloads if you use linux - just use package manager
+    4.2. in cas of linux - just install "git" using package manager
 5. Clone "springrts-ru-website" project into your local drive
     5.1. in console run this command: git clone https://github.com/spring-rts-ru/springrts-ru-website.git
 6. Build it using SBT to test that sbt and java are installed correctly

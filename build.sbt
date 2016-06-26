@@ -16,19 +16,19 @@ libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.21"
 
 libraryDependencies += "org.slf4j" % "slf4j-simple" % "1.7.21"
 
-libraryDependencies += "org.hibernate" % "hibernate-core" % "5.2.0.Final"
+libraryDependencies += "org.hibernate" % "hibernate-core" % "5.1.0.Final"
 
 libraryDependencies += "org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final"
 
-libraryDependencies += "org.springframework" % "spring-context" % "4.2.6.RELEASE"
+libraryDependencies += "org.springframework" % "spring-context" % "4.3.0.RELEASE"
 
-libraryDependencies += "org.springframework" % "spring-web" % "4.2.6.RELEASE"
+libraryDependencies += "org.springframework" % "spring-web" % "4.3.0.RELEASE"
 
-libraryDependencies += "org.springframework" % "spring-aop" % "4.2.6.RELEASE"
+libraryDependencies += "org.springframework" % "spring-aop" % "4.3.0.RELEASE"
 
 libraryDependencies += "org.apache.wicket" % "wicket-spring" % "7.3.0"
 
-libraryDependencies += "org.springframework.data" % "spring-data-jpa" % "1.10.1.RELEASE"
+libraryDependencies += "org.springframework.data" % "spring-data-jpa" % "1.10.2.RELEASE"
 
 enablePlugins(JettyPlugin)
 

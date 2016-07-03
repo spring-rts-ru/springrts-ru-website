@@ -81,15 +81,38 @@ body {
 }
 
 .welcome-link {
-    padding-right: 5%;
-    color:white;
-    font-size: 30px;
+    /*padding-right: 30%;*/
+    color:darkgray;
+    font-size: 35px;
+    text-align: center;
+}
+
+/* unvisited link */
+.welcome-link a:link {
+    color: white;
+}
+
+.welcome-link a {
+    color: white;
+}
+
+.welcome-link a:visited {
+    color: white;
+}
+
+.welcome-link a:hover {
+    color: lightgray;
+}
+
+.welcome-link:active {
+    color: white;
 }
 
 .welcome-scroll {
     margin: auto;
     padding-top: 5%;
     width: 2%;
+    min-width: 40px;
     color: white;
 }
 

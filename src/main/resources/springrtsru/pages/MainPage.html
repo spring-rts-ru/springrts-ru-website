@@ -3,32 +3,54 @@
 <body>
 
     <wicket:extend>
-
-        <div class="welcome-block">
-            <img class="welcome-logo img-responsive" src="/images/logo.png"/>
-            <div class="welcome-text-block">
-                <div class="welcome-text">ДОБРО ПОЖАЛОВАТЬ</div>
-                <div class="welcome-text">В РУССКОЯЗЫЧНОЕ СООБЩЕСТВО</div>
-                <div class="welcome-text">ИГР НА ДВИЖКЕ SPRING!</div>
+        <section class="welcome-block" id="welcome">
+        <!--<div class="welcome-block">-->
+            <div class="row welcome-logo center-text">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <img class="img-responsive" src="/images/logo.png"/>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+            <div class="row welcome-text center-text">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-12"><h2>ДОБРО ПОЖАЛОВАТЬ</h2></div>
+                <div class="col-lg-4"></div>
+            </div>
+            <div class="row welcome-text center-text">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-12"><h2>В РУССКОЯЗЫЧНОЕ СООБЩЕСТВО</h2></div>
+                <div class="col-lg-4"></div>
+            </div>
+            <div class="row welcome-text center-text">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-12"><h2>ИГР НА ДВИЖКЕ SPRING!</h2></div>
+                <div class="col-lg-4"></div>
             </div>
 
-            <div class="welcome-links">
-                <nobr>
-                    <!--<span class="welcome-link">ЧТО ТАКОЕ SPRING?</span>-->
-                    <div class="welcome-link"><a href="#games">ИГРЫ</a></div>
-                    <div class="welcome-link"><a href="#news">НОВОСТИ</a></div>
-                </nobr>
+            <div class="row">
+
+                    <div class="welcome-link col-lg-12">
+                        <a href="#history">ЧТО ТАКОЕ SPRING?</a>
+                        <a href="#games">ИГРЫ</a>
+                        <a href="#news">НОВОСТИ</a>
+                    </div>
+
             </div>
 
-            <img class="welcome-scroll img-responsive" src="/images/redesign/welcome_scroll.png"/>
-        </div>
-
+            <div class="row center-text">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <img class="welcome-scroll img-responsive" src="/images/redesign/welcome_scroll.png"/>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </section>
     <br/>
+
         <section class="main-page-intro" id="games">
         <!-- Games Intro -->
-            <div class="row center-text">
-                <div class="col-lg-12"><h2>Добро пожаловать в русскоязычное сообщество Spring RTS!</h2><hr></div>
-            </div>
+
             <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <a href="/games/ba">

@@ -64,7 +64,6 @@ body {
 
 .welcome-text {
     color: white;
-    display: table;
     margin: 0 auto;
     font-size: 60px;
     font-weight: bold;
@@ -76,7 +75,6 @@ body {
 
 .welcome-links {
     padding-top: 5%;
-    display: table;
     margin: 0 auto;
 }
 
@@ -87,25 +85,29 @@ body {
     text-align: center;
 }
 
-/* unvisited link */
+/* unvisited link*/
 .welcome-link a:link {
     color: white;
 }
 
 .welcome-link a {
     color: white;
+
 }
 
 .welcome-link a:visited {
     color: white;
+
 }
 
 .welcome-link a:hover {
     color: lightgray;
+
 }
 
 .welcome-link:active {
     color: white;
+
 }
 
 .welcome-scroll {
@@ -115,7 +117,9 @@ body {
     min-width: 40px;
     color: white;
 }
+/* GAMES INTRO */
 
+/* END GAMES INTRO */
 /* END OF NEW DESIGN STYLES */
 
 

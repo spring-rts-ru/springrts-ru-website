@@ -127,8 +127,8 @@ body {
     background: url('/images/redesign/BA_bg.jpg') no-repeat center center;
     background-size: cover;
     font-size: 16px;
-    padding: 15px;
-    /*margin: 15px;*/
+    padding: 2%;
+    margin: 2%;
     color: white;
 }
 
@@ -136,8 +136,8 @@ body {
     background: url('/images/redesign/ZEROK_bg.jpg') no-repeat center center;
     background-size: cover;
     font-size: 16px;
-    padding: 15px;
-    /*margin: 15px;*/
+    padding: 2%;
+    margin: 2%;
     color: white;
 }
 
@@ -145,8 +145,8 @@ body {
     background: url('/images/redesign/NOTA_bg.jpg') no-repeat center center;
     background-size: cover;
     font-size: 16px;
-    padding: 15px;
-    /*margin: 15px;*/
+    padding: 2%;
+    margin: 2%;
     color: white;
 
 }
@@ -155,8 +155,8 @@ body {
     background: url('/images/redesign/1944_bg.jpg') no-repeat center center;
     background-size: cover;
     font-size: 16px;
-    padding: 15px;
-    /*margin: 15px;*/
+    padding: 2%;
+    margin: 2%;
     color: white;
 }
 
@@ -164,8 +164,8 @@ body {
     background: url('/images/redesign/XTA_bg.jpg') no-repeat center center;
     background-size: cover;
     font-size: 16px;
-    padding: 15px;
-    /*margin: 15px;*/
+    padding: 2%;
+    margin: 2%;
     color: white;
 
 }
@@ -174,9 +174,10 @@ body {
     background: url('/images/redesign/TA_bg.jpg') no-repeat center center;
     background-size: cover;
     font-size: 16px;
-    padding: 15px;
-    /*margin: 15px;*/
+    padding: 2%;
+    margin: 2%;
     color: white;
+    /*height: 110%;*/
 }
 
 .games-link a:link {

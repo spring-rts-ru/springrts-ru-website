@@ -51,10 +51,7 @@ body {
 
 .welcome-block {
     background: url('/images/redesign/welcome_bg.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
 }
 
 .welcome-logo {
@@ -118,11 +115,102 @@ body {
     color: white;
 }
 /* GAMES INTRO */
+.main-intro {
+    background: url('/images/redesign/games_bg.jpg') no-repeat center center;
+    background-size: cover;
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+}
 
+.BA-block {
+    background: url('/images/redesign/BA_bg.jpg') no-repeat center center;
+    background-size: cover;
+    font-size: 16px;
+    padding: 2%;
+    margin: 2%;
+    color: white;
+}
+
+.Zerok-block {
+    background: url('/images/redesign/ZEROK_bg.jpg') no-repeat center center;
+    background-size: cover;
+    font-size: 16px;
+    padding: 2%;
+    margin: 2%;
+    color: white;
+}
+
+.NOTA-block {
+    background: url('/images/redesign/NOTA_bg.jpg') no-repeat center center;
+    background-size: cover;
+    font-size: 16px;
+    padding: 2%;
+    margin: 2%;
+    color: white;
+
+}
+
+.I944-block {
+    background: url('/images/redesign/1944_bg.jpg') no-repeat center center;
+    background-size: cover;
+    font-size: 16px;
+    padding: 2%;
+    margin: 2%;
+    color: white;
+}
+
+.XTA-block {
+    background: url('/images/redesign/XTA_bg.jpg') no-repeat center center;
+    background-size: cover;
+    font-size: 16px;
+    padding: 2%;
+    margin: 2%;
+    color: white;
+
+}
+
+.TA-block {
+    background: url('/images/redesign/TA_bg.jpg') no-repeat center center;
+    background-size: cover;
+    font-size: 16px;
+    padding: 2%;
+    margin: 2%;
+    color: white;
+    /*height: 110%;*/
+}
+
+.games-link a:link {
+
+    color: lightgray;
+}
+
+.games-link a {
+    font-size: 20px;
+    color: lightgray;
+
+}
+
+.games-link a:visited {
+    color: lightgray;
+
+}
+
+.games-link a:hover {
+    color: lightgray;
+
+}
+
+.games-link:active {
+    color: lightgray;
+
+}
+.whitehr {
+    color: rgba(27, 24, 24, 0);
+    background: rgba(26, 23, 23, 0);
+    width: 100%;
+    height: 3px;
+}
 /* END GAMES INTRO */
 /* END OF NEW DESIGN STYLES */
-
-
-
-
 

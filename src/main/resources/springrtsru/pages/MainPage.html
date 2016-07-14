@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="src/main/webapp/css/styles.css"/>
+</head>
 <body>
 
     <wicket:extend>
         <section class="welcome-block" id="welcome">
         <!--<div class="welcome-block">-->
             <div class="row welcome-logo">
-                <div class="col-xs-2 col-md-4"></div>
-                <div class="col-xs-8">
+                <div class="col-xs-2 col-md-4 col-lg-4"></div>
+                <div class="col-xs-8 col-lg-4">
                     <img class="img-responsive" src="/images/logo.png"/>
                 </div>
-                <div class="col-xs-4"></div>
+                <div class="col-xs-4 col-lg-4"></div>
             </div>
             <div class="row welcome-text center-text">
                 <div class="col-lg-4"></div>
@@ -50,46 +53,129 @@
 
         <section class="main-intro" id="games"> <!--was class="main-page-intro" and don't know why-->
         <!-- Games Intro -->
-
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <a href="/games/ba">
-                        <img class="img-circle img-responsive" src="/images/Carousel/BA.jpg"/>
+            <div class="container">
+            <div class="row ">
+                <div class="col-lg-11 col-lg-offset-1"><h3>Игры</h3></div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12"><hr class="whitehr"></div>
+            </div>
+            <div class="row games-link" style="height:100%">
+                <div class="col-sm-5 col-md-4 ">
+                    <div class="BA-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
                         <h3>Balanced Annihilation</h3>
-                    </a>
-                    <p>Balanced Annihilation - самая популярная игра на базе движка Spring.
-                        Линейка BA восходит к фан-модам оригинальной Total Annihilation.</p>
+                        <p>Balanced Annihilation - самая популярная игра на базе движка Spring.
+                            Линейка BA восходит к фан-модам оригинальной Total Annihilation.
+                        </p>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="/games/ba">ПОДРОБНЕЕ</a>
+                            </div>
+                            <div class="col-lg-5">
+                                <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <a href="/games/nota">
-                        <img class="img-circle img-responsive" src="/images/Carousel/NOTAfin.jpg"/>
-                        <h3>NOTA</h3>
-                    </a>
-                    <p> • Роботы, танки, корабли, самолеты и статическое оружие.<br>
-                        • Эпические сражения с участием сотни юнитов.<br>
-                        • 150+ типов юнитов в 2-ух основных противоборствующих сторонах.<br>
-                        • 3-я сторона, Spacebugs, смертельные насекомоподобные инопланетяне</p>
+                <div class="col-sm-5 col-md-4 ">
+                    <div class="NOTA-block col-sm-11 col-md-11 col-lg-offset-1"style="height:30%">
+                            <h3>NOTA</h3>
+                            <p>NOTA - это мод для TA, созданный для больших карт с увеличенными юнитами,
+                                топливом для самолетов и многим другим.
+                            </p>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="/games/nota">ПОДРОБНЕЕ</a>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <a href="http://nota.machys.net/downloads"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="clearfix hidden-md hidden-lg"></div>
-                <div class="col-sm-6 col-md-3">
-                    <a href="/games/zerok">
-                        <img class="img-circle img-responsive" src="/images/Carousel/Zero-k.jpg"/>
-                        <h3>Zero-K</h3>
-                    </a>
-                    <p>Zero-K является кроссплатформенной стратегией в реальном времени с открытым исходным кодом,
-                        где массивные армии роботов борются в бесконечном конфликте.</p>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <a href="/games/1944">
-                        <img class="img-circle img-responsive" src="/images/Carousel/1944.jpg"/>
-                        <h3>Spring: 1944</h3>
-                    </a>
-                    <p>Игра появилась в 2002 году как мод под Total Annihilation, называлась она тогда AATA.
-                        Когда spring стал достаточно играбельным, игру начали переносить на новый движок, заодно поменяли
-                        название и все модели.
-                        Тогда же добавили воздушные и морские юниты. </p>
+                <div class="col-sm-5 col-md-4 ">
+                    <div class="Zerok-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                                <h3>Zero-K</h3>
+                            <p>Zero-K является кроссплатформенной стратегией в реальном времени с открытым исходным кодом,
+                                где массивные армии роботов борются в бесконечном конфликте.
+                            </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="/games/zerok">ПОДРОБНЕЕ</a>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <a href="http://zero-k.info/Wiki/Download"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="clearfix hidden-md hidden-lg"></div><br>
+            <div class="row games-link">
+                <div class="col-sm-5 col-md-4 ">
+                    <div class="I944-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                            <h3>Spring: 1944</h3>
+                            <p>Spring: 1994 - это мод под Total Annihilation. Когда Spring стал достаточно играбельным,
+                                игру перенесли на новый движок и добавили новые юниты.
+                            </p>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="/games/1944">ПОДРОБНЕЕ</a>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <a href="http://spring1944.net/?page_id=124"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-4 ">
+                    <div class="XTA-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                            <h3>XTA</h3>
+                            <p>XTA является одной из оригинальных игр для Spring, и многие игроки считают, что она "более
+                                OTA, чем сама OTA" из-за аутентичных ощущений, в сочетании с возможностями Spring Engine.
+                            </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="/games/xta">ПОДРОБНЕЕ</a>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-4 ">
+                    <div class="TA-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                            <h3>TA</h3>
+                            <p>Это RTS игра, основанная на Balanced Annihilation, но подвергшаяся серьезной
+                                ребалансировке и дополненная юнитами
+                            </p>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="/games/ta">ПОДРОБНЕЕ</a>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12"><br></div>
+            </div>
+                </div>
         </section>
 
         <hr class="bighr">

@@ -126,19 +126,15 @@ body {
 .BA-block {
     background: url('/images/redesign/BA_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
 }
 
 .Zerok-block {
     background: url('/images/redesign/ZEROK_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
 }
 
 .NOTA-block {
@@ -147,36 +143,27 @@ body {
     font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
-
 }
 
 .I944-block {
     background: url('/images/redesign/1944_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
 }
 
 .XTA-block {
     background: url('/images/redesign/XTA_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
-
 }
 
 .TA-block {
     background: url('/images/redesign/TA_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
     /*height: 110%;*/
 }
 
@@ -210,6 +197,11 @@ body {
     background: rgba(26, 23, 23, 0);
     width: 100%;
     height: 3px;
+}
+
+.games-text {
+    font-size: 16px;
+    color: white;
 }
 /* END GAMES INTRO */
 /* END OF NEW DESIGN STYLES */

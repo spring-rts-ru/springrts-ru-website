@@ -62,8 +62,8 @@ body {
 .welcome-text {
     color: white;
     margin: 0 auto;
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 250%;
+    /*font-weight: bold;*/
 }
 
 .welcome-text-block {
@@ -78,7 +78,7 @@ body {
 .welcome-link {
     /*padding-right: 30%;*/
     color:darkgray;
-    font-size: 35px;
+    font-size: 250%;
     text-align: center;
 }
 
@@ -93,12 +93,12 @@ body {
 }
 
 .welcome-link a:visited {
-    color: white;
+    color: lightgray;
 
 }
 
 .welcome-link a:hover {
-    color: lightgray;
+    color: #f9f900;
 
 }
 

@@ -30,13 +30,6 @@ body {
     margin-left: -30px;
 }
 
-.bighr {
-    color: #1b1818;
-    background: #1b1818;
-    width: 100%;
-    height: 3px;
-}
-
 .center-text {
     text-align: center;
 }
@@ -168,30 +161,26 @@ body {
 }
 
 .games-link a:link {
-
-    color: lightgray;
+    color: white;
 }
 
 .games-link a {
     font-size: 20px;
-    color: lightgray;
-
+    color: white;
 }
 
 .games-link a:visited {
     color: lightgray;
-
 }
 
 .games-link a:hover {
-    color: lightgray;
-
+    color: #f9f900;
 }
 
 .games-link:active {
-    color: lightgray;
-
+    color: white;
 }
+
 .whitehr {
     color: rgba(27, 24, 24, 0);
     background: rgba(26, 23, 23, 0);
@@ -204,5 +193,30 @@ body {
     color: white;
 }
 /* END GAMES INTRO */
+/* NEWS */
+.news-block {
+    font-size: 20px;
+    padding: 15px;
+}
+.news {
+    outline: 1px solid lightgray;
+}
+.greenhr {
+    color: green;
+    background: green;
+    width: 100%;
+    height: 3px;
+}
+
+.news-text {
+    font-size: 16px;
+    color: black;
+}
+
+.news-block h1, h2, h3{
+    font-size: 20px;
+    color: green;
+}
+/* END NEWS */
 /* END OF NEW DESIGN STYLES */
 

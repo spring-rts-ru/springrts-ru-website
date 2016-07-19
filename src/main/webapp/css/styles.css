@@ -213,7 +213,7 @@ body {
 }
 
 .news-text {
-    font-size: 12px;
+    max-font-size: 1vw;
     color: black;
 }
 

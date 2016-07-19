@@ -55,7 +55,7 @@ body {
 .welcome-text {
     color: white;
     margin: 0 auto;
-    font-size: 250%;
+    font-size: 3vw;
     /*font-weight: bold;*/
 }
 
@@ -71,7 +71,7 @@ body {
 .welcome-link {
     /*padding-right: 30%;*/
     color:darkgray;
-    font-size: 250%;
+    font-size: 3vw;
     text-align: center;
 }
 

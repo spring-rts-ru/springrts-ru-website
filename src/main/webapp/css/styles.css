@@ -195,11 +195,14 @@ body {
 /* END GAMES INTRO */
 /* NEWS */
 .news-block {
-    font-size: 20px;
-    padding: 15px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    outline: 1px solid lightgray;
 }
 .news {
-    outline: 1px solid lightgray;
+    padding: 15px;
 }
 .greenhr {
     color: green;
@@ -209,13 +212,20 @@ body {
 }
 
 .news-text {
-    font-size: 16px;
+    font-size: 12px;
     color: black;
 }
 
-.news-block h1, h2, h3{
+.news h1, h2, h3{
     font-size: 20px;
     color: green;
+}
+.btn-green {
+    color: green;
+}
+
+.news-block-time {
+    color: #b4b4b4;
 }
 /* END NEWS */
 /* END OF NEW DESIGN STYLES */

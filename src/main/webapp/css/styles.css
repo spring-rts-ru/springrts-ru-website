@@ -30,13 +30,6 @@ body {
     margin-left: -30px;
 }
 
-.bighr {
-    color: #1b1818;
-    background: #1b1818;
-    width: 100%;
-    height: 3px;
-}
-
 .center-text {
     text-align: center;
 }
@@ -62,8 +55,8 @@ body {
 .welcome-text {
     color: white;
     margin: 0 auto;
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 250%;
+    /*font-weight: bold;*/
 }
 
 .welcome-text-block {
@@ -78,7 +71,7 @@ body {
 .welcome-link {
     /*padding-right: 30%;*/
     color:darkgray;
-    font-size: 35px;
+    font-size: 250%;
     text-align: center;
 }
 
@@ -93,12 +86,12 @@ body {
 }
 
 .welcome-link a:visited {
-    color: white;
+    color: lightgray;
 
 }
 
 .welcome-link a:hover {
-    color: lightgray;
+    color: #f9f900;
 
 }
 
@@ -126,19 +119,15 @@ body {
 .BA-block {
     background: url('/images/redesign/BA_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
 }
 
 .Zerok-block {
     background: url('/images/redesign/ZEROK_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
 }
 
 .NOTA-block {
@@ -147,70 +136,97 @@ body {
     font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
-
 }
 
 .I944-block {
     background: url('/images/redesign/1944_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
 }
 
 .XTA-block {
     background: url('/images/redesign/XTA_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
-
 }
 
 .TA-block {
     background: url('/images/redesign/TA_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 16px;
     padding: 2%;
     margin: 2%;
-    color: white;
     /*height: 110%;*/
 }
 
 .games-link a:link {
-
-    color: lightgray;
+    color: white;
 }
 
 .games-link a {
     font-size: 20px;
-    color: lightgray;
-
+    color: white;
 }
 
 .games-link a:visited {
     color: lightgray;
-
 }
 
 .games-link a:hover {
-    color: lightgray;
-
+    color: #f9f900;
 }
 
 .games-link:active {
-    color: lightgray;
-
+    color: white;
 }
+
 .whitehr {
     color: rgba(27, 24, 24, 0);
     background: rgba(26, 23, 23, 0);
     width: 100%;
     height: 3px;
 }
+
+.games-text {
+    font-size: 16px;
+    color: white;
+}
 /* END GAMES INTRO */
+/* NEWS */
+.news-block {
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    outline: 1px solid lightgray;
+}
+.news {
+    padding: 15px;
+}
+.greenhr {
+    color: green;
+    background: green;
+    width: 100%;
+    height: 3px;
+}
+
+.news-text {
+    font-size: 12px;
+    color: black;
+}
+
+.news h1, h2, h3{
+    font-size: 20px;
+    color: green;
+}
+.btn-green {
+    color: green;
+}
+
+.news-block-time {
+    color: #b4b4b4;
+}
+/* END NEWS */
 /* END OF NEW DESIGN STYLES */
 

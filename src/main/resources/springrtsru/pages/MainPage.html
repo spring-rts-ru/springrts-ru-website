@@ -7,68 +7,60 @@
 
     <wicket:extend>
         <section class="welcome-block" id="welcome">
+
         <!--<div class="welcome-block">-->
             <div class="row welcome-logo">
-                <div class="col-xs-2 col-md-4 col-lg-4"></div>
-                <div class="col-xs-8 col-lg-4">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-lg-offset-4 col-xs-offset-4">
                     <img class="img-responsive" src="/images/logo.png"/>
                 </div>
-                <div class="col-xs-4 col-lg-4"></div>
             </div>
             <div class="row welcome-text center-text">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-12"><h2>ДОБРО ПОЖАЛОВАТЬ</h2></div>
-                <div class="col-lg-4"></div>
-            </div>
-            <div class="row welcome-text center-text">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-12"><h2>В РУССКОЯЗЫЧНОЕ СООБЩЕСТВО</h2></div>
-                <div class="col-lg-4"></div>
-            </div>
-            <div class="row welcome-text center-text">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-12"><h2>ИГР НА ДВИЖКЕ SPRING!</h2></div>
-                <div class="col-lg-4"></div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>ДОБРО ПОЖАЛОВАТЬ</p>
+                    <p>В РУССКОЯЗЫЧНОЕ СООБЩЕСТВО</p>
+                    <p>ИГР НА ДВИЖКЕ SPRING!</p>
+                </div>
+
             </div>
 
             <div class="row">
-
-                    <div class="welcome-link col-lg-12">
-                        <a href="#history">ЧТО ТАКОЕ SPRING?</a>
-                        <a href="#games">ИГРЫ</a>
-                        <a href="#news">НОВОСТИ</a>
-                    </div>
-
+                <div class="welcome-link col-lg-8 col-lg-offset-2">
+                    <a href="#history">ЧТО ТАКОЕ SPRING?</a>
+                    <a href="#games">ИГРЫ</a>
+                    <a href="#news">НОВОСТИ</a>
+                </div>
             </div>
 
             <div class="row center-text">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-lg-offset-4">
                     <img class="welcome-scroll img-responsive" src="/images/redesign/welcome_scroll.png"/>
                 </div>
                 <div class="col-lg-4"></div>
             </div>
+
         </section>
-    <br/>
+        <br/>
 
         <section class="main-intro" id="games"> <!--was class="main-page-intro" and don't know why-->
         <!-- Games Intro -->
             <div class="container">
-            <div class="row ">
-                <div class="col-lg-11 col-lg-offset-1"><h3>Игры</h3></div>
+                <div class="row ">
+                <div class="col-sm-5 col-md-4 ">
+                <div class="col-sm-2 col-md-2 col-lg-offset-1" style="height:30%">
+                    <h2>Игры</h2></div></div>
             </div>
-            <div class="row ">
+                <div class="row ">
                 <div class="col-lg-12"><hr class="whitehr"></div>
             </div>
-            <div class="row games-link" style="height:100%">
+                <div class="row games-text" style="height:100%">
                 <div class="col-sm-5 col-md-4 ">
-                    <div class="BA-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                    <div class="BA-block games-text col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
                         <h3>Balanced Annihilation</h3>
                         <p>Balanced Annihilation - самая популярная игра на базе движка Spring.
                             Линейка BA восходит к фан-модам оригинальной Total Annihilation.
                         </p>
                         <br>
-                        <div class="row">
+                        <div class="row games-link">
                             <div class="col-lg-6">
                                 <a href="/games/ba">ПОДРОБНЕЕ</a>
                             </div>
@@ -85,7 +77,7 @@
                                 топливом для самолетов и многим другим.
                             </p>
                         <br>
-                        <div class="row">
+                        <div class="row games-link">
                             <div class="col-lg-6">
                                 <a href="/games/nota">ПОДРОБНЕЕ</a>
                             </div>
@@ -102,7 +94,7 @@
                             <p>Zero-K является кроссплатформенной стратегией в реальном времени с открытым исходным кодом,
                                 где массивные армии роботов борются в бесконечном конфликте.
                             </p>
-                        <div class="row">
+                        <div class="row games-link">
                             <div class="col-lg-6">
                                 <a href="/games/zerok">ПОДРОБНЕЕ</a>
                             </div>
@@ -114,992 +106,139 @@
                     </div>
                 </div>
             </div>
-            <div class="clearfix hidden-md hidden-lg"></div><br>
-            <div class="row games-link">
-                <div class="col-sm-5 col-md-4 ">
-                    <div class="I944-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
-                            <h3>Spring: 1944</h3>
-                            <p>Spring: 1994 - это мод под Total Annihilation. Когда Spring стал достаточно играбельным,
-                                игру перенесли на новый движок и добавили новые юниты.
-                            </p>
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a href="/games/1944">ПОДРОБНЕЕ</a>
-                            </div>
+                <div class="clearfix hidden-md hidden-lg"></div>
+                <div class="row games-link games-text">
+                    <div class="col-sm-5 col-md-4 ">
+                        <div class="I944-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                                <h3>Spring: 1944</h3>
+                                <p>Spring: 1994 - это мод под Total Annihilation. Когда Spring стал достаточно играбельным,
+                                    игру перенесли на новый движок и добавили новые юниты.
+                                </p>
+                            <br>
+                            <div class="row games-link">
+                                <div class="col-lg-6">
+                                    <a href="/games/1944">ПОДРОБНЕЕ</a>
+                                </div>
 
-                            <div class="col-lg-5">
-                                <a href="http://spring1944.net/?page_id=124"><img src="/images/redesign/Download.png" class="img-responsive"></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5 col-md-4 ">
-                    <div class="XTA-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
-                            <h3>XTA</h3>
-                            <p>XTA является одной из оригинальных игр для Spring, и многие игроки считают, что она "более
-                                OTA, чем сама OTA" из-за аутентичных ощущений, в сочетании с возможностями Spring Engine.
-                            </p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a href="/games/xta">ПОДРОБНЕЕ</a>
-                            </div>
-
-                            <div class="col-lg-5">
-                                <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                <div class="col-lg-5">
+                                    <a href="http://spring1944.net/?page_id=124"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-5 col-md-4 ">
-                    <div class="TA-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
-                            <h3>TA</h3>
-                            <p>Это RTS игра, основанная на Balanced Annihilation, но подвергшаяся серьезной
-                                ребалансировке и дополненная юнитами
-                            </p>
-                        <br><br>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a href="/games/ta">ПОДРОБНЕЕ</a>
-                            </div>
+                    <div class="col-sm-5 col-md-4 ">
+                        <div class="XTA-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                                <h3>XTA</h3>
+                                <p>XTA является одной из оригинальных игр для Spring, и многие игроки считают, что она "более
+                                    OTA, чем сама OTA" из-за аутентичных ощущений, в сочетании с возможностями Spring Engine.
+                                </p>
+                            <div class="row games-link">
+                                <div class="col-lg-6">
+                                    <a href="/games/xta">ПОДРОБНЕЕ</a>
+                                </div>
 
-                            <div class="col-lg-5">
-                                <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                <div class="col-lg-5">
+                                    <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-5 col-md-4 ">
+                        <div class="TA-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                                <h3>TA</h3>
+                                <p>Это RTS игра, основанная на Balanced Annihilation, но подвергшаяся серьезной
+                                    ребалансировке и дополненная юнитами
+                                </p>
+                            <br><br>
+                            <div class="row games-link">
+                                <div class="col-lg-6">
+                                    <a href="/games/ta">ПОДРОБНЕЕ</a>
+                                </div>
+
+                                <div class="col-lg-5">
+                                    <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
                 </div>
-                <div class="col-lg-2"></div>
+                <div class="row">
+                    <div class="col-lg-12"><br></div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12"><br></div>
-            </div>
-                </div>
+            <!-- End of Games Intro-->
         </section>
 
-        <hr class="bighr">
 
+        <section>
             <div class="container">
-                <div class="base-contents">
-        <!-- End of Games Intro-->
-        <div class="row">
-        <div class="col-sm-10 news">
-            <section>
-                <h2 id="news">Новости</h2>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 9 июля 2016
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.36!</h1>
-                <b>Изменения баланса:</b><br/>
-                - В обломки металла теперь сложнее попасть -> будет больше металла на поле боя<br/>
-                - Исправлена проблема: в закрытый випер сложно попасть (ракетная установка core 2 уровня)<br/>
-                - Исправления для функциональности "установить цель"<br/>
-                <br/>
-                <b>Другие изменения:</b><br/>
-                - Добавлен набор курсоров от BAR (можно включить/отключить с помощью /cursor)<br/>
-                - Радиус парализованной противоракетной системы будет мигать<br/>
-                - Курсоры неактивных наблюдателей будут постепенно исчезать<br/>
-                - Удален виджет "SmoothScroll" (плавная прокрутка) - больше не нужен<br/>
-                - Добавлено еще больше сообщений о смерти игрока<br/>
-                - Эффект появления командира переделан в виджет (который можно включать/отключать)<br/>
-                - Уменьшено количество дикой живности на земле<br/>
-                - Различные изменения, необходимые для поддержки движка Spring 102<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="https://springfiles.com/spring/games/balanced-annihilation-85">Balanced Annihilation 9.36</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/hotlips.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 8 марта 2016
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.35!</h1>
-                <b>Изменения баланса:</b><br/>
-                - Парализующие дроны перемещаются на 10% медленнее<br/>
-                <br/>
-                <b>Другие изменения:</b><br/>
-                - Поддержка движка spring 101<br/>
-                - Новый виджет "BA cmdcolors"(цвета БА) - отключите его, если хотите использовать цвета движка spring<br/>
-                - Обновлен виджет "Unit Stats"(статистика по юнитам) - более точная статистика<br/>
-                - гораздо больше животных<br/>
-                - животные исчезают, когда юнитов становится слишком много<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="https://springfiles.com/spring/games/balanced-annihilation-84">Balanced Annihilation 9.35</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/hotlips.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 28 февраля 2016
-                <hr/>
-
-                <h1>Релиз движка стратегических игр Spring: версия 101!</h1>
-                Привет всем любителям стратегических игр! <br/>
-                Большая новость для вас сегодня! Крупный релиз движка Spring!<br/>
-                Прошло пол года с момента прошлого релиза. За это время, разработчики
-                сделали более 1200 изменений: добавлено много новых возможностей, исправлено много ошибок + улучшена производительность!<br/>
-                Ознакомиться с играми, основанными на движке, можно <a href="http://springrts.ru/videos">здесь</a><br/>
-
-                <br/>
-                <b>Несколько слов о релизе</b>: <br/>
-                - Шейдеры для игровых объектов и карт теперь доступны разработчикам игр на уровне lua.<br/>
-                - Линия обзора теперь обновляется плавно и потребляет меньше ресурсов.<br/>
-                - Транспортировка юнитов была переработана так, что разработчики игр теперь могут прикреплять любой юнит к любому другому юниту.<br/>
-                - Добавлен встроенный механизм скачивания файлов. Это позволит создавать лобби внутри игры и скачивать необходимые карты и ресурсы.<br/>
-                Подробнее список изменений можно посмотреть <a href="https://github.com/spring/spring/blob/master/doc/changelog.txt">здесь</a><br/>
-                <br/>
-
-                Небольшое видео, демонстрирующее техническую чать нововведений:<br/>
-                <div class="video-container">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/2IgBvSH7Kqs" frameborder="0" allowfullscreen></iframe>
+                <div class="row news">
+                    <div class="col-sm-12">
+                        <h2 id="news">Новости</h2>
+                        <hr class="greenhr">
+                    </div>
                 </div>
-                <br/>
-                <b>Если не будет найдено критических ошибок, то официальное лобби перейдет на этот релиз на следующей неделе.</b>
-                <br/><br/>
-
-                <b>Скачать:</b><br/>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-101.0/spring_101.0.exe/download">Windows (установщик)</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-101.0/spring_101.0_portable.7z/download">Windows (без установки, в архиве)</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-101.0/spring_101.0_minimal-portable-linux32-static.7z/download">Linux 32 битная версия</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-101.0/spring_101.0_minimal-portable-linux64-static.7z/download">Linux 64 битная версия</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-101.0/spring_101.0_src.tar.gz/download">Исходный код</a>
-                <br/><br/>
-
-                <span class="glyphicon glyphicon-time"></span> 15 февраля 2016
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.33!</h1>
-                Изменения баланса:<br/>
-                - Обломки машин и роботов 2 уровня стали крепче<br/><br/>
-
-                Остальные изменения:<br/>
-                - Все элементы интерфейса могут быть перемещены, удерживая правую кнопку мыши в режиме Ctrl+F11<br/>
-                - Виджеты "changelog / commands info / unit info" теперь поддерживают скроллинг мышью<br/>
-                - Виджет "Smart select"(умное выделение) отключен фильтр зданий, когда в выделении есть мобильные юниты (можно включить с помощью /selectionmode)<br/>
-                - Виджет Unit stats(статистика по юнитам) - изменяет свой размер в зависимости от разрешения экрана<br/>
-                - Виджет Comcounter (счетчик командиров) теперь имеет такой же размер, как и виджет, отображающий силу ветра<br/>
-                - Добавлена дикая живность на некоторых картах (животные)!<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-83">Balanced Annihilation 9.33</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/green_1.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 8 февраля 2016
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.32!</h1>
-                - Система противоядерной обороны (наземная) стоит на 10% меньше энергии<br/>
-                - Продвинутые ядерные реакторы строятся дольше на 15%<br/>
-                - Останки некоторых юнитов 1 уровня стали крепче<br/>
-                - Конструкторы 2 уровня (машины, роботы, самолеты) стоят на 20% дороже<br/>
-                - Добавлен виджет "Unit Stats"(статистика по юнитам). Держите пробел и наведите на юнита, чтобы увидеть характеристики<br/>
-                - Немного изменился интерфейс ставок<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-82">Balanced Annihilation 9.32</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/vallesmarineris.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 2 февраля 2016
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.31!</h1>
-                - Кнопка для заключения союзов была доработана: при повторном нажатии - союз расторгается (AdvPlayersList, FFA)<br/>
-                - Добавлен виджет "LOS view", который включает линию обзора для игроков, и отключает для наблюдателей<br/>
-                - Виджет "Ally Resource Bars"(ресурсы союзников) теперь отображает, сколько союзники добывают, если нравести мышкой<br/>
-                - В виджет "Darken map"(затемнение карты) добавлена опция для более точной настройки '/mapdarkness #' где # может принимать значения от 0 до 0.6<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-81">Balanced Annihilation 9.31</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/vallesmarineris.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 25 января 2016
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.29!</h1>
-                Режим FFA: Союз разрывается, когда ты атакуешь юнита союзника<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-79">Balanced Annihilation 9.29</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/screen01290.png" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 18 января 2016
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.28!</h1>
-                    Изменения баланса:<br/>
-                    - Гремлина (танк-невидимка) теперь сложнее парализовать<br/>
-                    - Аннигилятор и Машина судного дня (самые крутые оборонительные вышки) - слабее стреляют на 10% (все пушки)<br/>
-                    - Оружие снайпера было переделано. Теперь снайперы не убивают своих же юнитов<br/><br/>
-
-                    Другие изменения:<br/>
-                    - Исправлен баг со скроллом камеры в начале игры (проявлялся у некоторых игроков)<br/>
-                    - Исправлено отображение кнопки для заключения союзов в FFA<br/>
-                    <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-78">Balanced Annihilation 9.28</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/screen01290.png" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 11 января 2016
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.27!</h1>
-                - Виджет "Advplayerlist"(список игроков): показывает кнопку &lt;3, при разрешенных альянсах(см на FFA серверах: 'Fixed Alliances: No')<br/>
-                - улучшенный алгоритм нахождения путей включен по умолчанию (как в релизе v9.25)<br/>
-                - Исправлена ошибка, которая периодически сыпалась в консоль при заморозке хранилищ метала/энергии<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-77">Balanced Annihilation 9.27</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/screen01290.png" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 23 декабря 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.26!</h1>
-                - Виджет, отображающий радиус DGun-а теперь показывает более точную информацию (учитывается высота земли)<br/>
-                - Виджет, отображающий список игроков, прячет список наблюдателей для тех, кто играет<br/>
-                - виджет, рисующий снег, теперь показывает информацию перед игрой (если карта - снежная)<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-76">Balanced Annihilation 9.26</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/screen01290.png" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 15 декабря 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.25!</h1>
-                - Исправлены ошибки<br/>
-                - Улучшен Pathfinder (опционально, для тестирования)<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-75">Balanced Annihilation 9.25</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/screen01290.png" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 15 декабря 2015
-                <hr/>
-                <p>
-
-                <h1>Релиз игры Balanced Annihilation: версия 9.24!</h1>
-                - У ложного командира больше нет настоящего dgun.<br/>
-                - Выбранные союзные юниты: исправлена  мертвая зона для нажатий мышкой<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-74">Balanced Annihilation 9.24</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/screen01290.png" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 15 декабря 2015
-                <hr/>
-                <p>
-
-                <h1>Релиз игры Balanced Annihilation: версия 9.23!</h1>
-                - Выбранные союзные юниты: исправлен баг, изменяющий цвет карты + авто-масштабирование пользовательского
-                интерфейса в соответствии с разрешением<br/>
-                - Фронтенд: удалена мертвая зона нажатий мышкой для игроков + список заказаных юнитов сортируется по времени +
-                продолжает работать на паузе<br/>
-                - Союзные ресурсбары: Опять чуть больше на малых разрешениях<br/>
-                - Добавлен виджет: "Bloom shader highlight"<br/>
-                - Опции пассивных строителей показываются только для игроков + авто-масштабируются в соответствии с разрешением<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-73">Balanced Annihilation 9.23</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/screen01290.png" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 28 ноября 2015
-                <hr/>
-                <p>
-
-                <h1>Релиз игры Balanced Annihilation: версия 9.21!</h1>
-                Добавлен виджет "Darken Map". Позволяет делать карту темнее или светлее. Используйте сочетания клавиш trl+alt+[ или ]<br/>
-                Улучшен интерфейс для ставок. Выделяйте юниты в режиме наблюдателя и делайте ставки!<br/>
-                Прочие исправления и улучшения<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-71">Balanced Annihilation 9.21</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/screen01290.png" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 21 ноября 2015
-                <hr/>
-                <p>
-
-                <h1>Релиз игры Balanced Annihilation: версия 9.19!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                Улучшенный подводный извлекатель металла CORE стоит на 10% меньше<br/>
-                Улучшенные подводные лодки-строители стоят на 20% меньше металла<br/>
-                Платформы гидропланов стоят на 20% меньше металла<br/>
-                Pincer (ARM танк-амфибия) и Garpike (CORE танк-амфибия) передвигаются быстрее и их сложнее парализовать<br/>
-                Невидимая электростанция производит на 50 энергии больше<br/>
-                <br/>
-                <b>Другие изменения:</b><br/>
-                Виджет "Advplayerlist"(список игроков): если вы - наблюдатель и два раза кликните по имени игрока, то увидите, какие юниты он выделяет<br/>
-                Виджет "Ally selected units"(показывает выделенных юнитов союзника): теперь отображает информацию о выделении и для наблюдателей тоже<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-70">Balanced Annihilation 9.19</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/hotlips.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 15 ноября 2015
-                <hr/>
-                <p>
-
-                <h1>Релиз игры Balanced Annihilation: версия 9.18!</h1>
-                Улучшения в виджете "Статистика экономики": мертвые команды не отображаются<br/>
-                Добавлена рамка для виджета, отображающего мини-карту<br/>
-                Небольшое увеличение производительности множества виджетов<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-69">Balanced Annihilation 9.18</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/riverdelta.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 7 ноября 2015
-                <hr/>
-                <p>
-
-                <h1>Релиз игры Balanced Annihilation: версия <s>9.14</s> 9.15!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                Транспортные самолеты будут лететь медленнее, когда переносят тяжелый груз <br/>
-                Исправлена ошибка движка - скользящие юниты после выгрузки из транспортного самолета<br/>
-                Транспортные самолеты больше не пролетают сквозь возвышенности + теперь юниты выгружаются корректно всегда <br/>
-                Отключена зарядка оружия "dgun", теперь командир может использовать его сразу после высадки из транспорта <br/>
-                Легче парализовать банту (в 1.3 раза)<br/>
-
-                <br/>
-                <b>Другие изменения:</b><br/>
-                Добавлена "бета" версия виджета ставок (по умолчанию, выключено)<br/>
-                Добавлен виджет "Bloom Shader" (отключен по умолчанию) <br/>
-                Элементам интерфейса добавлена небольшая рамка<br/>
-                Виджет, отображающий информацию о карте, теперь показывает и размер карты<br/>
-                Исправлено отображение нимбов для юнитов противника <br/>
-                Переименован виджет "HighlightSelectedUnits" - добавлены пробелы<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-67">Balanced Annihilation 9.15</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/whitelight_2.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 30 октября 2015
-                <hr/>
-                <p>
-
-                <h1>Релиз игры Balanced Annihilation: версия 9.13!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                Buzzsaw и Vulcan переведены в режим "не стрелять" по умолчанию<br/>
-                Скорость постройки улучшенных электростанций (afus) увеличена на 15%<br/>
-                Ракетные корабли 2 уровня ускоряются чуть быстрее<br/>
-                Улучшенная ползучая бомба передвигается быстрее(1.75 -> 2.8)<br/>
-                Количество жизней огнеметного робота уменьшено на 5%<br/>
-                Термит (core паук) стоит на 10% меньше металла<br/>
-                Удалена торпедная установка вода-воздух<br/>
-                <br/>
-                <b>Другие изменения:</b><br/>
-                Добавлен виджет "Commands info" - отображает список доступных команд<br/>
-                Нимб отображается и для вражеских воскрешенных юнитов<br/>
-                Удален виджет "LockCamera" т.к. эта функциональность теперь включена в виджет списка игроков<br/>
-                "commands FX" - рисует более изящные(тонкие) линии<br/>
-                Удален зверек кото-сова из виджета "зверьки для списка игроков"<br/>
-                Добавлен виджет "Pause/Unpause sounds" - издает звуки при паузе, по умолчанию выключен<br/>
-                У мини-карты убали рамку<br/>
-                У заводов больше нет фундамента(текстуры)<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-65">Balanced Annihilation 9.13</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/whitelight_2.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 23 октября 2015
-                <hr/>
-                <p>
-
-                <h1>Релиз игры Balanced Annihilation: версия 9.12!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                Стоимость аннигилятора увеличена на 10%<br/>
-                Стоимость Doomsday Machine увеличена на 15%<br/>
-                Радиус взрыва самолетов-строителей увеличен (128 -> 160)<br/>
-                Интрудер (машина-транспорт 2 уровня) теперь крепче (12 500 -> 20 000)<br/>
-                Сложнее парализовать транспортные самолеты<br/>
-                Стоимость всех бомбардировщиков, с наземных авиабаз, уменьшена на 5%<br/>
-                Время перезарядки Доминаторв (ракетный робот 2 уровня) увеличено (7->8), но ракета наносит больше урона (750 -> 800)<br/>
-                Переделан D-Gun(мощное оружие командира), теперь он стелится по земле<br/>
-                <br/>
-                <b>Другие изменения:</b><br/>
-                Добавлена команда "/unitcounter", для отображения количества юнитов всего (если игрок - то в команде)<br/>
-                Добавлена команда "/cputext", которая меняет отображение загруженности процессора с иконки на текст в списке игроков<br/>
-                Добавлен новый виджет "gui_transport_weight_limit", который подсвечивает юниты, которые транспорт может загрузить<br/>
-                Виджет "Map Edge Extension" - включен по умолчанию<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-64">Balanced Annihilation 9.12</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/flagships_0.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 16 октября 2015
-                <hr/>
-                <p>
-
-                <h1>Релиз игры Balanced Annihilation: версия 9.11!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                Парализованые хранилища энергии теперь "протекают" (первого уровня - расходуют 60 энергии, 2 уровня - 400)<br/>
-                Парализованные хранилища металла перестают "хранить". Если у вам было металла больше, чем вы можете хранить без хранилища, то излишки пропадают<br/>
-                Улучшен гаджет "пассивные строители". Теперь они не будут строить, если не хватает нужного ресурса, а не любого<br/>
-                По умолчанию, включена возможность транспортировки вражеских юнитов (кроме командира)<br/>
-                Парализующие пауки восстанавливают жизни чуть быстрее (20 -> 30)<br/>
-                Возвращено старое оружие ракетным кораблям 2 уровня<br/>
-                Хранилища металла 1 уровня теперь на 10% крепче<br/>
-
-                <br/>
-                <b>Другие изменения:</b><br/>
-                Атомные бомбардировщики теперь взрываются, когда их убили, а не падают вниз (когда падали - могли стрелять)<br/>
-                Количество вражеских командиров теперь отображается в виджете "счетчик командиров"<br/>
-                Новые виджеты: "External VR grid", "Map Edge extension", "Team stats"<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-63">Balanced Annihilation 9.11</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/green_1.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <h1>Релиз игры Balanced Annihilation: версия 9.10!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                Парализующие пауки теперь восстанавливаются после повреждения<br/>
-                Скорость захвата командиром юнитов увеличена в 2 раза (900 -> 1800)<br/>
-                Фальшивый командир теперь тоже умеет захватывать (скорость - 900)<br/>
-                Роботы Фидо теперь включены по умолчанию (стреляют по дуге)<br/>
-
-                <br/>
-                <b>Другие изменения:</b><br/>
-                Текст экрана паузы теперь лучше видно<br/>
-                Улучшен внешний вид диалога виджетов + если кликнуть за область диалога, то он закрывается<br/>
-                Добавлен кот-сова в виджет с котами<br/>
-                Исправления ошибок<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-62">Balanced Annihilation 9.10</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/centerrock.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 18 сентября 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.09!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                Увеличена дальность стрельбы парализующего робота-паука (220 -> 280)<br/>
-                Теперь сложнее парализовать роботов-пауков<br/>
-                Ракеты арм робота "Recluse" теперь летят точно в цель (раньше летели в рассыпную) + добавлена 1 дополнительная ракета<br/>
-                <br/>
-                <b>Другие изменения:</b><br/>
-                Добавлен виджет "vignette" - темная рамка вокруг экрана<br/>
-                Добавлен новый виджет "AdvPlayersList mascotte" - кот над списком игроков. Попробуйте активировать и набрать в консоли /mascotte<br/>
-                Улучшен внешний вид списка виджетов<br/>
-                Переработаны виджеты "anti ranges", "energy conversion" и "red ui drawing" с целью увеличения производительности<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-61">Balanced Annihilation 9.09</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/titan.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 11 сентября 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.08!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                Робот-амфибия 2 уровня (gimp) теперь снова виден сонарам<br/>
-                <br/>
-                <b>Другие изменения:</b><br/>
-                Улучшен внешний вид виджета ecostats(отображает статистику по экономике команд), исправлены ошибки<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-60">Balanced Annihilation 9.08</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/titan.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 4 сентября 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.07!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                Закрывающиеся пушки (когти дракона) теперь получают больше урона в закрытом состоянии (было 0.15, стало 0.25)<br/>
-                Уменьшена сила строительства самолетов-строителей 2 уровня (120 -> 100)<br/>
-                <br/>
-                <b>Другие изменения:</b><br/>
-                Коммандиры не крутят своим торсом, когда помогают заводам строить<br/>
-                Добавлены новые скриншоты-заставки<br/>
-                Исправлен экран паузы<br/>
-                Добавлен виджет (ecostats), который отображает статистику по экономике команд<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-59">Balanced Annihilation 9.07</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/vallesmarineris.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 21 августа 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.06!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                Уменьшена максимальная скорость самолета-строителя 1 уроаня на 12%, зато увеличена сила строительства на 22%<br/>
-                Уменьшена максимальная скорость самолета-строителя 2 уровня на 20% и уменьшена сила строительства на 30%<br/>
-                <br/>
-                <b>Другие изменения:</b><br/>
-                Виджет, показывающий информацию о юнитах теперь использует сочетание клавиш Ctrl+U<br/>
-                Добавлены новые изображения, отображаемые при загрузке игры. Некоторые старые были удалены<br/>
-                Теперь изображение, отображаемое при загрузке игры, растягивается, чтобы занять всю область окна<br/>
-                Виджет "пассивные строители" был доработан. Теперь он настраивается на экране настроек (Ctrl+F11)<br/>
-                Исправлены подсказки к преобразователям металла. Теперь они отображают корректную информацию<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-58">Balanced Annihilation 9.06</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/arena.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 14 августа 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.05!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                - Преобразователи энергии в металл теперь вырабатывают на 16.5 процента меньше металла<br/>
-                - У машин 1 уровня количество здоровья увеличилось на 5% (кроме разведчиков, строителей и миноукладчиков)<br/>
-                - Теперь большинство самолетов не сливаются в один юнит: включили столкновения (не включили для разведчиков и истребителей)<br/>
-                - Бомбардировщики 1 уровня летают на 3% медленнее<br/>
-                - Бомбардировщики 2 уровня летают на 8% медленнее, но стоят на 10% меньше энергии<br/>
-                - Артилерийская машина 1 уровня стоит на 10% меньше металла<br/>
-                <br/>
-                <b>Другие изменения:</b><br/>
-                - Добавлен вилджет "unit info"(информация о юнитах) -> выделите юнита и нажмите U, или наберите команду /unitinfo armcom<br/>
-                - Виджет, подсвечивающий выбранных юнитов, включен по умолчанию<br/>
-                - Информация о преобразователях металла снова отображается в окне подсказок (тултипе)<br/>
-                - Теперь парализованные преобразователи металла не генерируют металл<br/>
-                - Виджет, отображаюший силу ветра, теперь снова запоминает позицию<br/>
-                - Виджет, отображающий количетство ресурсов, теперь снова показывает числа после запятой, если ресурсов меньше 10<br/>
-                - Экран паузы теперь выглядит красивее и более прозрачный<br/>
-                - Теперь снова можно менять размер карты не нажимая Ctrl+F11<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://packages.springrts.com/builds/ba-V9.05.sdz">Balanced Annihilation 9.05</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/riverdelta.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-
-                <span class="glyphicon glyphicon-time"></span> 8 августа 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.04!</h1>
-                <b>Изменения в балансе</b>: <br/>
-                - Радиус поражения ракеты увеличен для ракетного робота 2 уровня "Dominator", но уменьшена поражающая способность на окраинах взрыва<br/>
-                - Максимальное время, на которое можно парализовать мобильные юниты, увеличино до 20 секунт<br/>
-                - Увеличено количество здоровья "пауку" - парализующему роботу 2 уровня<br/>
-                - Теперь самолеты-разведчики 1 уровня стоят больше металла<br/>
-                - Вернули отображение обломков юнитов за пределами области видимости<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-56">Balanced Annihilation 9.04</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/riverdelta.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 7 августа 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.03!</h1>
-                <b>Несколько слов о релизе</b>: <br/>
-                - Предметы на карте(например, обломки танков) теперь не отображаются за областю видимости<br/>
-                - Элементы интерфейса теперь можно перемещать только в режиме настройки(CTRL+F11)<br/>
-                - Виджет, отображающий ресурсы, теперь можно увеличивать или уменьшать, используя команды /allyresbars_sizeup и /allyresbars_sizeup<br/>
-                <br/>
-                <b>Исправлены ошибки:</b><br/>
-                - Убрали небольшой пробел возле закругленных углов виджетов<br/>
-                - Виджет, отображающий изменения между релизами, теперь работает!<br/>
-                - Изменить размер иконок виджета "Buildbar"(меню строительства справа) можно с помощью колесика мыши в режиме настройки интерфейса<br/>
-                - Область поражение дганом коммандира теперь отрисовывается точнее<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-55">Balanced Annihilation 9.03</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/riverdelta.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-                <span class="glyphicon glyphicon-time"></span> 3 августа 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.02!</h1>
-                <b>Несколько слов о релизе</b>: <br/>
-                <br/>
-                <b>Изменения в балансе</b><br/>
-                Атомный бомбардировщик теперь убивает командира (без опыта) с 1 ракеты. Но ракеты больше не самонаводящиеся и уменьшен радиус выстрела (самолет должен подлетать ближе)<br/>
-                Уменьшен радиус взрыва снаряда дальнобойных пушек Берта (Bertha и Intimidator)<br/>
-                Увеличен радиус сонара у командира, теперь он совпадает с линией обзора<br/>
-                Уменьшена скорость транспортных самолетов 1 уровня (Valkyrie и Atlas)<br/>
-                У некоторых воздушных юнитов теперь включен режим столкновений. Теперь 30 строителей не смогут слиться в 1.<br/>
-                Исправлена ошибка: раньше замороженные преобразователи металла продолжали работать (преобразовывать)<br/>
-                <br/>
-                <b>Остальные изменения</b><br/>
-                Добавлен виджет "список изменений", который будет отображать "что нового" при каждом релизе<br/>
-                Добавлен виджет, отображающий радиус рассекречивания шпионов и гремлинов. Радиус отображается, когда юнит выбран<br/>
-                Виджет "Buildbar"(меню строительства справа) теперь отключается, когда игрок становится наблюдателем<br/>
-                Виджет "Smart Select"(умное выделение) теперь включен по умолчанию<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-54">Balanced Annihilation 9.02</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/riverdelta.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 28 июля 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.01!</h1>
-                <b>Несколько слов о релизе</b>: <br/>
-                <br/>
-                Исправлена ошибка: перевернутые иконки ховер танков в заводе 3 уровня<br/>
-                Модернизирован виджет, отвечающий за линию обзора "BA LOS colors": настройки радара теперь сохраняются (кнопка ;)
-                + исправлены проблемы с горячей клавишей (;) на некоторых раскладках + добавлена опция "цветная линия обзора", включается /loscolor<br/>
-                Удален код, устанавливаюший состояние "активен/пассивен" из виджета "immobile builder" (теперь за это отвечает виджет "passive builders"<br/>
-                Добавлен виджет "passive builders"(пассивные строители). Все конструкторы и заводы по умолчанию имеют пассивный режим (исключение - командир и коммандо)<br/>
-                Исправлены проблемы с виджетом "GUIshader"<br/>
-                Из консоли "RedUI" убрали эффект затуманивания фона, можно включить назад так: /consoleblur<br/>
-                В виджете "RedUI build/order menu"(меню строительства): теперь можно убрать пробелы между иконками /iconspace<br/>
-                Виджет, отображающий ресурсы, теперь показывает только целые числа<br/>
-                Исправлен баг, когда запоминалась очередь строительства в виджете "Initial Queue"<br/>
-                Виджет "Resurrection halos"(отображающий нимб) теперь можно отключить, и он больше не отображает нимбы для вражеских юнитов<br/>
-                <br/>
-                <b>В этом релизе нет изменений баланса!</b><br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-53">Balanced Annihilation 9.01</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/riverdelta.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-
-
-                <span class="glyphicon glyphicon-time"></span> 24 июля 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 9.00!</h1>
-                <b>Несколько слов о релизе</b>: <br/>
-
-                [teh]Flow, еще известный под ником Floris - проделал огромную работу по модернизации интерфейса игры!<br/>
-                [teh]decay добавил кустомизацию цветов линии обзора, чтобы избавиться от эффекта радуги, пришедшего с движком spring 100<br/>
-
-                <br/>
-                В этом релизе нет изменений баланса!<br/>
-                <br/>
-
-                <b>Настраиваемые виджеты:</b><br/>
-                Healthbars(полоски жизней) теперь имеют рамку вокруг полосок (отключаемо с помощью /healthbars_style).
-                Полоски для обломков юнитов теперь меньше, отображаются только если приблизить камеру. <br/>
-                Ally-cursors (курсоры друзей) теперь отображают имя игрока рядом с курсором. (отключаемо с /allycursorplayername и /allycursorspecname)<br/>
-                Добавлен "снежный" виджет. Снег включается для карт со снегом. (выключить можно с /snow, настройки запоминаются для каждой карты отдельно)<br/>
-                Добавлен виджет умного выбора (по умолчанию отключен). Выбирает юниты, которые попадают под рамку выделения (SHIFT: выделяет всех, Z: такого же типа, SPACE: не занятые юниты, CTRL: инвертирует выделение)<br/>
-                Цвета линии обзора теперь серые + используйте ';' кнопку для переключения между "линия обзора" / "линия обзора + радар"<br/>
-                Отображение линии обзора теперь включено по умолчанию. Если не нравится - деактивируйте виджет "LOS View" (gfx_los_view.lua)<br/>
-                <br/>
-
-                <b>Другие изменения:</b><br/>
-                Иниты, которые были воскрешены - получают нимб над головой <br/>
-                Enemyspotter виджет (подсвечивает врага) выглядит лучше и потребляет меньше ресурсов<br/>
-                Commands FX - виджет, который рисует команды: линии теперь имеют текстуру + свечение.<br/>
-                Добавлен виджет, который подстраивает качество теней, в зависимости от текущей производительности игры (Shadow quality manager)<br/>
-                Юниты, которым дали приказ на самоуничтожение, теперь имеют иконку скелета<br/>
-                Юниты, которые были получены от других игроков, будут иметь иконку "новый"<br/>
-                Подсветка для снарядов теперь немного менее яркая<br/>
-                Пункты назначения виджета "Customformations" теперь отрисовываются используя текстуру<br/>
-                Добавлен виджет "highlight selected unit" (подсветить выбранных юнитов)<br/>
-                Добавлен виджет "Xray shader"<br/>
-                Добавлен виджет "anti ranges", отображающий радиусы действия мобильных противоядерок.<br/>
-                Добавлен виджет "mapmarks"(метки на карте) - рисует на земле круги, где только что поставили метку<br/>
-                <br/>
-
-                <b>Изменения в интерфейсе:</b><br/>
-                Углы виджетов были закруглены<br/>
-                Иконки юнитов были растянуты, теперь они почти квадратные и выглядят лучше<br/>
-                Добавлен виджет "GUI shader", который размывает фон виджетов <br/>
-                Стили виджетов "Red UI" были приведены к одному виду<br/>
-                Теперь помещается больше команд и иконок в меню строительства, это сделано с целью избавиться от разбивки на страницы<br/>
-                Добавлен виджет для отображения скорости ветра. В нижнем правом углу отображается средняя скорость ветра<br/>
-                Добавлен виджет, отображающий прогресс при переподключении<br/>
-                Сообщения в консоли теперь отображаются дольше (30 секунд)<br/>
-                Виджет, который отображает ресурсы союздников, был обновлен: теперь он отображает полоски в таком же порядке, как и в списке игроков<br/>
-                Виджет со списком игроков "Advanced playerlist" был доработан. Добавлены флаги стран. Двойной клик теперь позволяет "привязать камеру" к камере игрока.<br/>
-                Добавлен виджет, отображаюший информацию о карте (снизу слева у карты)<br/>
-                На экран, с подсказками по горячим клавишам, добавили кнопку "закрыть"<br/>
-
-                <br/>
-                <b>Удалены виджеты:</b><br/>
-                Open Hosts<br/>
-                Lockcamera UI<br/>
-
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-52">Balanced Annihilation 9.00</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/riverdelta.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-                <span class="glyphicon glyphicon-time"></span> 16 июля 2015
-                <hr/>
-                <p>
-                <h1>Релиз игры Balanced Annihilation: версия 8.18!</h1>
-                <b>Несколько слов о релизе</b>: <br/>
-                - Обновления, необходимые для работы на движке Spring 100.0<br/>
-                - Добавлены виджет и гаджет для сбора статистики по юнитам<br/>
-                - Добавлен виджет, который запоминает выбранную камеру<br/>
-                - Добавлен виджет, который включает LOS вид (кнопка L)<br/>
-                - Добавлен виджет, который останавливает самоуничтожение командира по приказу "стоп"<br/>
-                - Добавлено предупреждение, если используется слишком новый или слишком старый движок<br/>
-                - Добавлено больше сообщений, которые отображаются при уничтожении игрока<br/>
-                - Исправлена ошибка, которая не позволяла получить контроль над игроками, которые лагают<br/>
-                - Ракеты противоядерки теперь летят быстрее<br/>
-                - Увеличено количество жизней корабля "Decade" (арм, лвл 1) 1650 -> 1900<br/>
-                - Теперь нельзя парализовать мобильных юнитов (кроме противоядерок) больше, чем на 15 секунд<br/>
-                <br/>
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://springfiles.com/spring/games/balanced-annihilation-51">Balanced Annihilation 8.18</a>
-                <br/>
-                <br/>
-                <img src="./images/Loadscreens/riverdelta.jpg" class="img-responsive">
-                <br/>
-                <hr/>
-                <span class="glyphicon glyphicon-time"></span> 16 июля 2015
-                <hr/>
-                <p>
-                <h1>Релиз движка стратегических игр Spring: версия 100!</h1>
-                <b>Несколько слов о релизе</b>: <br/>
-                - исправили ошибки (в том числе и критические)<br/>
-                - добавили второй цвет для отрисовки границы действия радаров<br/>
-                <br/>
-
-                Ускоренное видео из битвы, где мы тестировали эту версию движка:<br/>
-                <div class="video-container">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/mCjAr4mLwR8" frameborder="0" allowfullscreen></iframe>
+                <div class="row news">
+                    <div class="col-md-10>">
+                        <div class="container news-block">
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <p class="news-block-time">09/07/2016</p>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="#" class="btn btn-default btn-xs disabled" role="button">Balanced Annihilation 9.36</a>
+                                </div>
+                                <div class="col-lg-1">
+                                    <a href="#" class="btn btn-default btn-xs disabled" role="button">Новости</a>
+                                </div>
+                                <div class="col-lg-2"></div>
+
+                                <div class="col-lg-4"></div>
+                                <div class="col-lg-2"><a href="https://springfiles.com/spring/games/balanced-annihilation-85" class="btn btn-default btn-sm active" role="button">Скачать версию 9.36</a></div>
+                            </div>
+                            <div class="row"><br></div>
+                            <div class="row">
+                                <div class="col-lg-6 news-text">
+                                    <h1>Релиз игры Balanced Annihilation: версия 9.36!</h1>
+                                    <b>Изменения баланса:</b><br/>
+                                    - В обломки металла теперь сложнее попасть -> будет больше металла на поле боя<br/>
+                                    - Исправлена проблема: в закрытый випер сложно попасть (ракетная установка core 2 уровня)<br/>
+                                    - Исправления для функциональности "установить цель"<br/>
+                                    <br/>
+                                    <b>Другие изменения:</b><br/>
+                                    - Добавлен набор курсоров от BAR (можно включить/отключить с помощью /cursor)<br/>
+                                    - Радиус парализованной противоракетной системы будет мигать<br/>
+                                    - Курсоры неактивных наблюдателей будут постепенно исчезать<br/>
+                                    - Удален виджет "SmoothScroll" (плавная прокрутка) - больше не нужен<br/>
+                                    - Добавлено еще больше сообщений о смерти игрока<br/>
+                                    - Эффект появления командира переделан в виджет (который можно включать/отключать)<br/>
+                                    - Уменьшено количество дикой живности на земле<br/>
+                                    - Различные изменения, необходимые для поддержки движка Spring 102<br/>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-1"></div>
+                                        <div class="col-lg-11"><img src="./images/Loadscreens/hotlips.jpg" class="img-responsive"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <!--div class="row">
+                                <div class="col-lg-1">
+                                    <b>Скачать:</b>
+                                </div>
+                                <div class="col-lg-11 btn-green">
+                                    <a href="https://springfiles.com/spring/games/balanced-annihilation-85" class="btn btn-default btn-sm active" role="button">Balanced Annihilation 9.36</a>
+                                </div>
+                            </div-->
+                        </div>
+                    </div>
                 </div>
-                <br/>
-                <b>Если критических ошибок не найдут, то официальное лобби перейдет на этот релиз в следующий четверг (23 июля)!</b>
-                <br/><br/>
-
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-100.0/spring_100.0.exe/download">Windows (установщик)</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-100.0/spring_100.0_portable.7z/download">Windows (без установки, в архиве)</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-100.0/spring_100.0_minimal-portable-linux32-static.7z/download">Linux 32 битная версия</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-100.0/spring_100.0_minimal-portable-linux64-static.7z/download">Linux 64 битная версия</a>
-                <br/><br/>
-
-                <b>Версия движка для Mac OS X 10.10</b>(надо установить оба):
-                <a target="_blank" class="btn btn-large btn-primary" href="http://www.mediafire.com/download/9liv6wnv6w3w8my/Spring_100.0-OSX-10.10.dmg">Spring</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://www.mediafire.com/download/3r7rdm2gw79cils/SpringLobby-0.225-OSX-10.10.dmg">SpringLobby</a>
-                <br/>
-                <br/>
-
-                <hr/>
-                <span class="glyphicon glyphicon-time"></span> 26 июня 2015
-                <hr/>
-                <p>
-                <h1>Релиз движка стратегических игр Spring: версия 99!</h1>
-                <b>Несколько слов о релизе</b>: <br/>
-                - Проведена большая работа по оптимизации движка (больше FPS в игре!)<br/>
-                - Исправлено множество ошибок (например, юниты не застревают)<br/>
-                - Добавлено много новых возможностей для игроков(новая камера spring) и для разработчиков игр!<br/><br/>
-                Релиз только вышел, если не будет найдено никаких критических ошибок, то этот релиз будет использован как основной в официальном Lobby 2 июля.<br/><br/>
-
-                <b>Список изменений очень большой, ниже приведена(и переведена) лишь часть изменений. </b><br/>
-                <a target="_blank" href="https://raw.githubusercontent.com/spring/spring/develop/doc/changelog.txt">Полный список изменений на английском языке</a><br/>
-                <a target="_blank" href="https://springrts.com/phpbb/viewtopic.php?f=2&t=33617">Ссылка на оригинальную новость, есть немного картинок</a><br/><br/>
-                <b>Основные изменения:</b><br/>
-                - Линия обзора теперь обновляется гораздо быстрее и плавнее + потребляет меньше ресурсов процессора<br/>
-                - Увеличение скорости отрисовки в 1.5 - 3 раза! Это поможет избавиться от тормозов в больших битвах<br/>
-                - Добавили возможность кастомизировать (переопределять) основное меню, что позволит разработчикам игр создавать свои меню, лобби, настройки и прочее<br/>
-                - Переписан код управляющий вооружением юнитов. Улучшили прицеливание, когда у юнита несколько орудий<br/>
-                - Оптимизирована обработка столкновений юнитов. Теперь столкновения потребляют меньше ресурсов процессора<br/>
-                - Новая подсистема сбора ошибок при падениях игры в операционных системах Linux (разработчик - Major Bor3d0m)<br/>
-                - Новая камера, которая так и называется "spring". У нее есть возможность вращения!<br/>
-                - Добавлена функция Spring.Reload(script), благодаря которой, теперь не нужно перезапускать сам движок при смене карты.
-                Это нужно для того, чтобы разработчики могли делать миссии. При смене миссии - не будет отображаться рабочий стол.<br/>
-                - Изменена функция Spring.Restart(parameters, script): теперь она перезапускает спринг только, когда параметры не пустые<br/>
-                - Удалена команда "/quit", вместо нее используйте "/quitforce"<br/>
-                - Добавлен новый пункт меню: "quit to menu", который позволяет не закрывать спринг совсем, а лишь выйти в меню<br/>
-                - Добавлена команда "/reloadforce"<br/>
-                <br/>
-                <b>Камеры:</b><br/>
-                - Удалены камеры "Total war", "Orbital" и "Smooth"<br/>
-                - Добавлена новая камера "Spring", которая включает в себя функции камер "Total war" и "Overhead" +
-                есть возможность вращения (активируется клавишей alt)<br/>
-                <br/>
-                <b>Изменения в конфигурации (SpringSettings.cfg):</b><br/>
-                - Спринг больше не читает файлы конфигурации в директориях, признанных устаревшими в прошлых релизах: <br/>
-                "AppData\Local\springsettings.cfg"<br/>
-                "~/.springrc"<br/>
-                - Все параметры конфигурации теперь печатаются в infolog.txt, это позволяет легко понять, какие настройки использовались<br/>
-                <br/>
-                <b>"Системные изменения":</b><br/>
-                - Новая подсистема сбора ошибок при падениях для Linux<br/>
-                - "libunwind" теперь является необходимой зависимостью при компиляции движка под Linux<br/>
-                - Починили сборку "headless" версии движка на системах, в которых не установлены "x11" и "SDL"<br/>
-                <br/>
-
-                <b>Изменения в интерфейсе:</b><br/>
-                - Починили отключение звука по нажатию F6<br/>
-                - Починили ошибку, когда в чате не работала клавиша "backspace"<br/>
-                - Починили "застревание в режиме рисования на карте"<br/>
-                - Починили пропадание некоторых символов при печати в чате<br/>
-                - Улучшены цвета линии обзора, а так же области видимости радаров, антирадаров и прочее<br/>
-                <br/>
-                <b>Изменения в симуляции:</b><br/>
-                - Исправлена ошибка сбора ресурсов (в играх с харвейстерами)<br/>
-                - Исправлена ошибка "строители иногда теряют задания из очереди"<br/>
-                - Исправлена ошибка застревания юнитов в заводах и "на пустом месте"<br/>
-                - Исправлена ошибка, когда юниты отменяли команду "идти"<br/>
-                <br/>
-                <b>Изменения в отрисовке(рендеринге)</b><br/>
-                - Оптимизация кода, ускорение в 2-3 раза!<br/>
-                - Исправлена ситуация, когда могло быть сгенерировано больше частиц, чем указано в настройках как "Максимум частиц"<br/>
-                - Уменьшено количество частиц для отрисовки щитов-пузырей(shields) больше, чем в 2 раза!<br/>
-                - Добавлен кэш шейдеров (ускорение графики)<br/>
-                <br/>
-                <br/>
-                <b>В ближайшее время ожидается релиз игры Balanced Annihilation, добавляющий поддержку Spring 99</b>
-                <br/><br/>
-
-                <b>Скачать:</b>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-99.0/spring_99.0.exe/download">Windows (установщик)</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-99.0/spring_99.0_portable.7z/download">Windows (без установки, в архиве)</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-99.0/spring_99.0_minimal-portable-linux32-static.7z/download">Linux 32 битная версия</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://sourceforge.net/projects/springrts/files/springrts/spring-99.0/spring_99.0_minimal-portable-linux64-static.7z/download">Linux 64 битная версия</a>
-                <br/><br/>
-                <b>Версия движка для Mac OS X 10.10</b>(надо установить оба):
-                <a target="_blank" class="btn btn-large btn-primary" href="http://www.mediafire.com/download/8sjdozlhb685bkj/Spring_99.0-OSX-10.10.dmg">Spring</a>
-                <a target="_blank" class="btn btn-large btn-primary" href="http://www.mediafire.com/download/3r7rdm2gw79cils/SpringLobby-0.225-OSX-10.10.dmg">SpringLobby</a>
-                <br/>
-
-            </section>
-
-        </div>
-        </div>
-
-
-        </div>
-
-    </div>
-    <br/><br/>
-</wicket:extend>
+            </div>
+        </section>
+       <br/><br/>
+    </wicket:extend>
 
 </body>
 </html>

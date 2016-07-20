@@ -55,7 +55,7 @@ body {
 .welcome-text {
     color: white;
     margin: 0 auto;
-    font-size: 250%;
+    font-size: 3vw;
     /*font-weight: bold;*/
 }
 
@@ -71,7 +71,7 @@ body {
 .welcome-link {
     /*padding-right: 30%;*/
     color:darkgray;
-    font-size: 250%;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -207,20 +207,18 @@ body {
 .greenhr {
     color: green;
     background: green;
-    width: 100%;
-    height: 3px;
+    margin-left: -5%;
+    width: 110%;
+    height: 1px;
 }
 
 .news-text {
-    font-size: 12px;
+    max-font-size: 1vw;
     color: black;
 }
 
 .news h1, h2, h3{
     font-size: 20px;
-    color: green;
-}
-.btn-green {
     color: green;
 }
 

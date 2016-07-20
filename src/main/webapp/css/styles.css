@@ -3,6 +3,7 @@ body {
 }
 
 .navbar-fixed-top .navbar-brand {
+
     padding-top: 5px;
 }
 
@@ -217,7 +218,7 @@ body {
     color: black;
 }
 
-.news h1, h2, h3{
+.news-h{
     font-size: 20px;
     color: green;
 }

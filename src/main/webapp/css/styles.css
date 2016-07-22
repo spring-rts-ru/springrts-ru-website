@@ -194,6 +194,7 @@ body {
     color: white;
 }
 /* END GAMES INTRO */
+
 /* NEWS */
 .news-block {
     padding-top: 2%;
@@ -218,7 +219,7 @@ body {
     color: black;
 }
 
-.news-h{
+.h-green{
     font-size: 20px;
     color: green;
 }
@@ -258,9 +259,24 @@ body {
     font-size: 1vw;
     color: whitesmoke;
 }
-
-
 /* END GAMEPAGES*/
+
+/* ARTICLES */
+.h7-green {
+    font-size: 3.5vw;
+    color: green;
+}
+
+.h8-black {
+    font-size: 3vw;
+    color: black;
+}
+
+.article-page-text {
+    font-size: 2vw;
+    color: black;
+}
+/* END ARTICLES */
 
 /* END OF NEW DESIGN STYLES */
 

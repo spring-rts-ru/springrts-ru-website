@@ -232,21 +232,30 @@ body {
 .BA-game-page {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
-    padding: 15px;
+    padding: 2vw;
   /*  margin-left: -4vw;
     margin-right: -4vw;*/
     color: white;
 }
 
 .h7 {
-    font-size: 40px;
+    font-size: 4vw;
+    color: white;
+}
+
+.h8 {
+    font-size: 3vw;
     color: white;
 }
 
 .video-container {
-margin: 15px;
+    margin: 2vw;
 }
 
+.ba-game-page-text {
+    font-size: 2vw;
+    color: whitesmoke;
+}
 /* END GAMEPAGES*/
 
 /* END OF NEW DESIGN STYLES */

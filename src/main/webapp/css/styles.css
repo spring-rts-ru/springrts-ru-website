@@ -109,7 +109,7 @@ body {
     color: white;
 }
 /* GAMES INTRO */
-.main-intro {
+.main-games {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
     font-size: 20px;
@@ -194,6 +194,40 @@ body {
     color: white;
 }
 /* END GAMES INTRO */
+
+/* MAIN INTRO */
+.main-intro-text {
+    font-size: 1vw;
+    color: black;
+}
+
+.h8-green {
+    font-size: 3vw;
+    color: green;
+}
+
+.main-intro-link a:link {
+    color: green;
+}
+
+.main-intro-link a {
+    font-size: 2vw;
+    color: green;
+}
+
+.main-intro-link a:visited {
+    color: lightgreen;
+}
+
+.main-intro-link a:hover {
+    color: darkgreen;
+}
+
+.main-intro-link:active {
+    color: green;
+}
+
+/* END MAIN INTRO*/
 
 /* NEWS */
 .news-block {

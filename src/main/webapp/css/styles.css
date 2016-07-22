@@ -109,7 +109,7 @@ body {
     color: white;
 }
 /* GAMES INTRO */
-.main-intro {
+.main-games {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
     font-size: 20px;
@@ -194,6 +194,41 @@ body {
     color: white;
 }
 /* END GAMES INTRO */
+
+/* MAIN INTRO */
+.main-intro-text {
+    font-size: 1vw;
+    color: black;
+}
+
+.h8-green {
+    font-size: 3vw;
+    color: green;
+}
+
+.main-intro-link a:link {
+    color: green;
+}
+
+.main-intro-link a {
+    font-size: 2vw;
+    color: green;
+}
+
+.main-intro-link a:visited {
+    color: lightgreen;
+}
+
+.main-intro-link a:hover {
+    color: darkgreen;
+}
+
+.main-intro-link:active {
+    color: green;
+}
+
+/* END MAIN INTRO*/
+
 /* NEWS */
 .news-block {
     padding-top: 2%;
@@ -218,7 +253,7 @@ body {
     color: black;
 }
 
-.news-h{
+.h-green{
     font-size: 20px;
     color: green;
 }
@@ -229,25 +264,53 @@ body {
 /* END NEWS */
 
 /* GAMEPAGES*/
-.BA-game-page {
+.game-page {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
-    padding: 15px;
-  /*  margin-left: -4vw;
-    margin-right: -4vw;*/
+    padding: 2vw;
     color: white;
 }
 
 .h7 {
-    font-size: 40px;
+    font-size: 4vw;
+    color: white;
+}
+
+.h8 {
+    font-size: 3vw;
     color: white;
 }
 
 .video-container {
-margin: 15px;
+    margin: 2vw;
 }
 
+.game-page-text {
+    font-size: 2vw;
+    color: whitesmoke;
+}
+.game-page-text-min {
+    font-size: 1vw;
+    color: whitesmoke;
+}
 /* END GAMEPAGES*/
+
+/* ARTICLES */
+.h7-green {
+    font-size: 3.5vw;
+    color: green;
+}
+
+.h8-black {
+    font-size: 3vw;
+    color: black;
+}
+
+.article-page-text {
+    font-size: 2vw;
+    color: black;
+}
+/* END ARTICLES */
 
 /* END OF NEW DESIGN STYLES */
 

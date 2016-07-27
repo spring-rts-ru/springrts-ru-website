@@ -8,11 +8,11 @@
     <wicket:extend>
 
         <section class="welcome-block" id="welcome">
-
+        <div class="container-fluid">
         <!--<div class="welcome-block">-->
             <div class="row welcome-logo">
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-lg-offset-4 col-xs-offset-4">
-                    <img class="img-responsive" src="/images/logo.png"/>
+                    <br>
                 </div>
             </div>
             <div class="row welcome-text center-text">
@@ -26,23 +26,23 @@
 
             <div class="row">
                 <div class="welcome-link col-lg-8 col-lg-offset-2">
-                    <a href="#history">ЧТО ТАКОЕ SPRING?</a>
+                    <a href="#main-intro">ЧТО ТАКОЕ SPRING?</a>
                     <a href="#games">ИГРЫ</a>
-                    <a href="#news">НОВОСТИ</a>
+                    <a href="#news-feed">НОВОСТИ</a>
                 </div>
             </div>
 
             <div class="row center-text">
                 <div class="col-lg-4 col-lg-offset-4">
-                    <img class="welcome-scroll img-responsive" src="/images/redesign/welcome_scroll.png"/>
+                    <img class="welcome-scroll img-games" src="/images/redesign/welcome_scroll.png"/>
                 </div>
                 <div class="col-lg-4"></div>
             </div>
-
+        </div>
         </section>
 
-        <section class="main-intro">
-            <div class="container">
+        <section class="main-intro" id="main-intro">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12">
                         <br>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="row news">
                     <div class="col-md-10>">
-                        <div class="container">
+                        <div class="container-fluid">
                             <div class="row">
                                 <div class="col-lg-6 main-intro-text">
                                     <br>
@@ -76,11 +76,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-
                                             <div class="video-container">
                                                 <iframe width="800" height="600" src="http://www.youtube.com/embed/9VCi62VJWGw" frameborder="0" allowfullscreen=""></iframe>
                                             </div>
-
                                 </div>
                             </div>
                         </div>
@@ -91,53 +89,51 @@
 
         <section class="main-games" id="games">
         <!-- Games Intro -->
-            <div class="container">
-                <div class="row ">
+            <div class="container-fluid">
+                <div class="row games-text">
                     <div class="col-sm-5 col-md-4 ">
-                    <div class="col-sm-2 col-md-2 col-lg-offset-1" style="height:30%">
-                        <h2>Игры</h2></div></div>
+                    <div class="col-sm-2 col-md-2 col-lg-offset-1">
+                        <h3>Игры</h3></div></div>
                 </div>
                 <div class="row ">
                     <div class="col-lg-12"><hr class="whitehr"></div>
                 </div>
-                <div class="row games-text" style="height:100%">
+                <div class="row games-text">
                     <div class="col-sm-5 col-md-4 ">
-                        <div class="BA-block games-text col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                        <div class="BA-block games-text col-sm-11 col-md-11 col-lg-offset-1">
                             <h3>Balanced Annihilation</h3>
                             <p>Balanced Annihilation - самая популярная игра на базе движка Spring.
                                 Линейка BA восходит к фан-модам оригинальной Total Annihilation.
                             </p>
-                            <br>
                             <div class="row games-link">
                                 <div class="col-lg-6">
                                     <a href="/games/ba">ПОДРОБНЕЕ</a>
                                 </div>
                                 <div class="col-lg-5">
-                                    <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                    <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-games"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-4 ">
-                        <div class="NOTA-block col-sm-11 col-md-11 col-lg-offset-1"style="height:30%">
+                        <div class="NOTA-block col-sm-11 col-md-11 col-lg-offset-1">
                                 <h3>NOTA</h3>
                                 <p>NOTA - это мод для TA, созданный для больших карт с увеличенными юнитами,
                                     топливом для самолетов и многим другим.
                                 </p>
-                            <br>
                             <div class="row games-link">
                                 <div class="col-lg-6">
                                     <a href="/games/nota">ПОДРОБНЕЕ</a>
                                 </div>
 
                                 <div class="col-lg-5">
-                                    <a href="http://nota.machys.net/downloads"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                    <a href="http://nota.machys.net/downloads"><img src="/images/redesign/Download.png" class="img-games"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-4 ">
-                        <div class="Zerok-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                        <div class="Zerok-block col-sm-11 col-md-11 col-lg-offset-1">
                                     <h3>Zero-K</h3>
                                 <p>Zero-K является кроссплатформенной стратегией в реальном времени с открытым исходным кодом,
                                     где массивные армии роботов борются в бесконечном конфликте.
@@ -148,7 +144,7 @@
                                 </div>
 
                                 <div class="col-lg-5">
-                                    <a href="http://zero-k.info/Wiki/Download"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                    <a href="http://zero-k.info/Wiki/Download"><img src="/images/redesign/Download.png" class="img-games"></a>
                                 </div>
                             </div>
                         </div>
@@ -157,25 +153,24 @@
                 <div class="clearfix hidden-md hidden-lg"></div>
                 <div class="row games-link games-text">
                     <div class="col-sm-5 col-md-4 ">
-                        <div class="I944-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                        <div class="I944-block col-sm-11 col-md-11 col-lg-offset-1">
                                 <h3>Spring: 1944</h3>
                                 <p>Spring: 1994 - это мод под Total Annihilation. Когда Spring стал достаточно играбельным,
                                     игру перенесли на новый движок и добавили новые юниты.
                                 </p>
-                            <br>
                             <div class="row games-link">
                                 <div class="col-lg-6">
                                     <a href="/games/1944">ПОДРОБНЕЕ</a>
                                 </div>
 
                                 <div class="col-lg-5">
-                                    <a href="http://spring1944.net/?page_id=124"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                    <a href="http://spring1944.net/?page_id=124"><img src="/images/redesign/Download.png" class="img-games"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-4 ">
-                        <div class="XTA-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                        <div class="XTA-block col-sm-11 col-md-11 col-lg-offset-1">
                                 <h3>XTA</h3>
                                 <p>XTA является одной из оригинальных игр для Spring, и многие игроки считают, что она "более
                                     OTA, чем сама OTA" из-за аутентичных ощущений, в сочетании с возможностями Spring Engine.
@@ -186,25 +181,24 @@
                                 </div>
 
                                 <div class="col-lg-5">
-                                    <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                    <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-games"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-4 ">
-                        <div class="TA-block col-sm-11 col-md-11 col-lg-offset-1" style="height:30%">
+                        <div class="TA-block col-sm-11 col-md-11 col-lg-offset-1">
                                 <h3>TA</h3>
                                 <p>Это RTS игра, основанная на Balanced Annihilation, но подвергшаяся серьезной
                                     ребалансировке и дополненная юнитами
                                 </p>
-                            <br><br>
                             <div class="row games-link">
                                 <div class="col-lg-6">
                                     <a href="/games/ta">ПОДРОБНЕЕ</a>
                                 </div>
 
                                 <div class="col-lg-5">
-                                    <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-responsive"></a>
+                                    <a href="http://springrts.ru/howto/install/ba"><img src="/images/redesign/Download.png" class="img-games"></a>
                                 </div>
                             </div>
                         </div>
@@ -218,28 +212,28 @@
         <!-- End of Games Intro-->
         </section>
 
-        <section class="news">
-            <div class="container">
+        <section class="news-feed" id="news-feed">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h class="h-green" id="news">Новости</h>
+                        <h class="h-green">Новости</h>
                         <hr class="greenhr">
                     </div>
                 </div>
-                <div class="row news">
+                <div class="row">
                     <div class="col-md-10>">
-                        <div class="container news-block">
+                        <div class="container-fluid news-block">
                             <div class="row">
-                                <div class="col-lg-1 col-xs-3">
-                                    <p class="news-block-time">09/07/2016</p>
+                                <div class="col-lg-1 col-xs-3 news-text">
+                                    <p class="news-block-time ">09/07/2016</p>
                                 </div>
                                 <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
                                 <div class="col-lg-2 col-xs-6">
-                                    <a href="#" class="btn btn-default btn-xs disabled" role="button">Balanced Annihilation 9.36</a>
+                                    <a href="#" class="btn btn-default btn-xs disabled btn-responsive" role="button">Balanced Annihilation 9.36</a>
                                 </div>
                                 <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
                                 <div class="col-lg-2 col-xs-6">
-                                    <a href="#" class="btn btn-default btn-xs disabled" role="button">Новости</a>
+                                    <a href="#" class="btn btn-default btn-xs disabled btn-responsive" role="button">Новости</a>
                                 </div>
                             </div>
                             <div class="row">
@@ -268,13 +262,13 @@
                                 </div>
                             </div>
                             <br/>
-                            <div class="row">
+                            <div class="row news-text">
                                 <div class="col-lg-1 col-xs-4">
                                     <b>Скачать:</b>
                                 </div>
                                 <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
                                 <div class="col-lg-4 col-xs-6">
-                                    <a href="https://springfiles.com/spring/games/balanced-annihilation-85" class="btn btn-default btn-sm active" role="button">Balanced Annihilation 9.36</a>
+                                    <a href="https://springfiles.com/spring/games/balanced-annihilation-85" class="btn btn-default btn-sm active btn-responsive" role="button">Balanced Annihilation 9.36</a>
                                 </div>
                             </div>
                         </div>

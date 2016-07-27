@@ -3,12 +3,12 @@
 <body>
 
     <wicket:extend>
-        <section class="article">
+        <section class="article-page">
             <div class="row article-page-text">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
-                        <div class="col-lg-12 h7-green">
-                            Демонстрация различных игр, основанных на движке Spring:
+                        <div class="col-lg-12">
+                            <h3>Демонстрация различных игр, основанных на движке Spring:</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -26,8 +26,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 h7-green">
-                            Демонстрация игры NOTA:
+                        <div class="col-lg-12">
+                            <h3>Демонстрация игры NOTA:</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -38,8 +38,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 h7-green">
-                            Демонатрация игры Zero-K:
+                        <div class="col-lg-12">
+                            <h3>Демонатрация игры Zero-K:</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -50,8 +50,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 h7-green">
-                            Вот так выглядит битва в игре Balanced Annihilation:
+                        <div class="col-lg-12">
+                            <h3>Вот так выглядит битва в игре Balanced Annihilation:</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -62,8 +62,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 h7-green">
-                            Поддержка с воздууха в игре Balanced Annihilation:
+                        <div class="col-lg-12">
+                            <h3>Поддержка с воздууха в игре Balanced Annihilation:</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -74,8 +74,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 h7-green">
-                            Большая битва на большой карте в игре Balanced Annihilation:
+                        <div class="col-lg-12">
+                            <h3>Большая битва на большой карте в игре Balanced Annihilation:</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -86,8 +86,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 h7-green">
-                            И снова LOL CANNON в игре Balanced Annihilation:
+                        <div class="col-lg-12">
+                            <h3>И снова LOL CANNON в игре Balanced Annihilation:</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -99,6 +99,11 @@
                     </div>
                 </div>
             </div>
+            <!-- Put this div tag to the place, where the Comments block will be -->
+            <div id="vk_comments"></div>
+            <script type="text/javascript">
+                VK.Widgets.Comments("vk_comments", {limit: 10, width: "665", attach: false});
+            </script>
         </section>
         <!--
         Старые, но все равно забавные, видео:<br/>
@@ -121,12 +126,7 @@
         <br/><br/>
         <iframe width="420" height="315" src="https://www.youtube.com/embed/3q48ys5hFtI" frameborder="0" allowfullscreen></iframe>
         -->
-        <!-- Put this div tag to the place, where the Comments block will be -->
-        <div id="vk_comments"></div>
-        <script type="text/javascript">
-            VK.Widgets.Comments("vk_comments", {limit: 10, width: "665", attach: false});
-        </script>
-    </wicket:extend>
 
+    </wicket:extend>
 </body>
 </html>

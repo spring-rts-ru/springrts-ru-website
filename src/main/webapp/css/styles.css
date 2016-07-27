@@ -253,9 +253,6 @@ body {
     padding-left: 1%;
     outline: 1px solid lightgray;
 }
-/*.news {
-    padding: 15px;
-}*/
 
 .btn-responsive {
     white-space: normal !important;
@@ -263,11 +260,6 @@ body {
     height: 2vw;
     font-size: 1vw;
  }
-
-/*.btn-text{
-    font-size: 1vw;
-    margin-top: -5%;
-}*/
 
 .greenhr {
     color: green;
@@ -324,6 +316,17 @@ body {
 /* END GAMEPAGES*/
 
 /* ARTICLES */
+.article-page {
+    background: url('/images/redesign/games_bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 2vw;
+    color: white;
+}
+
+.article-page h3{
+    font-size: 3vw;
+    color: white;
+}
 .h7-green {
     font-size: 3.5vw;
     color: green;

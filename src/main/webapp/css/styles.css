@@ -131,7 +131,7 @@ body {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
     font-size: 2vw;
-    padding: 15px;
+    padding: 2vh;
     color: white;
 }
 
@@ -280,10 +280,11 @@ body {
 
 .btn-responsive {
     white-space: normal !important;
-    word-wrap: normal;
-    height: 2vw;
-    font-size: 1vw;
-    border-radius: 50px 50px 50px 50px;
+    word-wrap: normal !important;
+    height: 2vw !important;
+    font-size: 1vw !important;
+    border-radius: 50px 50px 50px 50px !important;
+    padding: 0.6vh !important;
  }
 
 .greenhr {

@@ -99,13 +99,13 @@ body {
 }
 
 .welcome-link a {
-    color: #f99f00;
+    color: #f39900;
     text-decoration: none;
 
 }
 
 .welcome-link a:visited {
-    color: #ffcc00;
+    color: #f5c300;
     text-decoration: none;
 }
 
@@ -131,7 +131,7 @@ body {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
     font-size: 2vw;
-    padding: 15px;
+    padding: 2vh;
     color: white;
 }
 
@@ -181,6 +181,14 @@ body {
     padding: 2%;
     margin: 2%;
     height: 40vh;
+}
+
+.btn-download {
+    padding: 0.6vh !important;
+    border: 0.4vh solid !important;
+    font-size: 2vh !important;
+    border-radius: 50px 50px 50px 50px !important;
+    color: white !important;
 }
 
 .games-link a:link {
@@ -272,10 +280,11 @@ body {
 
 .btn-responsive {
     white-space: normal !important;
-    word-wrap: normal;
-    height: 2vw;
-    font-size: 1vw;
-    border-radius: 50px 50px 50px 50px;
+    word-wrap: normal !important;
+    height: 2vw !important;
+    font-size: 1vw !important;
+    border-radius: 50px 50px 50px 50px !important;
+    padding: 0.6vh !important;
  }
 
 .greenhr {

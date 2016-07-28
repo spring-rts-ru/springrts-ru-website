@@ -99,13 +99,13 @@ body {
 }
 
 .welcome-link a {
-    color: #f99f00;
+    color: #f39900;
     text-decoration: none;
 
 }
 
 .welcome-link a:visited {
-    color: #ffcc00;
+    color: #f5c300;
     text-decoration: none;
 }
 

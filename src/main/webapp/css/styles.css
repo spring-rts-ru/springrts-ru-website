@@ -183,6 +183,14 @@ body {
     height: 40vh;
 }
 
+.btn-download {
+    padding: 0.6vh !important;
+    border: 0.4vh solid !important;
+    font-size: 2vh !important;
+    border-radius: 50px 50px 50px 50px !important;
+    color: white !important;
+}
+
 .games-link a:link {
     color: white;
 }

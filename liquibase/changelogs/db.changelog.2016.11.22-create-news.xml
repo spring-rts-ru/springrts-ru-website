@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="db.changelog.2016.11.22-create-news.1" author="decay" runOnChange="true">
+
+        <sql>
+            create table news (
+                id              int4 not null,
+                appName         varchar(255),
+                appVersion      varchar(255),
+                downloadLink    varchar(1000),
+                imageLink       varchar(1000),
+                publicationDate timestamp,
+                text            varchar(10000),
+                title           varchar(255),
+                userCreated     varchar(255),
+                version         int4 not null,
+                videoLink       varchar(1000),
+                primary key (id)
+            )
+        </sql>
+
+    </changeSet>
+
+</databaseChangeLog>

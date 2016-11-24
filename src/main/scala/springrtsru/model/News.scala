@@ -1,24 +1,56 @@
 package springrtsru.model
 
 import java.util.Date
-import javax.persistence.{Id, GenerationType, GeneratedValue, Entity}
+import javax.persistence._
 
 import scala.beans.BeanProperty
 
 @Entity
-class News (@BeanProperty var title : String, @BeanProperty var appName : String, @BeanProperty var appVersion : String,
-            @BeanProperty var user_created : String, @BeanProperty var downloadLink : String,
-            @BeanProperty var imageLink : String, @BeanProperty var videoLink : String,
-            @BeanProperty var text : String, @BeanProperty var publicationDate: Date,
-            @BeanProperty var version : Int) extends Serializable {
+@Table(name = "news")
+class News (p_title : String, p_appName : String, p_appVersion : String, p_userCreated : String, p_downloadLink : String,
+            p_imageLink : String, p_videoLink : String, p_text : String, p_publicationDate: Date) extends Serializable {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   var id: Int = _
 
-  // Default constructor for hibernate
-  // No public visibility required
-//  private def this() = this()
+  @BeanProperty
+  var title : String = p_title
 
-  override def toString = s"News($id, $title, $appName, $appVersion, $user_created, $downloadLink, $imageLink, $videoLink, $text, $publicationDate, $version)"
+  @BeanProperty
+  var appName : String = p_appName
+
+  @BeanProperty
+  var appVersion : String = p_appVersion
+
+  @BeanProperty
+  var userCreated : String = p_userCreated
+
+  @Column(length = 1000)
+  @BeanProperty
+  var downloadLink : String = p_downloadLink
+
+  @Column(length = 1000)
+  @BeanProperty
+  var imageLink : String = p_imageLink
+
+  @Column(length = 1000)
+  @BeanProperty
+  var videoLink : String = p_videoLink
+
+  @Column(length = 10000)
+  @BeanProperty
+  var text : String = p_text
+
+  @BeanProperty
+  var publicationDate: Date = p_publicationDate
+
+  @Version
+  @BeanProperty
+  var version : Int = _
+
+  private def this() = this(null, null, null, null, null, null, null, null, null)
+
+  override def toString = s"News($id, $title, $appName, $appVersion, $userCreated, $downloadLink, " +
+    s"$imageLink, $videoLink, $text, $publicationDate, $version)"
 }

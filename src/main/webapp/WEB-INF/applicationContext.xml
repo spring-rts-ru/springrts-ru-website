@@ -39,6 +39,11 @@
             <bean class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver" />
         </property>
         <property name="persistenceUnitName" value="ru.springrts.persistence"/>
+        <property name="jpaProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">validate</prop>
+            </props>
+        </property>
     </bean>
 
     <bean id="jpaAdapter"

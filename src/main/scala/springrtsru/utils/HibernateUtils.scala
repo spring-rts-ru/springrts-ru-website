@@ -1,5 +1,6 @@
 package springrtsru.utils
 
+import java.util.Date
 import javax.persistence.EntityManager
 import javax.persistence.EntityManagerFactory
 import javax.persistence.Persistence
@@ -15,16 +16,16 @@ object HibernateUtils {
   def main( args : Array[String]) {
 
     entityManager.getTransaction.begin()
-//    entityManager.persist( new News( ) )
+    entityManager.persist( new News("titlee", "BA", "1.1.1", "jamerlan", "http://aaa.aaa.aa", "http://aa.aa.aa/1.png", "http://aa.aa.aa/video", "test test text", new Date()))
 //    entityManager.persist( new News( ) )
 //    entityManager.persist( new News( ) )
     entityManager.getTransaction.commit()
 
     entityManager.getTransaction.begin()
-    val allBuddies = entityManager.createQuery("From Buddy", classOf[News]).getResultList.toList
+    val allNews = entityManager.createQuery("from News", classOf[News]).getResultList.toList
     entityManager.getTransaction.commit()
 
-    allBuddies foreach println
+    allNews foreach println
 
     entityManager.close()
   }

@@ -9,12 +9,14 @@
             Persistence unit for the JPA
         </description>
         <class>springrtsru.model.News</class>
-        <!--<properties>-->
-            <!--<property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>-->
-            <!--<property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:mem:JpaScala"/>-->
-            <!--<property name="hibernate.show_sql" value="false"/>-->
-            <!--<property name="hibernate.hbm2ddl.auto" value="create"/>-->
-        <!--</properties>-->
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/springrtsru"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/> <!-- <property name="hibernate.hbm2ddl.auto" value="validate"/> -->
+            <property name="javax.persistence.jdbc.user" value="local"/>
+            <property name="javax.persistence.jdbc.password" value="local"/>
+        </properties>
     </persistence-unit>
 
 </persistence>

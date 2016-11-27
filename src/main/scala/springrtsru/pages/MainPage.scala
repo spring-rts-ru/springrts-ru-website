@@ -7,9 +7,12 @@ class MainPage extends BasePage {
 
   override def getPageIndex: PageIndex = News
 
-  var firstNews = repo.findAll().iterator().next()
+  var firstNews = newsRepo.findAll().iterator().next()
 
   var gameVersion = new Label("gameVersion", firstNews.appVersion)
   add(gameVersion)
+
+  var tag = new Label("newsTag", firstNews.tags.get(0).getTitle)
+  add(tag)
 
 }

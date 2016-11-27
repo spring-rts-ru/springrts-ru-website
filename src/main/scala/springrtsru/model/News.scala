@@ -5,10 +5,12 @@ import javax.persistence._
 
 import scala.beans.BeanProperty
 
+import collection.JavaConversions._
+
 @Entity
 @Table(name = "news")
 class News (p_title : String, p_appName : String, p_appVersion : String, p_userCreated : String, p_downloadLink : String,
-            p_imageLink : String, p_videoLink : String, p_text : String, p_publicationDate: Date) extends Serializable {
+            p_imageLink : String, p_videoLink : String, p_text : String, p_publicationDate: Date, p_tags : java.util.List[Tag]) extends Serializable {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
@@ -49,8 +51,14 @@ class News (p_title : String, p_appName : String, p_appVersion : String, p_userC
   @BeanProperty
   var version : Int = _
 
-  private def this() = this(null, null, null, null, null, null, null, null, null)
+  @ManyToMany(fetch = FetchType.LAZY)
+  @JoinTable(name="news_tags",
+    joinColumns = Array(new JoinColumn(name="news_id")),
+    inverseJoinColumns = Array(new JoinColumn(name="tag_id"))
+  )
+  var tags: java.util.List[Tag] = p_tags
 
-  override def toString = s"News($id, $title, $appName, $appVersion, $userCreated, $downloadLink, " +
-    s"$imageLink, $videoLink, $text, $publicationDate, $version)"
+  private def this() = this(null, null, null, null, null, null, null, null, null, null)
+
+  override def toString = s"News($id, $title, $appName, $appVersion, $userCreated, $downloadLink, $imageLink, $videoLink, $text, $publicationDate, $version, $tags)"
 }

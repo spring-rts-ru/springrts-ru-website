@@ -24,7 +24,7 @@ abstract class BasePage extends WebPage {
 
   @SpringBean
   @BeanProperty
-  var repo : NewsRepository = _
+  var newsRepo : NewsRepository = _
 
   val newsLink = new WebMarkupContainer("newsLink")
   add(newsLink)

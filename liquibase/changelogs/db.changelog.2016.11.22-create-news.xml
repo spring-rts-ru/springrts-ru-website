@@ -24,4 +24,30 @@
 
     </changeSet>
 
+    <changeSet id="db.changelog.2016.11.22-create-news.2" author="decay" runOnChange="true">
+        <sql>
+            create table tags (
+                id    int4 not null,
+                title varchar(255),
+                primary key (id)
+            );
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2016.11.22-create-news.3" author="decay" runOnChange="true">
+        <sql>
+            create table news_tags (
+                tag_id  int4 not null,
+                news_id int4 not null
+            );
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2016.11.22-create-news.4" author="decay" runOnChange="true">
+        <sql>
+            alter table news_tags add constraint news_id_fk foreign key (news_id) references tags;
+            alter table news_tags add constraint tag_id_fk foreign key (tag_id) references news;
+        </sql>
+    </changeSet>
+
 </databaseChangeLog>

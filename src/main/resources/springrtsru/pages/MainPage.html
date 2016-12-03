@@ -228,42 +228,43 @@
                 </div>
                 <div class="row">
                     <div class="col-md-10>">
-                        <div class="container-fluid news-block">
+                        <div class="container-fluid news-block" wicket:id="newsBlock">
                             <div class="row">
                                 <div class="col-lg-1 col-xs-3 news-text">
-                                    <p class="news-block-time ">09/07/2016</p>
+                                    <p class="news-block-time"><nobr><span wicket:id="newsDate">09/07/2016</span></nobr></p>
                                 </div>
-                                <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
-                                <div class="col-lg-2 col-xs-6">
-                                    <a href="#" class="btn btn-default btn-xs disabled btn-responsive" role="button"><span wicket:id="newsTag">Balanced Annihilation</span></a>
-                                </div>
-                                <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
-                                <div class="col-lg-2 col-xs-6">
-                                    <a href="#" class="btn btn-default btn-xs disabled btn-responsive" role="button">Новости</a>
+
+                                <div wicket:id="tags">
+                                    <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
+                                    <div class="col-lg-2 col-xs-6">
+                                        <a href="#" class="btn btn-default btn-xs disabled btn-responsive" role="button"><span wicket:id="newsTag">Balanced Annihilation</span></a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 news-text">
-                                    <h class="h-green">Релиз игры Balanced Annihilation: версия <span wicket:id="gameVersion">9.36</span>!</h><br/>
-                                    <b>Изменения баланса:</b><br/>
-                                    - В обломки металла теперь сложнее попасть -> будет больше металла на поле боя<br/>
-                                    - Исправлена проблема: в закрытый випер сложно попасть (ракетная установка core 2 уровня)<br/>
-                                    - Исправления для функциональности "установить цель"<br/>
-                                    <br/>
-                                    <b>Другие изменения:</b><br/>
-                                    - Добавлен набор курсоров от BAR (можно включить/отключить с помощью /cursor)<br/>
-                                    - Радиус парализованной противоракетной системы будет мигать<br/>
-                                    - Курсоры неактивных наблюдателей будут постепенно исчезать<br/>
-                                    - Удален виджет "SmoothScroll" (плавная прокрутка) - больше не нужен<br/>
-                                    - Добавлено еще больше сообщений о смерти игрока<br/>
-                                    - Эффект появления командира переделан в виджет (который можно включать/отключать)<br/>
-                                    - Уменьшено количество дикой живности на земле<br/>
-                                    - Различные изменения, необходимые для поддержки движка Spring 102<br/>
+                                    <h class="h-green" wicket:id="newsTitle">Релиз игры Balanced Annihilation: версия 9.36!</h><br/>
+                                    <span wicket:id="newsText">
+                                        <b>Изменения баланса:</b><br/>
+                                         - В обломки металла теперь сложнее попасть -> будет больше металла на поле боя<br/>
+                                         - Исправлена проблема: в закрытый випер сложно попасть (ракетная установка core 2 уровня)<br/>
+                                         - Исправления для функциональности "установить цель"<br/>
+                                        <br/>
+                                        <b>Другие изменения:</b><br/>
+                                         - Добавлен набор курсоров от BAR (можно включить/отключить с помощью /cursor)<br/>
+                                         - Радиус парализованной противоракетной системы будет мигать<br/>
+                                         - Курсоры неактивных наблюдателей будут постепенно исчезать<br/>
+                                         - Удален виджет "SmoothScroll" (плавная прокрутка) - больше не нужен<br/>
+                                         - Добавлено еще больше сообщений о смерти игрока<br/>
+                                         - Эффект появления командира переделан в виджет (который можно включать/отключать)<br/>
+                                         - Уменьшено количество дикой живности на земле<br/>
+                                         - Различные изменения, необходимые для поддержки движка Spring 102<br/>
+                                    </span>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-lg-1"></div>
-                                        <div class="col-lg-11"><img src="./images/Loadscreens/hotlips.jpg" class="img-responsive"></div>
+                                        <div class="col-lg-11"><img wicket:id="newsImage" src="./images/Loadscreens/hotlips.jpg" class="img-responsive"></div>
                                     </div>
                                 </div>
                             </div>
@@ -274,7 +275,7 @@
                                 </div>
                                 <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
                                 <div class="col-lg-4 col-xs-6">
-                                    <a href="https://springfiles.com/spring/games/balanced-annihilation-85" class="btn btn-default btn-sm active btn-responsive" role="button">Balanced Annihilation 9.36</a>
+                                    <a wicket:id="downloadLink" href="https://springfiles.com/spring/games/balanced-annihilation-85" class="btn btn-default btn-sm active btn-responsive" role="button"><span wicket:id="newsGameName">Balanced Annihilation</span> <span wicket:id="gameVersion">9.36</span></a>
                                 </div>
                             </div>
                         </div>

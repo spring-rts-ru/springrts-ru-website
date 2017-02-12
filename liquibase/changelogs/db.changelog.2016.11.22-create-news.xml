@@ -46,7 +46,24 @@
     <changeSet id="db.changelog.2016.11.22-create-news.4" author="decay" runOnChange="true">
         <sql>
             alter table news_tags add constraint news_id_fk foreign key (news_id) references tags;
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2016.11.22-create-news.5" author="decay" runOnChange="true">
+        <sql>
             alter table news_tags add constraint tag_id_fk foreign key (tag_id) references news;
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2016.11.22-create-news.6" author="decay" runOnChange="true">
+        <sql>
+            create sequence news_id_seq;
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2016.11.22-create-news.7" author="decay" runOnChange="true">
+        <sql>
+            create sequence tag_id_seq;
         </sql>
     </changeSet>
 

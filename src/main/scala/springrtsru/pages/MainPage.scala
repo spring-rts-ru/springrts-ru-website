@@ -1,7 +1,8 @@
 package springrtsru.pages
 
 import java.text.SimpleDateFormat
-import java.util.Locale
+import java.util
+import java.util.{Collections, Locale}
 
 import org.apache.wicket.markup.html.basic.Label
 import org.apache.wicket.markup.html.image.ExternalImage
@@ -14,7 +15,11 @@ class MainPage extends BasePage {
 
   override def getPageIndex: PageIndex = News
 
-  var newsList = newsRepo.findAll()
+  val newsList: util.List[News] = newsRepo.findAll()
+
+  Collections.sort[News](newsList, (o1: News, o2: News) => {
+    o2.publicationDate.compareTo(o1.publicationDate)
+  })
 
   var newsBlock = new ListView("newsBlock", newsList) {
     override def populateItem(item: ListItem[News]): Unit = {

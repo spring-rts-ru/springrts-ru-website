@@ -13,7 +13,7 @@ class News (p_title : String, p_appName : String, p_appVersion : String, p_userC
             p_imageLink : String, p_videoLink : String, p_text : String, p_publicationDate: Date, p_tags : java.util.List[Tag]) extends Serializable {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @SequenceGenerator(name = "news_id_seq_gen", sequenceName = "news_id_seq", allocationSize = 1)
   var id: Int = _
 
   @BeanProperty
@@ -53,8 +53,8 @@ class News (p_title : String, p_appName : String, p_appVersion : String, p_userC
 
   @ManyToMany(fetch = FetchType.LAZY)
   @JoinTable(name="news_tags",
-    joinColumns = Array(new JoinColumn(name="news_id")),
-    inverseJoinColumns = Array(new JoinColumn(name="tag_id"))
+    joinColumns = Array(new JoinColumn(name="news_id", foreignKey = new ForeignKey(name = "news_id_fk"))),
+    inverseJoinColumns = Array(new JoinColumn(name="tag_id", foreignKey = new ForeignKey(name = "tag_id_fk")))
   )
   var tags: java.util.List[Tag] = p_tags
 

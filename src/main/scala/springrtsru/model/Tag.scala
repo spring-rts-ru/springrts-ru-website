@@ -8,7 +8,7 @@ import scala.beans.BeanProperty
 @Table(name = "tags")
 class Tag (p_title: String) {
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @SequenceGenerator(name = "tag_id_seq_gen", sequenceName = "tag_id_seq", allocationSize = 1)
   var id: Int = _
 
   @BeanProperty

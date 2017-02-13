@@ -20,7 +20,7 @@ this document describes how to build/run this website on a local machine
 6. Install postgresql
     6.1. install it and start
     6.2. run https://github.com/spring-rts-ru/springrts-ru-website/blob/master/liquibase/init/postgresql.sql
-    6.3. go to springrts-ru-website/liquibase and run ./liquibase.sh (answer Y to install database changes)
+    6.3. go to springrts-ru-website/liquibase and run ./liquibase-update.sh (answer Y to install database changes)
 7. Build it using SBT to test that sbt and java are installed correctly
     7.1. open terminal and go to springrts-ru-website directory
     7.2. run command: sbt clean package

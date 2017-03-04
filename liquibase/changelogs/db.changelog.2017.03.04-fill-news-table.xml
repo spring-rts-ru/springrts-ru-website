@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="db.changelog.2017.03.04-fill-news-table.1" author="decay" runOnChange="true">
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.37',
+                'https://springfiles.com/spring/games/balanced-annihilation-86',
+                './images/Loadscreens/zetasiege.jpg',
+                '2016-07-21 00:01:54',
+                    '- Совместимость с движком 103 <br/>' ||
+                    '- Исправления ошибок',
+                'Релиз игры Balanced Annihilation: версия 9.37!',
+                '[teh]decay',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2017.03.04-fill-news-table.2" author="decay" runOnChange="true">
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.38',
+                'https://springfiles.com/spring/games/balanced-annihilation-87',
+                './images/Loadscreens/zetasiege2.jpg',
+                '2016-07-23 00:01:54',
+                    '- У парализующего паука убрали авторемонт, уменьшили количество жизней 950 -> 850, уменьшили скорость на 10% <br/>' ||
+                    '- Удален виджет для ставок (раньше наблюдатели могли делать ставки) <br/>' ||
+                    '- Удален виджет, показывающий эффект появления командира (с молниями) <br/>' ||
+                    '- Удален виджет, рисующий темную рамку по краям экрана <br/>' ||
+                    '- /cursor теперь отображает допустимые курсоры в параметрах',
+                'Релиз игры Balanced Annihilation: версия 9.38!',
+                '[teh]decay',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2017.03.04-fill-news-table.3" author="decay" runOnChange="true">
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.39',
+                'https://springfiles.com/spring/games/balanced-annihilation-88',
+                './images/Loadscreens/arena.jpg',
+                '2016-07-29 00:01:54',
+                    '<b>Изменения баланса:</b> <br/>' ||
+                    '- Уменьшена точность линии обзора и радара для увеличения производительности игры  <br/>' ||
+                    '- Вангард (артилерия 3 уровня арм) теперь строится на 10% быстрее <br/>' ||
+                    '- Установка тактических ракет core теперь стоит больше металла: 804 -> 1200 <br/>' ||
+                    '<b>Другие изменения:</b> <br/>' ||
+                    '- Расширен набор курсоров. Теперь доступны: old, old_150%, old_200%, bar, bar_150%, bar_200% <br/>' ||
+                    '- Плеер лист: теперь отображает количество FPS вместо загрузки CPU<br/>' ||
+                    '- Плеер лист: при наведении - показывает всплывающее окно с характеристиками компьютера игрока<br/>' ||
+                    '- Плеер лист: активные наблюдатели теперь отображаются более ярким шрифтом<br/>' ||
+                    '- Добавлена кнопка очистки маркеров и рисунков на карте. Прикреплена к плеер листу<br/>' ||
+                    '- Добавлено больше сообщений, отображающихся при смерти игрока',
+                'Релиз игры Balanced Annihilation: версия 9.39!',
+                '[teh]decay',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2017.03.04-fill-news-table.4" author="decay" runOnChange="true">
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.40',
+                'https://springfiles.com/spring/games/balanced-annihilation-89',
+                './images/Loadscreens/centerrock.jpg',
+                '2016-08-04 00:01:54',
+                    '<b>Изменения баланса:</b> <br/>' ||
+                    '- Артилерийские машины 2 уровня наносят на 10% больше урона <br/>' ||
+                    '- Юниты теперь могут проходить сквозь приземлившиеся самолеты <br/>' ||
+                    '<b>Другие изменения:</b> <br/>' ||
+                    '- Плеер лист: добавлены индикаторы ресурсов игроков <br/>' ||
+                    '- Старый виджет, отображающий ресурсы, переименован и отключен по умолчанию <br/>' ||
+                    '- Виджет "маркер юнитов" отключается, когда игрок становится наблюдателем <br/>' ||
+                    '- Животные больше не блокируют проход + следуют за командиром, когда он проходит мимо <br/>',
+                'Релиз игры Balanced Annihilation: версия 9.40!',
+                '[teh]decay',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2017.03.04-fill-news-table.5" author="decay" runOnChange="true">
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.42',
+                'https://springfiles.com/spring/games/balanced-annihilation-91',
+                './images/Loadscreens/deltacom.jpg',
+                '2016-08-11 00:01:54',
+                    '<b>Изменения баланса:</b> <br/>' ||
+                    '- Мародеры - быстрые роботы 3 уровня арм теперь строятся на 10% быстрее, скорость передвижения + 5%<br/>' ||
+                    '- Мобильная противоядерка теперь производит только 100 энергии (было 200) <br/>' ||
+                    '- Летающая крепость (самолет core) теперь производит 50 энергии (было 0) <br/>' ||
+                    '<b>Другие изменения:</b> <br/>' ||
+                    '- Исправлены огромные кратеры от взрывов (появились после перехода на 103 движок) <br/>' ||
+                    '- Добавлен виджет "строители-бездельники", отображающий иконку строителя внизу экрана <br/>' ||
+                    '- Другие исправления в виджетах <br/>',
+                'Релиз игры Balanced Annihilation: версия 9.42!',
+                '[teh]decay',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2017.03.04-fill-news-table.6" author="decay" runOnChange="true">
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.43',
+                'https://springfiles.com/spring/games/balanced-annihilation-92',
+                './images/Loadscreens/downsofdestruction.jpg',
+                '2016-09-08 00:01:54',
+                    '- Команда "Установить цель"(Y) теперь не устанавливает атаку на землю по умолчанию. Старое поведение: Alt+Y <br/>' ||
+                    '- Экран с наградами теперь растягивается, в зависимости от разрешения экрана<br/>',
+                'Релиз игры Balanced Annihilation: версия 9.43!',
+                '[teh]decay',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2017.03.04-fill-news-table.7" author="decay" runOnChange="true">
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.44',
+                'https://springfiles.com/spring/games/balanced-annihilation-93',
+                './images/Loadscreens/flagships.jpg',
+                '2016-09-18 00:01:54',
+                    '- Добавлен виджет "Опции" <br/>' ||
+                    '- Теперь многие игроки общаются в Discord: discord.gg/aDtX3hW <br/>' ||
+                    '- Кнопка "Я готов" теперь меняет размер, в зависимости от разрашения экрана <br/>' ||
+                    '- Улучшено качество иконки игры <br/>' ||
+                    '- Увеличена производительность освещения снарядов (спасибо roink[vegan])',
+                'Релиз игры Balanced Annihilation: версия 9.44!',
+                '[teh]decay',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+    </changeSet>
+
+    <changeSet id="db.changelog.2017.03.04-fill-news-table.8" author="decay" runOnChange="true">
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.46',
+                'https://springfiles.com/spring/games/balanced-annihilation-95',
+                './images/Loadscreens/folsombridge.jpg',
+                '2016-09-22 00:01:54',
+                    '- Если кликнуть на иконку Discord(перед битвой) - появится ссылка на него <br/>' ||
+                    '- Исправления для кнопки "готов" <br/>' ||
+                    '- Добавлено больше опций в виджет "опции" <br/>' ||
+                    '- Изменен эффект выстрела флеш танка (без изменения баланса) <br/>' ||
+                    '- Добавлено несколько параметров игры (modoptions): <br/>' ||
+                    '   "контролируй територию для победы"(controlvictoryoptions) <br/>' ||
+                    '   "лучший контроль над юнитами"(betterunitmovement) - юниты разворачиваются быстрее <br/>' ||
+                    '   "стрелять через своих"(firethroughfriendly)<br/>' ||
+                    '   "стрелять через мелкие обломки"(smallfeaturenoblock) ',
+                'Релиз игры Balanced Annihilation: версия 9.46!',
+                '[teh]decay',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+    </changeSet>
+
+<!--
+    <changeSet id="db.changelog.2016.11.25-fill-news-table.3" author="decay" runOnChange="true">
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),  id
+                'Balanced Annihilation',  appname
+                '',  appversion
+                '',  downloadlink
+                '',  imagelink
+                '',  publicationdate
+                    '',  text
+                'Релиз игры Balanced Annihilation: версия !',  title
+                '[teh]decay',  usercreated
+                0,  version
+                'http://aa.aa.aa/video');  videolink
+            ]]>
+        </sql>
+    </changeSet>
+-->
+
+</databaseChangeLog>

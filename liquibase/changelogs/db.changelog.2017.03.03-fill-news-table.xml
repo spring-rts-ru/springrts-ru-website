@@ -22,7 +22,7 @@
                 'Balanced Annihilation',
                 '9.01',
                 'http://springfiles.com/spring/games/balanced-annihilation-53',
-                './images/Loadscreens/riverdelta.jpg',
+                './images/Loadscreens/centerrock.jpg',
                 '2015-07-28 00:01:54',
                     '<b>Несколько слов о релизе</b>: <br/>
                 <br/>
@@ -67,7 +67,7 @@
                 'Balanced Annihilation',
                 '9.02',
                 'http://springfiles.com/spring/games/balanced-annihilation-54',
-                './images/Loadscreens/riverdelta.jpg',
+                './images/Loadscreens/deltacom.jpg',
                 '2015-08-03 00:01:54',
                     '<b>Несколько слов о релизе</b>: <br/>
                 <br/>
@@ -113,7 +113,7 @@
                 'Balanced Annihilation',
                 '9.03',
                 'http://springfiles.com/spring/games/balanced-annihilation-55',
-                './images/Loadscreens/riverdelta.jpg',
+                './images/Loadscreens/downsofdestruction.jpg',
                 '2015-08-07 00:01:54',
                     '<b>Несколько слов о релизе</b>: <br/>
                 - Предметы на карте(например, обломки танков) теперь не отображаются за областю видимости<br/>
@@ -155,7 +155,7 @@
                 'Balanced Annihilation',
                 '9.04',
                 'http://springfiles.com/spring/games/balanced-annihilation-56',
-                './images/Loadscreens/riverdelta.jpg',
+                './images/Loadscreens/flagships.jpg',
                 '2015-08-08 00:01:54',
                     '<b>Изменения в балансе</b>: <br/>
                 - Радиус поражения ракеты увеличен для ракетного робота 2 уровня "Dominator", но уменьшена поражающая способность на окраинах взрыва<br/>
@@ -193,7 +193,7 @@
                 'Balanced Annihilation',
                 '9.05',
                 'http://packages.springrts.com/builds/ba-V9.05.sdz',
-                './images/Loadscreens/riverdelta.jpg',
+                './images/Loadscreens/folsombridge.jpg',
                 '2015-08-14 00:01:54',
                     '<b>Изменения в балансе</b>: <br/>
                 - Преобразователи энергии в металл теперь вырабатывают на 16.5 процента меньше металла<br/>
@@ -242,7 +242,7 @@
                 'Balanced Annihilation',
                 '9.06',
                 'http://springfiles.com/spring/games/balanced-annihilation-58',
-                'http://springfiles.com/sites/default/files/images/spring/games/arena.jpg',
+                './images/Loadscreens/frozenfortress.jpg',
                 '2015-08-21 00:01:54',
                     '<b>Изменения в балансе</b>: <br/>
                 Уменьшена максимальная скорость самолета-строителя 1 уроаня на 12%, зато увеличена сила строительства на 22%<br/>
@@ -284,7 +284,7 @@
                 'Balanced Annihilation',
                 '9.07',
                 'http://springfiles.com/spring/games/balanced-annihilation-59',
-                'http://springfiles.com/sites/default/files/images/spring/games/vallesmarineris.jpg',
+                './images/Loadscreens/green.jpg',
                 '2015-09-04 00:01:54',
                     '<b>Изменения в балансе</b>: <br/>
                 Закрывающиеся пушки (когти дракона) теперь получают больше урона в закрытом состоянии (было 0.15, стало 0.25)<br/>
@@ -325,7 +325,7 @@
                 'Balanced Annihilation',
                 '9.08',
                 'http://springfiles.com/spring/games/balanced-annihilation-60',
-                'http://springfiles.com/sites/default/files/images/spring/games/titan.jpg',
+                './images/Loadscreens/hotlips.jpg',
                 '2015-09-11 00:01:54',
                     ' <b>Изменения в балансе</b>: <br/>
                 Робот-амфибия 2 уровня (gimp) теперь снова виден сонарам<br/>
@@ -362,7 +362,7 @@
                 'Balanced Annihilation',
                 '9.09',
                 'http://springfiles.com/spring/games/balanced-annihilation-61',
-                'http://springfiles.com/sites/default/files/images/spring/games/titan.jpg',
+                './images/Loadscreens/lolcannon.jpg',
                 '2015-09-18 00:01:54',
                     '<b>Изменения в балансе</b>: <br/>
                 Увеличена дальность стрельбы парализующего робота-паука (220 -> 280)<br/>
@@ -402,8 +402,8 @@
                 'Balanced Annihilation',
                 '9.10',
                 'http://springfiles.com/spring/games/balanced-annihilation-62',
-                'http://springfiles.com/sites/default/files/images/spring/games/centerrock.jpg',
-                '2015-09-19 00:01:54',
+                './images/Loadscreens/massiveair.jpg',
+                '2015-09-25 00:01:54',
                     '<b>Изменения в балансе</b>: <br/>
                 Парализующие пауки теперь восстанавливаются после повреждения<br/>
                 Скорость захвата командиром юнитов увеличена в 2 раза (900 -> 1800)<br/>
@@ -445,7 +445,7 @@
                 'Balanced Annihilation',
                 '9.11',
                 'http://springfiles.com/spring/games/balanced-annihilation-63',
-                'http://springfiles.com/sites/default/files/images/spring/games/green_1.jpg',
+                './images/Loadscreens/mescalinecoms.jpg',
                 '2015-10-16 00:01:54',
                     '<b>Изменения в балансе</b>: <br/>
                 Парализованые хранилища энергии теперь "протекают" (первого уровня - расходуют 60 энергии, 2 уровня - 400)<br/>
@@ -491,7 +491,7 @@
                 'Balanced Annihilation',
                 '9.12',
                 'http://springfiles.com/spring/games/balanced-annihilation-64',
-                'http://springfiles.com/sites/default/files/images/spring/games/flagships_0.jpg',
+                './images/Loadscreens/nuclearwinter.jpg',
                 '2015-10-23 00:01:54',
                     '<b>Изменения в балансе</b>: <br/>
                 Стоимость аннигилятора увеличена на 10%<br/>
@@ -537,7 +537,7 @@
                 'Balanced Annihilation',
                 '9.13',
                 'http://springfiles.com/spring/games/balanced-annihilation-65',
-                'http://springfiles.com/sites/default/files/images/spring/games/whitelight_2.jpg',
+                './images/Loadscreens/parchedmesa.jpg',
                 '2015-10-30 00:01:54',
                     '<b>Изменения в балансе</b>: <br/>
                 Buzzsaw и Vulcan переведены в режим "не стрелять" по умолчанию<br/>
@@ -586,7 +586,7 @@
                 'Balanced Annihilation',
                 '9.15',
                 'http://springfiles.com/spring/games/balanced-annihilation-67',
-                'http://springfiles.com/sites/default/files/images/spring/games/whitelight_2.jpg',
+                './images/Loadscreens/riverbend.jpg',
                 '2015-11-07 00:01:54',
                     ' <b>Изменения в балансе:</b>: <br/>
                         Транспортные самолеты будут лететь медленнее, когда переносят тяжелый груз<br/>
@@ -631,7 +631,7 @@
                 'Balanced Annihilation',
                 '9.18',
                 'http://springfiles.com/spring/games/balanced-annihilation-69',
-                'http://s14.postimg.org/5q7lfcci9/riverdelta.jpg',
+                './images/Loadscreens/riverpool.jpg',
                 '2015-11-15 00:01:54',
                     ' Улучшения в виджете "Статистика экономики": мертвые команды не отображаются<br/>
                     Добавлена рамка для виджета, отображающего мини-карту<br/>
@@ -666,7 +666,7 @@
                 'Balanced Annihilation',
                 '9.19',
                 'http://springfiles.com/spring/games/balanced-annihilation-69',
-                'http://springfiles.com/sites/default/files/images/spring/games/hotlips.jpg',
+                './images/Loadscreens/sima.jpg',
                 '2015-11-21 00:01:54',
                     ' <b>Изменения в балансе:</b>: <br/>
                         Улучшенный подводный извлекатель металла CORE стоит на 10% меньше<br/>
@@ -708,7 +708,7 @@
                 'Balanced Annihilation',
                 '9.21',
                 'http://springfiles.com/spring/games/balanced-annihilation-71',
-                'http://springfiles.com/sites/default/files/images/spring/games/screen01290.png',
+                './images/Loadscreens/speedball.jpg',
                 '2015-11-28 00:01:54',
                     ' Добавлен виджет "Darken Map". Позволяет делать карту темнее или светлее. Используйте сочетания клавиш trl+alt+[ или ]
                     Улучшен интерфейс для ставок. Выделяйте юниты в режиме наблюдателя и делайте ставки!<br/>
@@ -743,8 +743,8 @@
                 'Balanced Annihilation',
                 '9.23',
                 'http://springfiles.com/spring/games/balanced-annihilation-73',
-                'http://s14.postimg.org/5q7lfcci9/riverdelta.jpg',
-                '2015-12-14 00:01:54',
+                './images/Loadscreens/speedchaos.jpg',
+                '2015-12-05 00:01:54',
                     ' - Выбранные союзные юниты: исправлен баг, изменяющий цвет карты + авто-масштабирование пользовательского
                      интерфейса в соответствии с разрешением<br/>
                      - Фронтенд: удалена мертвая зона нажатий мышкой для игроков + список заказаных юнитов сортируется по времени +
@@ -782,8 +782,8 @@
                 'Balanced Annihilation',
                 '9.24',
                 'http://springfiles.com/spring/games/balanced-annihilation-74',
-                'http://s14.postimg.org/5q7lfcci9/riverdelta.jpg',
-                '2015-12-15 00:01:54',
+                './images/Loadscreens/speedexplosion.jpg',
+                '2015-12-08 00:01:54',
                     '  - У ложного командира  больше нет настоящего dgun.</br>
                         - Выбранные союзные юниты: исправлена  мертвая зона для нажатий мышкой</br>',
                 'Релиз игры Balanced Annihilation: версия 9.24!',
@@ -815,8 +815,8 @@
                 'Balanced Annihilation',
                 '9.25',
                 'http://springfiles.com/spring/games/balanced-annihilation-75',
-                'http://springfiles.com/sites/default/files/images/spring/games/screen01290.png',
-                '2015-12-16 00:01:54',
+                './images/Loadscreens/supdrylake.jpg',
+                '2015-12-13 00:01:54',
                     '  - Исправлены ошибки<br/>
                     - Улучшен Pathfinder (опционально, для тестирования)</br>',
                 'Релиз игры Balanced Annihilation: версия 9.25!',
@@ -848,8 +848,8 @@
                 'Balanced Annihilation',
                 '9.26',
                 'http://springfiles.com/spring/games/balanced-annihilation-76',
-                'http://springfiles.com/sites/default/files/images/spring/games/hotlips.jpg',
-                '2015-12-23 00:01:54',
+                './images/Loadscreens/tabulabehemoth.jpg',
+                '2015-12-19 00:01:54',
                     '  - Виджет, отображающий радиус DGun-а теперь показывает более точную информацию (учитывается высота земли)<br/>
                 - Виджет, отображающий список игроков, прячет список наблюдателей для тех, кто играет<br/>
                 - виджет, рисующий снег, теперь показывает информацию перед игрой (если карта - снежная)<br/>
@@ -883,8 +883,8 @@
                 'Balanced Annihilation',
                 '9.27',
                 'http://springfiles.com/spring/games/balanced-annihilation-77',
-                'http://springfiles.com/sites/default/files/images/spring/games/screen01290.png',
-                '2016-01-11 00:01:54',
+                './images/Loadscreens/titan.jpg',
+                '2016-01-04 00:01:54',
                     '  - Виджет "Advplayerlist"(список игроков): показывает кнопку <3, при разрешенных альянсах(см на FFA серверах: "Fixed Alliances: No")<br/>
                         - улучшенный алгоритм нахождения путей включен по умолчанию (как в релизе v9.25)<br/>
                         - Исправлена ошибка, которая периодически сыпалась в консоль при заморозке хранилищ метала/энергии<br/>
@@ -919,8 +919,8 @@
                 'Balanced Annihilation',
                 '9.28',
                 'http://springfiles.com/spring/games/balanced-annihilation-78',
-                'http://s14.postimg.org/5q7lfcci9/riverdelta.jpg',
-                '2016-01-18 00:01:54',
+                './images/Loadscreens/tropical.jpg',
+                '2016-01-16 00:01:54',
                     ' <br>Изменения баланса:</b><br/>
                     - Гремлина (танк-невидимка) теперь сложнее парализовать<br/>
                     - Аннигилятор и Машина судного дня (самые крутые оборонительные вышки) - слабее стреляют на 10% (все пушки)<br/>
@@ -957,8 +957,8 @@
                 'Balanced Annihilation',
                 '9.29',
                 'http://springfiles.com/spring/games/balanced-annihilation-79',
-                'http://springfiles.com/sites/default/files/images/spring/games/screen01290.png',
-                '2016-01-25 00:01:54',
+                './images/Loadscreens/tropicalisle.jpg',
+                '2016-01-22 00:01:54',
                     ' Режим FFA: Союз разрывается, когда ты атакуешь юнита союзника<br/>',
                 'Релиз игры Balanced Annihilation: версия 9.29!',
                 'Elt',
@@ -989,8 +989,8 @@
                 'Balanced Annihilation',
                 '9.31',
                 'http://springfiles.com/spring/games/balanced-annihilation-81',
-                'http://springfiles.com/sites/default/files/images/spring/games/vallesmarineris.jpg',
-                '2016-02-02 00:01:54',
+                './images/Loadscreens/tropicalshore.jpg',
+                '2016-02-01 00:01:54',
                     ' Режим FFA: Союз разрывается, когда ты атакуешь юнита союзника- Кнопка для заключения союзов была доработана: при повторном нажатии - союз расторгается (AdvPlayersList, FFA)<br/>
                     - Добавлен виджет "LOS view", который включает линию обзора для игроков, и отключает для наблюдателей<br/>
                     - Виджет "Ally Resource Bars"(ресурсы союзников) теперь отображает, сколько союзники добывают, если нравести мышкой<br/>
@@ -1024,8 +1024,8 @@
                 'Balanced Annihilation',
                 '9.32',
                 'http://springfiles.com/spring/games/balanced-annihilation-82',
-                'http://springfiles.com/sites/default/files/images/spring/games/screen01290.png',
-                '2016-02-08 00:01:54',
+                './images/Loadscreens/vallesmarineris.jpg',
+                '2016-02-06 00:01:54',
                     ' - Система противоядерной обороны (наземная) стоит на 10% меньше энергии<br/>
                     - Продвинутые ядерные реакторы строятся дольше на 15%<br/>
                     - Останки некоторых юнитов 1 уровня стали крепче<br/>
@@ -1061,8 +1061,8 @@
                 'Balanced Annihilation',
                 '9.33',
                 'http://springfiles.com/spring/games/balanced-annihilation-83',
-                'http://s14.postimg.org/5q7lfcci9/riverdelta.jpg',
-                '2016-02-15 00:01:54',
+                './images/Loadscreens/whitelight.jpg',
+                '2016-02-14 00:01:54',
                     ' <b>Изменения баланса:</b><br/>
                 - Обломки машин и роботов 2 уровня стали крепче<br/><br/>
 

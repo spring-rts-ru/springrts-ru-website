@@ -9,5 +9,6 @@
     <include file="changelogs/db.changelog.2016.11.22-create-news.xml"/>
     <include file="changelogs/db.changelog.2016.11.25-fill-news-table.xml"/>
     <include file="changelogs/db.changelog.2017.03.03-fill-news-table.xml"/>
+    <include file="changelogs/db.changelog.2017.03.04-fill-news-table.xml"/>
 
 </databaseChangeLog>

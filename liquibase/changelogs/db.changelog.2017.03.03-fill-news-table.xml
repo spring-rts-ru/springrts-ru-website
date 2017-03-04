@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="db.changelog.2017.03.03-fill-news-table.1" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.01',
+                'http://springfiles.com/spring/games/balanced-annihilation-53',
+                './images/Loadscreens/riverdelta.jpg',
+                '2015-07-28 00:01:54',
+                    '<b>Несколько слов о релизе</b>: <br/>
+                <br/>
+                Исправлена ошибка: перевернутые иконки ховер танков в заводе 3 уровня<br/>
+                Модернизирован виджет, отвечающий за линию обзора "BA LOS colors": настройки радара теперь сохраняются (кнопка ;)
+                + исправлены проблемы с горячей клавишей (;) на некоторых раскладках + добавлена опция "цветная линия обзора", включается /loscolor<br/>
+                Удален код, устанавливаюший состояние "активен/пассивен" из виджета "immobile builder" (теперь за это отвечает виджет "passive builders"<br/>
+                Добавлен виджет "passive builders"(пассивные строители). Все конструкторы и заводы по умолчанию имеют пассивный режим (исключение - командир и коммандо)<br/>
+                Исправлены проблемы с виджетом "GUIshader"<br/>
+                Из консоли "RedUI" убрали эффект затуманивания фона, можно включить назад так: /consoleblur<br/>
+                В виджете "RedUI build/order menu"(меню строительства): теперь можно убрать пробелы между иконками /iconspace<br/>
+                Виджет, отображающий ресурсы, теперь показывает только целые числа<br/>
+                Исправлен баг, когда запоминалась очередь строительства в виджете "Initial Queue"<br/>
+                Виджет "Resurrection halos"(отображающий нимб) теперь можно отключить, и он больше не отображает нимбы для вражеских юнитов<br/>
+                <br/>
+                <b>В этом релизе нет изменений баланса!</b><br/>',
+                'Релиз игры Balanced Annihilation: версия 9.01!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.2" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.02',
+                'http://springfiles.com/spring/games/balanced-annihilation-54',
+                './images/Loadscreens/riverdelta.jpg',
+                '2015-08-03 00:01:54',
+                    '<b>Несколько слов о релизе</b>: <br/>
+                <br/>
+                <b>Изменения в балансе</b><br/>
+                Атомный бомбардировщик теперь убивает командира (без опыта) с 1 ракеты. Но ракеты больше не самонаводящиеся и уменьшен радиус выстрела (самолет должен подлетать ближе)<br/>
+                Уменьшен радиус взрыва снаряда дальнобойных пушек Берта (Bertha и Intimidator)<br/>
+                Увеличен радиус сонара у командира, теперь он совпадает с линией обзора<br/>
+                Уменьшена скорость транспортных самолетов 1 уровня (Valkyrie и Atlas)<br/>
+                У некоторых воздушных юнитов теперь включен режим столкновений. Теперь 30 строителей не смогут слиться в 1.<br/>
+                Исправлена ошибка: раньше замороженные преобразователи металла продолжали работать (преобразовывать)<br/>
+                <br/>
+                <b>Остальные изменения</b><br/>
+                Добавлен виджет "список изменений", который будет отображать "что нового" при каждом релизе<br/>
+                Добавлен виджет, отображающий радиус рассекречивания шпионов и гремлинов. Радиус отображается, когда юнит выбран<br/>
+                Виджет "Buildbar"(меню строительства справа) теперь отключается, когда игрок становится наблюдателем<br/>
+                Виджет "Smart Select"(умное выделение) теперь включен по умолчанию<br/>',
+                'Релиз игры Balanced Annihilation: версия 9.02!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.3" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.03',
+                'http://springfiles.com/spring/games/balanced-annihilation-55',
+                './images/Loadscreens/riverdelta.jpg',
+                '2015-08-07 00:01:54',
+                    '<b>Несколько слов о релизе</b>: <br/>
+                - Предметы на карте(например, обломки танков) теперь не отображаются за областю видимости<br/>
+                - Элементы интерфейса теперь можно перемещать только в режиме настройки(CTRL+F11)<br/>
+                - Виджет, отображающий ресурсы, теперь можно увеличивать или уменьшать, используя команды /allyresbars_sizeup и /allyresbars_sizeup<br/>
+                <br/>
+                <b>Исправлены ошибки:</b><br/>
+                - Убрали небольшой пробел возле закругленных углов виджетов<br/>
+                - Виджет, отображающий изменения между релизами, теперь работает!<br/>
+                - Изменить размер иконок виджета "Buildbar"(меню строительства справа) можно с помощью колесика мыши в режиме настройки интерфейса<br/>
+                - Область поражение дганом коммандира теперь отрисовывается точнее<br/>
+                <br/>',
+                'Релиз игры Balanced Annihilation: версия 9.03!',
+                'ELt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.4" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.04',
+                'http://springfiles.com/spring/games/balanced-annihilation-56',
+                './images/Loadscreens/riverdelta.jpg',
+                '2015-08-08 00:01:54',
+                    '<b>Изменения в балансе</b>: <br/>
+                - Радиус поражения ракеты увеличен для ракетного робота 2 уровня "Dominator", но уменьшена поражающая способность на окраинах взрыва<br/>
+                - Максимальное время, на которое можно парализовать мобильные юниты, увеличино до 20 секунт<br/>
+                - Увеличено количество здоровья "пауку" - парализующему роботу 2 уровня<br/>
+                - Теперь самолеты-разведчики 1 уровня стоят больше металла<br/>
+                - Вернули отображение обломков юнитов за пределами области видимости<br/>
+                <br/>',
+                'Релиз игры Balanced Annihilation: версия 9.04!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.5" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.05',
+                'http://packages.springrts.com/builds/ba-V9.05.sdz',
+                './images/Loadscreens/riverdelta.jpg',
+                '2015-08-14 00:01:54',
+                    '<b>Изменения в балансе</b>: <br/>
+                - Преобразователи энергии в металл теперь вырабатывают на 16.5 процента меньше металла<br/>
+                - У машин 1 уровня количество здоровья увеличилось на 5% (кроме разведчиков, строителей и миноукладчиков)<br/>
+                - Теперь большинство самолетов не сливаются в один юнит: включили столкновения (не включили для разведчиков и истребителей)<br/>
+                - Бомбардировщики 1 уровня летают на 3% медленнее<br/>
+                - Бомбардировщики 2 уровня летают на 8% медленнее, но стоят на 10% меньше энергии<br/>
+                - Артилерийская машина 1 уровня стоит на 10% меньше металла<br/>
+                <br/>
+                <b>Другие изменения:</b><br/>
+                - Добавлен вилджет "unit info"(информация о юнитах) -> выделите юнита и нажмите U, или наберите команду /unitinfo armcom<br/>
+                - Виджет, подсвечивающий выбранных юнитов, включен по умолчанию<br/>
+                - Информация о преобразователях металла снова отображается в окне подсказок (тултипе)<br/>
+                - Теперь парализованные преобразователи металла не генерируют металл<br/>
+                - Виджет, отображаюший силу ветра, теперь снова запоминает позицию<br/>
+                - Виджет, отображающий количетство ресурсов, теперь снова показывает числа после запятой, если ресурсов меньше 10<br/>
+                - Экран паузы теперь выглядит красивее и более прозрачный<br/>
+                - Теперь снова можно менять размер карты не нажимая Ctrl+F11<br/>
+',
+                'Релиз игры Balanced Annihilation: версия 9.05!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.6" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.06',
+                'http://springfiles.com/spring/games/balanced-annihilation-58',
+                'http://springfiles.com/sites/default/files/images/spring/games/arena.jpg',
+                '2015-08-21 00:01:54',
+                    '<b>Изменения в балансе</b>: <br/>
+                Уменьшена максимальная скорость самолета-строителя 1 уроаня на 12%, зато увеличена сила строительства на 22%<br/>
+                Уменьшена максимальная скорость самолета-строителя 2 уровня на 20% и уменьшена сила строительства на 30%<br/>
+                <br/>
+                <b>Другие изменения:</b><br/>
+                Виджет, показывающий информацию о юнитах теперь использует сочетание клавиш Ctrl+U<br/>
+                Добавлены новые изображения, отображаемые при загрузке игры. Некоторые старые были удалены<br/>
+                Теперь изображение, отображаемое при загрузке игры, растягивается, чтобы занять всю область окна<br/>
+                Виджет "пассивные строители" был доработан. Теперь он настраивается на экране настроек (Ctrl+F11)<br/>
+                Исправлены подсказки к преобразователям металла. Теперь они отображают корректную информацию<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.06!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.7" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.07',
+                'http://springfiles.com/spring/games/balanced-annihilation-59',
+                'http://springfiles.com/sites/default/files/images/spring/games/vallesmarineris.jpg',
+                '2015-09-04 00:01:54',
+                    '<b>Изменения в балансе</b>: <br/>
+                Закрывающиеся пушки (когти дракона) теперь получают больше урона в закрытом состоянии (было 0.15, стало 0.25)<br/>
+                Уменьшена сила строительства самолетов-строителей 2 уровня (120 -> 100)<br/>
+                <br/>
+                <b>Другие изменения:</b><br/>
+                Коммандиры не крутят своим торсом, когда помогают заводам строить<br/>
+                Добавлены новые скриншоты-заставки<br/>
+                Исправлен экран паузы<br/>
+                Добавлен виджет (ecostats), который отображает статистику по экономике команд<br/>
+
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.07!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.8" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.08',
+                'http://springfiles.com/spring/games/balanced-annihilation-60',
+                'http://springfiles.com/sites/default/files/images/spring/games/titan.jpg',
+                '2015-09-11 00:01:54',
+                    ' <b>Изменения в балансе</b>: <br/>
+                Робот-амфибия 2 уровня (gimp) теперь снова виден сонарам<br/>
+                <br/>
+                <b>Другие изменения:</b><br/>
+                Улучшен внешний вид виджета ecostats(отображает статистику по экономике команд), исправлены ошибки<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.08!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.9" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.09',
+                'http://springfiles.com/spring/games/balanced-annihilation-61',
+                'http://springfiles.com/sites/default/files/images/spring/games/titan.jpg',
+                '2015-09-18 00:01:54',
+                    '<b>Изменения в балансе</b>: <br/>
+                Увеличена дальность стрельбы парализующего робота-паука (220 -> 280)<br/>
+                Теперь сложнее парализовать роботов-пауков<br/>
+                Ракеты арм робота "Recluse" теперь летят точно в цель (раньше летели в рассыпную) + добавлена 1 дополнительная ракета<br/>
+                <br/>
+                <b>Другие изменения:</b><br/>
+                Добавлен виджет "vignette" - темная рамка вокруг экрана<br/>
+                Добавлен новый виджет "AdvPlayersList mascotte" - кот над списком игроков. Попробуйте активировать и набрать в консоли /mascotte<br/>
+                Улучшен внешний вид списка виджетов<br/>
+                Переработаны виджеты "anti ranges", "energy conversion" и "red ui drawing" с целью увеличения производительности<br/>',
+                'Релиз игры Balanced Annihilation: версия 9.09!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.10" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.10',
+                'http://springfiles.com/spring/games/balanced-annihilation-62',
+                'http://springfiles.com/sites/default/files/images/spring/games/centerrock.jpg',
+                '2015-09-19 00:01:54',
+                    '<b>Изменения в балансе</b>: <br/>
+                Парализующие пауки теперь восстанавливаются после повреждения<br/>
+                Скорость захвата командиром юнитов увеличена в 2 раза (900 -> 1800)<br/>
+                Фальшивый командир теперь тоже умеет захватывать (скорость - 900)<br/>
+                Роботы Фидо теперь включены по умолчанию (стреляют по дуге)<br/>
+
+                <br/>
+                <b>Другие изменения:</b><br/>
+                Текст экрана паузы теперь лучше видно<br/>
+                Улучшен внешний вид диалога виджетов + если кликнуть за область диалога, то он закрывается<br/>
+                Добавлен кот-сова в виджет с котами<br/>
+                Исправления ошибок<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.10!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.11" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.11',
+                'http://springfiles.com/spring/games/balanced-annihilation-63',
+                'http://springfiles.com/sites/default/files/images/spring/games/green_1.jpg',
+                '2015-10-16 00:01:54',
+                    '<b>Изменения в балансе</b>: <br/>
+                Парализованые хранилища энергии теперь "протекают" (первого уровня - расходуют 60 энергии, 2 уровня - 400)<br/>
+                Парализованные хранилища металла перестают "хранить". Если у вам было металла больше, чем вы можете хранить без хранилища, то излишки пропадают<br/>
+                Улучшен гаджет "пассивные строители". Теперь они не будут строить, если не хватает нужного ресурса, а не любого<br/>
+                По умолчанию, включена возможность транспортировки вражеских юнитов (кроме командира)<br/>
+                Парализующие пауки восстанавливают жизни чуть быстрее (20 -> 30)<br/>
+                Возвращено старое оружие ракетным кораблям 2 уровня<br/>
+                Хранилища металла 1 уровня теперь на 10% крепче<br/>
+
+                <br/>
+                <b>Другие изменения:</b><br/>
+                Атомные бомбардировщики теперь взрываются, когда их убили, а не падают вниз (когда падали - могли стрелять)<br/>
+                Количество вражеских командиров теперь отображается в виджете "счетчик командиров"<br/>
+                Новые виджеты: "External VR grid", "Map Edge extension", "Team stats"<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.11!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.12" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.12',
+                'http://springfiles.com/spring/games/balanced-annihilation-64',
+                'http://springfiles.com/sites/default/files/images/spring/games/flagships_0.jpg',
+                '2015-10-23 00:01:54',
+                    '<b>Изменения в балансе</b>: <br/>
+                Стоимость аннигилятора увеличена на 10%<br/>
+                Стоимость Doomsday Machine увеличена на 15%<br/>
+                Радиус взрыва самолетов-строителей увеличен (128 -> 160)<br/>
+                Интрудер (машина-транспорт 2 уровня) теперь крепче (12 500 -> 20 000)<br/>
+                Сложнее парализовать транспортные самолеты<br/>
+                Стоимость всех бомбардировщиков, с наземных авиабаз, уменьшена на 5%<br/>
+                Время перезарядки Доминаторв (ракетный робот 2 уровня) увеличено (7->8), но ракета наносит больше урона (750 -> 800)<br/>
+                Переделан D-Gun(мощное оружие командира), теперь он стелится по земле<br/>
+                <br/>
+                <b>Другие изменения:</b><br/>
+                Добавлена команда "/unitcounter", для отображения количества юнитов всего (если игрок - то в команде)<br/>
+                Добавлена команда "/cputext", которая меняет отображение загруженности процессора с иконки на текст в списке игроков<br/>
+                Добавлен новый виджет "gui_transport_weight_limit", который подсвечивает юниты, которые транспорт может загрузить<br/>
+                Виджет "Map Edge Extension" - включен по умолчанию<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.12!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.13" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.13',
+                'http://springfiles.com/spring/games/balanced-annihilation-65',
+                'http://springfiles.com/sites/default/files/images/spring/games/whitelight_2.jpg',
+                '2015-10-30 00:01:54',
+                    '<b>Изменения в балансе</b>: <br/>
+                Buzzsaw и Vulcan переведены в режим "не стрелять" по умолчанию<br/>
+                Скорость постройки улучшенных электростанций (afus) увеличена на 15%<br/>
+                Ракетные корабли 2 уровня ускоряются чуть быстрее<br/>
+                Улучшенная ползучая бомба передвигается быстрее(1.75 -> 2.8)<br/>
+                Количество жизней огнеметного робота уменьшено на 5%<br/>
+                Термит (core паук) стоит на 10% меньше металла<br/>
+                Удалена торпедная установка вода-воздух<br/>
+                <br/>
+                <b>Другие изменения:</b><br/>
+                Добавлен виджет "Commands info" - отображает список доступных команд<br/>
+                Нимб отображается и для вражеских воскрешенных юнитов<br/>
+                Удален виджет "LockCamera" т.к. эта функциональность теперь включена в виджет списка игроков<br/>
+                "commands FX" - рисует более изящные(тонкие) линии<br/>
+                Удален зверек кото-сова из виджета "зверьки для списка игроков"<br/>
+                Добавлен виджет "Pause/Unpause sounds" - издает звуки при паузе, по умолчанию выключен<br/>
+                У мини-карты убали рамку<br/>
+                У заводов больше нет фундамента(текстуры)<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.13!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.14" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.15',
+                'http://springfiles.com/spring/games/balanced-annihilation-67',
+                'http://springfiles.com/sites/default/files/images/spring/games/whitelight_2.jpg',
+                '2015-11-07 00:01:54',
+                    ' <b>Изменения в балансе:</b>: <br/>
+                        Транспортные самолеты будут лететь медленнее, когда переносят тяжелый груз<br/>
+                        Исправлена ошибка движка - скользящие юниты после выгрузки из транспортного самолета<br/>
+                        Транспортные самолеты больше не пролетают сквозь возвышенности + теперь юниты выгружаются корректно всегда<br/>
+                        Отключена зарядка оружия "dgun", теперь командир может использовать его сразу после высадки из транспорта<br/>
+                        Легче парализовать банту (в 1.3 раза)<br/>
+
+                        <b>Другие изменения:</b><br/>
+                        Добавлена "бета" версия виджета ставок (по умолчанию, выключено)<br/>
+                        Добавлен виджет "Bloom Shader" (отключен по умолчанию)<br/>
+                        Элементам интерфейса добавлена небольшая рамка<br/>
+                        Виджет, отображающий информацию о карте, теперь показывает и размер карты<br/>
+                        Исправлено отображение нимбов для юнитов противника<br/>
+                        Переименован виджет "HighlightSelectedUnits" - добавлены пробелы<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.15!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.15" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.18',
+                'http://springfiles.com/spring/games/balanced-annihilation-69',
+                'http://s14.postimg.org/5q7lfcci9/riverdelta.jpg',
+                '2015-11-15 00:01:54',
+                    ' Улучшения в виджете "Статистика экономики": мертвые команды не отображаются<br/>
+                    Добавлена рамка для виджета, отображающего мини-карту<br/>
+                    Небольшое увеличение производительности множества виджетов<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.18!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.16" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.19',
+                'http://springfiles.com/spring/games/balanced-annihilation-69',
+                'http://springfiles.com/sites/default/files/images/spring/games/hotlips.jpg',
+                '2015-11-21 00:01:54',
+                    ' <b>Изменения в балансе:</b>: <br/>
+                        Улучшенный подводный извлекатель металла CORE стоит на 10% меньше<br/>
+                        Улучшенные подводные лодки-строители стоят на 20% меньше металла<br/>
+                        Платформы гидропланов стоят на 20% меньше металла<br/>
+                        Pincer (ARM танк-амфибия) и Garpike (CORE танк-амфибия) передвигаются быстрее и их сложнее парализовать<br/>
+                        Невидимая электростанция производит на 50 энергии больше<br/>
+
+                        <b>Другие изменения:</b>: <br/>
+                        Виджет "Advplayerlist"(список игроков): если вы - наблюдатель и два раза кликните по имени игрока, то увидите, какие юниты он выделяет<br/>
+                        Виджет "Ally selected units"(показывает выделенных юнитов союзника): теперь отображает информацию о выделении и для наблюдателей тоже<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.19!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.17" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.21',
+                'http://springfiles.com/spring/games/balanced-annihilation-71',
+                'http://springfiles.com/sites/default/files/images/spring/games/screen01290.png',
+                '2015-11-28 00:01:54',
+                    ' Добавлен виджет "Darken Map". Позволяет делать карту темнее или светлее. Используйте сочетания клавиш trl+alt+[ или ]
+                    Улучшен интерфейс для ставок. Выделяйте юниты в режиме наблюдателя и делайте ставки!<br/>
+                    Прочие исправления и улучшения<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.21!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.18" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.23',
+                'http://springfiles.com/spring/games/balanced-annihilation-73',
+                'http://s14.postimg.org/5q7lfcci9/riverdelta.jpg',
+                '2015-12-14 00:01:54',
+                    ' - Выбранные союзные юниты: исправлен баг, изменяющий цвет карты + авто-масштабирование пользовательского
+                     интерфейса в соответствии с разрешением<br/>
+                     - Фронтенд: удалена мертвая зона нажатий мышкой для игроков + список заказаных юнитов сортируется по времени +
+                     продолжает работать на паузе<br/>
+                     - Союзные ресурсбары: Опять чуть больше на малых разрешениях<br/>
+                     - Добавлен виджет: "Bloom shader highlight"<br/>
+                     - Опции пассивных строителей показываются только для игроков + авто-масштабируются в соответствии с разрешением<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.23!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.19" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.24',
+                'http://springfiles.com/spring/games/balanced-annihilation-74',
+                'http://s14.postimg.org/5q7lfcci9/riverdelta.jpg',
+                '2015-12-15 00:01:54',
+                    '  - У ложного командира  больше нет настоящего dgun.</br>
+                        - Выбранные союзные юниты: исправлена  мертвая зона для нажатий мышкой</br>',
+                'Релиз игры Balanced Annihilation: версия 9.24!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.20" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.25',
+                'http://springfiles.com/spring/games/balanced-annihilation-75',
+                'http://springfiles.com/sites/default/files/images/spring/games/screen01290.png',
+                '2015-12-16 00:01:54',
+                    '  - Исправлены ошибки<br/>
+                    - Улучшен Pathfinder (опционально, для тестирования)</br>',
+                'Релиз игры Balanced Annihilation: версия 9.25!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.21" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.26',
+                'http://springfiles.com/spring/games/balanced-annihilation-76',
+                'http://springfiles.com/sites/default/files/images/spring/games/hotlips.jpg',
+                '2015-12-23 00:01:54',
+                    '  - Виджет, отображающий радиус DGun-а теперь показывает более точную информацию (учитывается высота земли)<br/>
+                - Виджет, отображающий список игроков, прячет список наблюдателей для тех, кто играет<br/>
+                - виджет, рисующий снег, теперь показывает информацию перед игрой (если карта - снежная)<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.26!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.22" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.27',
+                'http://springfiles.com/spring/games/balanced-annihilation-77',
+                'http://springfiles.com/sites/default/files/images/spring/games/screen01290.png',
+                '2016-01-11 00:01:54',
+                    '  - Виджет "Advplayerlist"(список игроков): показывает кнопку <3, при разрешенных альянсах(см на FFA серверах: "Fixed Alliances: No")<br/>
+                        - улучшенный алгоритм нахождения путей включен по умолчанию (как в релизе v9.25)<br/>
+                        - Исправлена ошибка, которая периодически сыпалась в консоль при заморозке хранилищ метала/энергии<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.27!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.23" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.28',
+                'http://springfiles.com/spring/games/balanced-annihilation-78',
+                'http://s14.postimg.org/5q7lfcci9/riverdelta.jpg',
+                '2016-01-18 00:01:54',
+                    ' <br>Изменения баланса:</b><br/>
+                    - Гремлина (танк-невидимка) теперь сложнее парализовать<br/>
+                    - Аннигилятор и Машина судного дня (самые крутые оборонительные вышки) - слабее стреляют на 10% (все пушки)<br/>
+                    - Оружие снайпера было переделано. Теперь снайперы не убивают своих же юнитов<br/><br/>
+
+                    <b>Другие изменения:</b><br/>
+                    - Исправлен баг со скроллом камеры в начале игры (проявлялся у некоторых игроков)<br/>
+                    - Исправлено отображение кнопки для заключения союзов в FFA<br/>',
+                'Релиз игры Balanced Annihilation: версия 9.28!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.24" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.29',
+                'http://springfiles.com/spring/games/balanced-annihilation-79',
+                'http://springfiles.com/sites/default/files/images/spring/games/screen01290.png',
+                '2016-01-25 00:01:54',
+                    ' Режим FFA: Союз разрывается, когда ты атакуешь юнита союзника<br/>',
+                'Релиз игры Balanced Annihilation: версия 9.29!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.25" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.31',
+                'http://springfiles.com/spring/games/balanced-annihilation-81',
+                'http://springfiles.com/sites/default/files/images/spring/games/vallesmarineris.jpg',
+                '2016-02-02 00:01:54',
+                    ' Режим FFA: Союз разрывается, когда ты атакуешь юнита союзника- Кнопка для заключения союзов была доработана: при повторном нажатии - союз расторгается (AdvPlayersList, FFA)<br/>
+                    - Добавлен виджет "LOS view", который включает линию обзора для игроков, и отключает для наблюдателей<br/>
+                    - Виджет "Ally Resource Bars"(ресурсы союзников) теперь отображает, сколько союзники добывают, если нравести мышкой<br/>
+                    - В виджет "Darken map"(затемнение карты) добавлена опция для более точной настройки "/mapdarkness #" где # может принимать значения от 0 до 0.6<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.31!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.26" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.32',
+                'http://springfiles.com/spring/games/balanced-annihilation-82',
+                'http://springfiles.com/sites/default/files/images/spring/games/screen01290.png',
+                '2016-02-08 00:01:54',
+                    ' - Система противоядерной обороны (наземная) стоит на 10% меньше энергии<br/>
+                    - Продвинутые ядерные реакторы строятся дольше на 15%<br/>
+                    - Останки некоторых юнитов 1 уровня стали крепче<br/>
+                    - Конструкторы 2 уровня (машины, роботы, самолеты) стоят на 20% дороже<br/>
+                    - Добавлен виджет "Unit Stats"(статистика по юнитам). Держите пробел и наведите на юнита, чтобы увидеть характеристики<br/>
+                    - Немного изменился интерфейс ставок<br/>',
+                'Релиз игры Balanced Annihilation: версия 9.32!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+
+
+   <changeSet id="db.changelog.2017.03.03-fill-news-table.27" author="Elt" runOnChange="true">
+
+        <sql>
+            <![CDATA[
+            insert into news (id,
+                              appname,
+                              appversion,
+                              downloadlink,
+                              imagelink,
+                              publicationdate,
+                              text,
+                              title,
+                              usercreated,
+                              version,
+                              videolink)
+            values (nextval('news_id_seq'),
+                'Balanced Annihilation',
+                '9.33',
+                'http://springfiles.com/spring/games/balanced-annihilation-83',
+                'http://s14.postimg.org/5q7lfcci9/riverdelta.jpg',
+                '2016-02-15 00:01:54',
+                    ' <b>Изменения баланса:</b><br/>
+                - Обломки машин и роботов 2 уровня стали крепче<br/><br/>
+
+                <b>Остальные изменения:</b><br/>
+                - Все элементы интерфейса могут быть перемещены, удерживая правую кнопку мыши в режиме Ctrl+F11<br/>
+                - Виджеты "changelog / commands info / unit info" теперь поддерживают скроллинг мышью<br/>
+                - Виджет "Smart select"(умное выделение) отключен фильтр зданий, когда в выделении есть мобильные юниты (можно включить с помощью /selectionmode)<br/>
+                - Виджет Unit stats(статистика по юнитам) - изменяет свой размер в зависимости от разрешения экрана<br/>
+                - Виджет Comcounter (счетчик командиров) теперь имеет такой же размер, как и виджет, отображающий силу ветра<br/>
+                - Добавлена дикая живность на некоторых картах (животные)!<br/>
+                ',
+                'Релиз игры Balanced Annihilation: версия 9.33!',
+                'Elt',
+                0,
+                'http://aa.aa.aa/video');
+            ]]>
+        </sql>
+
+    </changeSet>
+</databaseChangeLog>

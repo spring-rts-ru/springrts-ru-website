@@ -191,6 +191,10 @@ body {
     color: white !important;
 }
 
+.btn-download:hover {
+    color: yellow !important;
+}
+
 .games-link a:link {
     color: white;
 }

@@ -15,7 +15,15 @@
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    padding-top: 6vh; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+*[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -10vh;
+    height: 10vh;
+    visibility: hidden;
 }
 
 .navbar-fixed-top .navbar-brand {
@@ -72,7 +80,7 @@ body {
 .welcome-text {
     color: white;
     margin: 0 auto;
-    font-size: 3vw;
+    font-size: 5vh;
     /*font-weight: bold;*/
 }
 
@@ -88,7 +96,7 @@ body {
 .welcome-link {
     /*padding-right: 30%;*/
     color:darkgray;
-    font-size: 3vw;
+    font-size: 5vh;
     text-align: center;
 }
 
@@ -121,9 +129,9 @@ body {
 
 .welcome-scroll {
     margin: auto;
-    padding-top: 5%;
-    width: 2%;
-    min-width: 40px;
+/*    padding-top: 4%;*/
+    width: 3vw;
+/*    min-width: 3vw;*/
     color: white;
 }
 /* GAMES INTRO */

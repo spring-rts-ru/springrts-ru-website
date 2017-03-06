@@ -147,6 +147,7 @@ body {
     background: url('/images/redesign/BA_bg.jpg') no-repeat center center;
     background-size: cover;
     padding: 2%;
+    padding-top: 1vh;
     margin: 2%;
     height: 40vh;
 }
@@ -155,6 +156,7 @@ body {
     background: url('/images/redesign/ZEROK_bg.jpg') no-repeat center center;
     background-size: cover;
     padding: 2%;
+    padding-top: 1vh;
     margin: 2%;
     height: 40vh;
 }
@@ -163,6 +165,7 @@ body {
     background: url('/images/redesign/NOTA_bg.jpg') no-repeat center center;
     background-size: cover;
     padding: 2%;
+    padding-top: 1vh;
     margin: 2%;
     height: 40vh;
 }
@@ -171,6 +174,7 @@ body {
     background: url('/images/redesign/1944_bg.jpg') no-repeat center center;
     background-size: cover;
     padding: 2%;
+    padding-top: 1vh;
     margin: 2%;
     height: 40vh;
 }
@@ -179,6 +183,7 @@ body {
     background: url('/images/redesign/XTA_bg.jpg') no-repeat center center;
     background-size: cover;
     padding: 2%;
+    padding-top: 1vh;
     margin: 2%;
     height: 40vh;
 }
@@ -187,6 +192,7 @@ body {
     background: url('/images/redesign/TA_bg.jpg') no-repeat center center;
     background-size: cover;
     padding: 2%;
+    padding-top: 1vh;
     margin: 2%;
     height: 40vh;
 }

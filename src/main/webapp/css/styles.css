@@ -28,12 +28,12 @@ body {
 
 .navbar-fixed-top .navbar-brand {
 
-    padding-top: 5px;
+    padding-top: 1vh;
 }
 
 .navbar-fixed-top .navbar-brand img {
-    height: 40px;
-    padding-right: 10px;
+    height: 6vh;
+    /*padding-right: 1vw;*/
 }
 
 .carousel-inner > .item > img {

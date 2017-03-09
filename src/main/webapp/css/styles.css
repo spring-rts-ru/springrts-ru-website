@@ -15,7 +15,7 @@
 }
 
 body {
-    padding-top: 6vh; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    padding-top: 10vh; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
 *[id]:before {

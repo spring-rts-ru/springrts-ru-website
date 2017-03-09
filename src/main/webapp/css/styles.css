@@ -255,12 +255,12 @@ body {
 
 /* MAIN INTRO */
 .main-intro-text {
-    font-size: 1vw;
+    font-size: 2.2vh;
     color: black;
 }
 
 .h8-green {
-    font-size: 3vw;
+    font-size: 6vh;
     color: green;
 }
 
@@ -269,7 +269,7 @@ body {
 }
 
 .main-intro-link a {
-    font-size: 2vw;
+    font-size: 4vh;
     color: green;
 }
 

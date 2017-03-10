@@ -25,14 +25,16 @@ body {
     height: 10vh;
     visibility: hidden;
 }
+.navbar .nav{
+    height: 7vh !important;
 
+}
 .navbar-fixed-top .navbar-brand {
-
     padding-top: 1vh;
 }
 
 .navbar-fixed-top .navbar-brand img {
-    height: 6vh;
+    height: 6vh !important;
     /*padding-right: 1vw;*/
 }
 
@@ -332,7 +334,6 @@ body {
 .game-page {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
-    padding: 2vw;
     color: white;
 }
 
@@ -364,7 +365,6 @@ body {
 .article-page {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
-    padding: 2vw;
     color: white;
 }
 

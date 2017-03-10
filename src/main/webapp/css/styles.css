@@ -332,7 +332,6 @@ body {
 .game-page {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
-    padding: 2vw;
     color: white;
 }
 
@@ -364,7 +363,6 @@ body {
 .article-page {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
-    padding: 2vw;
     color: white;
 }
 

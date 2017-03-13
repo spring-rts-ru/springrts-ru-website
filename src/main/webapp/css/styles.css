@@ -25,18 +25,6 @@ body {
     height: 10vh;
     visibility: hidden;
 }
-.navbar .nav{
-    height: 7vh !important;
-
-}
-.navbar-fixed-top .navbar-brand {
-    padding-top: 1vh;
-}
-
-.navbar-fixed-top .navbar-brand img {
-    height: 6vh !important;
-    /*padding-right: 1vw;*/
-}
 
 .carousel-inner > .item > img {
 /*    position: absolute; */

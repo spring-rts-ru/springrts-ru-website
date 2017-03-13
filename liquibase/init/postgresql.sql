@@ -1,8 +1,10 @@
 -- http://eax.me/postgresql-install/
 
--- on linux: sudo -u postgres psql
--- on fedora: sudo systemctl start postgresql
+-- start postgres on fedora linux:
+-- sudo systemctl start postgresql
 
+-- enter postgres console on linux:
+-- sudo -u postgres psql
 
 drop database springrtsru;
 create database springrtsru;

@@ -11,7 +11,7 @@ if [ $database == "local" ]; then
 	USER="local"
 	PASS="local"
 elif [ $database == "prod" ]; then
-	URL="jdbc:postgresql://localhost:5432/springrtsru"
+	URL="jdbc:postgresql://104.236.78.36:5432/springrtsru"
 	USER=""
 	PASS=""
 fi

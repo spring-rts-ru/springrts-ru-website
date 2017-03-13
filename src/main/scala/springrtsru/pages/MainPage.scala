@@ -15,11 +15,13 @@ class MainPage extends BasePage {
 
   override def getPageIndex: PageIndex = News
 
-  val newsList: util.List[News] = newsRepo.findAll()
+  var newsList: util.List[News] = newsRepo.findAll()
 
   Collections.sort[News](newsList, (o1: News, o2: News) => {
     o2.publicationDate.compareTo(o1.publicationDate)
   })
+
+  newsList = newsList.subList(0, Math.min(newsList.size(), 10))
 
   var newsBlock = new ListView("newsBlock", newsList) {
     override def populateItem(item: ListItem[News]): Unit = {

@@ -18,6 +18,15 @@ body {
     padding-top: 10vh; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
+.navbar-fixed-top .navbar-brand {
+    padding-top: 5px;
+}
+
+.navbar-fixed-top .navbar-brand img {
+    height: 40px;
+    padding-right: 10px;
+}
+
 *[id]:before {
     display: block;
     content: " ";

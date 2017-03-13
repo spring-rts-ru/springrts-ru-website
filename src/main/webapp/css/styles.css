@@ -15,7 +15,7 @@
 }
 
 body {
-    padding-top: 10vh; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
 .navbar-fixed-top .navbar-brand {
@@ -25,14 +25,6 @@ body {
 .navbar-fixed-top .navbar-brand img {
     height: 40px;
     padding-right: 10px;
-}
-
-*[id]:before {
-    display: block;
-    content: " ";
-    margin-top: -10vh;
-    height: 10vh;
-    visibility: hidden;
 }
 
 .carousel-inner > .item > img {
@@ -384,6 +376,11 @@ body {
     color: black;
 }
 /* END ARTICLES */
+
+.anchor-spring {
+    padding-top: 50px;
+    margin-top: -50px;
+}
 
 /* END OF NEW DESIGN STYLES */
 

@@ -10,20 +10,26 @@ import org.apache.wicket.markup.html.link.ExternalLink
 import org.apache.wicket.markup.html.list.{ListItem, ListView}
 import springrtsru.model._
 
+object MainPage {
+  val newsList: util.List[News] = new util.ArrayList[News]()
+}
+
 class MainPage extends BasePage {
   override def getTitle: String = "Новости Spring"
 
   override def getPageIndex: PageIndex = News
 
-  var newsList: util.List[News] = newsRepo.findAll()
+    if (MainPage.newsList.isEmpty) {
+      MainPage.newsList.addAll(newsRepo.findAll())
 
-  Collections.sort[News](newsList, (o1: News, o2: News) => {
-    o2.publicationDate.compareTo(o1.publicationDate)
-  })
+      Collections.sort[News](MainPage.newsList, (o1: News, o2: News) => {
+        o2.publicationDate.compareTo(o1.publicationDate)
+      })
 
-  newsList = newsList.subList(0, Math.min(newsList.size(), 10))
+      MainPage.newsList.removeIf(x => MainPage.newsList.indexOf(x) > 10)
+    }
 
-  var newsBlock = new ListView("newsBlock", newsList) {
+  var newsBlock = new ListView("newsBlock", MainPage.newsList) {
     override def populateItem(item: ListItem[News]): Unit = {
       val newsPost = item.getModelObject
 

@@ -71,7 +71,7 @@ body {
 .welcome-text {
     color: white;
     margin: 0 auto;
-    font-size: 5vh;
+    font-size: 50px;
     /*font-weight: bold;*/
 }
 
@@ -87,7 +87,7 @@ body {
 .welcome-link {
     /*padding-right: 30%;*/
     color:darkgray;
-    font-size: 5vh;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -121,7 +121,7 @@ body {
 .welcome-scroll {
     margin: auto;
 /*    padding-top: 4%;*/
-    width: 3vw;
+    width: 40px;
 /*    min-width: 3vw;*/
     color: white;
 }
@@ -130,7 +130,7 @@ body {
 .main-games {
     background: url('/images/redesign/games_bg.jpg') no-repeat center center;
     background-size: cover;
-    font-size: 2vw;
+    font-size: 30px;
     padding: 2vh;
     color: white;
 }
@@ -192,7 +192,7 @@ body {
 .btn-download {
     padding: 0.4vh !important;
     border: 0.4vh solid !important;
-    font-size: 2vh !important;
+    font-size: 20px !important;
     border-radius: 50px 50px 50px 50px !important;
     color: white !important;
 }
@@ -206,7 +206,7 @@ body {
 }
 
 .games-link a {
-    font-size: 3vh;
+    font-size: 20px;
     color: white;
 }
 
@@ -230,12 +230,12 @@ body {
 }
 
 .games-text {
-    font-size: 2.5vh;
+    font-size: 1.5vh;
     color: white;
 }
 
 .games-text h3{
-    font-size: 4vh;
+    font-size: 3vh;
     color: white;
 }
 
@@ -246,12 +246,12 @@ body {
 
 /* MAIN INTRO */
 .main-intro-text {
-    font-size: 2.2vh;
+    font-size: 20px;
     color: black;
 }
 
 .h8-green {
-    font-size: 6vh;
+    font-size: 30px;
     color: green;
 }
 
@@ -260,7 +260,7 @@ body {
 }
 
 .main-intro-link a {
-    font-size: 4vh;
+    font-size: 30px;
     color: green;
 }
 
@@ -291,8 +291,7 @@ body {
 .btn-responsive {
     white-space: normal !important;
     word-wrap: normal !important;
-    height: 2vw !important;
-    font-size: 1vw !important;
+    font-size: 20px !important;
     border-radius: 50px 50px 50px 50px !important;
     padding: 0.6vh !important;
  }
@@ -305,12 +304,12 @@ body {
 }
 
 .news-text {
-    font-size: 1vw;
+    font-size: 20px;
     color: black;
 }
 
 .h-green{
-    font-size: 2vw;
+    font-size: 30px;
     color: green;
 }
 
@@ -327,25 +326,25 @@ body {
 }
 
 .h7 {
-    font-size: 4vw;
+    font-size: 40px;
     color: white;
 }
 
 .h8 {
-    font-size: 3vw;
+    font-size: 20px;
     color: white;
 }
 
 .video-container {
-    margin: 2vw;
+    margin: 20px;
 }
 
 .game-page-text {
-    font-size: 2vw;
+    font-size: 20px;
     color: whitesmoke;
 }
 .game-page-text-min {
-    font-size: 1vw;
+    font-size: 20px;
     color: whitesmoke;
 }
 /* END GAMEPAGES*/
@@ -358,21 +357,21 @@ body {
 }
 
 .article-page h3{
-    font-size: 3vw;
+    font-size: 20px;
     color: white;
 }
 .h7-green {
-    font-size: 3.5vw;
+    font-size: 30px;
     color: green;
 }
 
 .h8-black {
-    font-size: 3vw;
+    font-size: 20px;
     color: black;
 }
 
 .article-page-text {
-    font-size: 2vw;
+    font-size: 20px;
     color: black;
 }
 /* END ARTICLES */

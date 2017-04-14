@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+
+<wicket:extend>
+
+    <section class="article-page" id="VideoPage">
+        <div class="row article-page-text">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form name="test" method="post" action="input1.php">
+                            <p><b>Ваше имя:</b><br>
+                                <input type="text" size="40">
+                            </p>
+                            <p><b>Каким браузером в основном пользуетесь:</b><Br>
+                                <input type="radio" name="browser" value="ie"> Internet Explorer<Br>
+                                <input type="radio" name="browser" value="opera"> Opera<Br>
+                                <input type="radio" name="browser" value="firefox"> Firefox<Br>
+                            </p>
+                            <p>Комментарий<Br>
+                                <textarea name="comment" cols="40" rows="3"></textarea></p>
+                            <p><input type="submit" value="Отправить">
+                                <input type="reset" value="Очистить"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</wicket:extend>
+</body>
+</html>

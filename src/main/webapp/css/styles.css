@@ -78,20 +78,43 @@ body {
 .welcome-text-block {
     padding-top: 5%;
 }
+.btn-welcome.focus,.btn-welcome:focus{color:#fff;background-color:#c9302c;border-color:#761c19}
+.btn-welcome:hover{color:#fff;background-color:#c9302c;border-color:#ac2925}
+.btn-welcome.active,.btn-welcome:active,.open>.dropdown-toggle.btn-welcome{color:#fff;background-color:#c9302c;border-color:#ac2925}
+.btn-welcome.active.focus,.btn-welcome.active:focus,.btn-welcome.active:hover,
+.btn-welcome:active.focus,.btn-welcome:active:focus,.btn-welcome:active:hover,
+.open>.dropdown-toggle.btn-welcome.focus,.open>.dropdown-toggle.btn-welcome:focus,
+.open>.dropdown-toggle.btn-welcome:hover{color:#fff;background-color:#ac2925;border-color:#761c19}
+.btn-welcome.active,.btn-welcome:active,.open>.dropdown-toggle.btn-welcome{background-image:none}
+.btn-welcome.disabled.focus,.btn-welcome.disabled:focus,.btn-welcome.disabled:hover,.btn-welcome[disabled].focus,
+.btn-welcome[disabled]:focus,.btn-welcome[disabled]:hover,fieldset[disabled] .btn-welcome.focus,fieldset[disabled]
+.btn-welcome:focus,fieldset[disabled] .btn-welcome:hover{background-color:#d9534f;border-color:#d43f3a}
+.btn-welcome .badge{color:#d9534f;background-color:#fff}
+.btn-welcome {
+    font-size: 30px;
+    color: #222;
+    white-space: normal !important;
+    word-wrap: normal !important;
+    background-color: darkred; !important;
+    border-color: #6c0003;!important;
+    border-radius: 50px 50px 50px 50px !important;
+    padding: 0.6vh !important;
+}
 
+/*
 .welcome-links {
     padding-top: 5%;
     margin: 0 auto;
 }
 
 .welcome-link {
-    /*padding-right: 30%;*/
+    /*padding-right: 30%;*//*
     color:darkgray;
     font-size: 40px;
     text-align: center;
 }
 
-/* unvisited link*/
+/* unvisited link*//*
 .welcome-link a:link {
     color: #f99f00;
     text-decoration: none;
@@ -104,7 +127,7 @@ body {
 }
 
 .welcome-link a:visited {
-    color: #f5c300;
+    color: #b89000;
     text-decoration: none;
 }
 
@@ -116,7 +139,7 @@ body {
 .welcome-link:active {
     color: white;
 
-}
+}*/
 
 .welcome-scroll {
     margin: auto;

@@ -63,42 +63,54 @@ body {
     background-size: cover;
 }
 
+
 .welcome-logo {
-    margin: auto;
-    padding-top: 10%;
+    background: url('/images/Logo1.png') no-repeat center center;
+    background-size: cover;
+    margin-top: 3vh;
+    width: 48vw;
+    height: 88vh;
 }
 
 .welcome-text {
-    color: white;
-    margin: 0 auto;
-    font-size: 50px;
+    font-family: "Segoe Print";
+    color: #ffffff;
+    font-size: 2.2vw;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+    margin-left: -2vw;
     /*font-weight: bold;*/
 }
 
 .welcome-text-block {
     padding-top: 5%;
 }
-.btn-welcome.focus,.btn-welcome:focus{color:#fff;background-color:#c9302c;border-color:#761c19}
-.btn-welcome:hover{color:#fff;background-color:#c9302c;border-color:#ac2925}
-.btn-welcome.active,.btn-welcome:active,.open>.dropdown-toggle.btn-welcome{color:#fff;background-color:#c9302c;border-color:#ac2925}
+.btn-welcome.focus,.btn-welcome:focus{background-color:#c9302c;border-color: #260003
+}
+.btn-welcome:hover{background-color:#c9302c;border-color:#ac2925}
+.btn-welcome.active,.btn-welcome:active,.open>.dropdown-toggle.btn-welcome{background-color:#c9302c;border-color:#ac2925}
 .btn-welcome.active.focus,.btn-welcome.active:focus,.btn-welcome.active:hover,
 .btn-welcome:active.focus,.btn-welcome:active:focus,.btn-welcome:active:hover,
 .open>.dropdown-toggle.btn-welcome.focus,.open>.dropdown-toggle.btn-welcome:focus,
-.open>.dropdown-toggle.btn-welcome:hover{color:#fff;background-color:#ac2925;border-color:#761c19}
+.open>.dropdown-toggle.btn-welcome:hover{background-color:#ac2925;border-color:#761c19}
 .btn-welcome.active,.btn-welcome:active,.open>.dropdown-toggle.btn-welcome{background-image:none}
-.btn-welcome.disabled.focus,.btn-welcome.disabled:focus,.btn-welcome.disabled:hover,.btn-welcome[disabled].focus,
-.btn-welcome[disabled]:focus,.btn-welcome[disabled]:hover,fieldset[disabled] .btn-welcome.focus,fieldset[disabled]
-.btn-welcome:focus,fieldset[disabled] .btn-welcome:hover{background-color:#d9534f;border-color:#d43f3a}
-.btn-welcome .badge{color:#d9534f;background-color:#fff}
+
+.btn-welcome .badge{color:#d9534f;}
 .btn-welcome {
-    font-size: 30px;
-    color: #222;
+    font-size: 1.5vw;
+    font-family: Gungsuh;
+    color: white;
     white-space: normal !important;
     word-wrap: normal !important;
-    background-color: darkred; !important;
-    border-color: #6c0003;!important;
+    /*background-color: #ff1c1e; !important;*/
+    border-color: #260003;!important;
     border-radius: 50px 50px 50px 50px !important;
     padding: 0.6vh !important;
+    background: radial-gradient(farthest-side ellipse at top left, #b41416, #5f0003);
+    box-shadow: 0 0 1vh 0 #190003; !important;
+    margin-bottom: 10vh;
+    margin-left: -1vw;
+    max-width: 15vw;
 }
 
 /*

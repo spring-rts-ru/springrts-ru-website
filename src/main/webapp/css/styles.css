@@ -63,35 +63,103 @@ body {
     background-size: cover;
 }
 
-.welcome-logo {
-    margin: auto;
-    padding-top: 10%;
+.welcome-left {
+    background: url('/images/bglogo.png') no-repeat center center;
+    background-size: cover;
+    margin-top: 3vh;
+    width: 48vw;
+    height: 88vh;
 }
 
 .welcome-text {
-    color: white;
-    margin: 0 auto;
-    font-size: 50px;
+    font-family: "Segoe Print";
+    color: #ffffff;
+    font-size: 2.2vw;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+    margin-left: -2vw;
     /*font-weight: bold;*/
 }
 
 .welcome-text-block {
     padding-top: 5%;
 }
+.btn-welcome.focus,.btn-welcome:focus{background-color:#c9302c;border-color: #260003
+}
+.btn-welcome:hover{background-color:#c9302c;border-color:#ac2925}
+.btn-welcome.active,.btn-welcome:active,.open>.dropdown-toggle.btn-welcome{background-color:#c9302c;border-color:#ac2925}
+.btn-welcome.active.focus,.btn-welcome.active:focus,.btn-welcome.active:hover,
+.btn-welcome:active.focus,.btn-welcome:active:focus,.btn-welcome:active:hover,
+.open>.dropdown-toggle.btn-welcome.focus,.open>.dropdown-toggle.btn-welcome:focus,
+.open>.dropdown-toggle.btn-welcome:hover{background-color:#ac2925;border-color:#761c19}
+.btn-welcome.active,.btn-welcome:active,.open>.dropdown-toggle.btn-welcome{background-image:none}
 
+.btn-welcome .badge{color:#d9534f;}
+.btn-welcome {
+    font-size: 1.5vw;
+    font-family: Gungsuh;
+    color: white;
+    white-space: normal !important;
+    word-wrap: normal !important;
+    /*background-color: #ff1c1e; !important;*/
+    border-color: #260003;!important;
+    border-radius: 50px 50px 50px 50px !important;
+    padding: 0.6vh !important;
+    background: radial-gradient(farthest-side ellipse at top left, #b41416, #5f0003);
+    box-shadow: 0 0 1vh 0 #190003; !important;
+    margin-bottom: 10vh;
+    margin-left: -1vw;
+    max-width: 15vw;
+}
+
+.welcome-right {
+    background-color: rgba(0,0,0, .7);
+    background-size: cover;
+    margin-top: 3vh;
+    padding-left: 0.5vw;
+    width: 48vw;
+    height: 88vh;
+}
+
+.welcome-video-block {
+    margin-left: 0.5vw;
+
+}
+
+.welcome-video {
+    padding-top: 2vh;
+    position: relative;
+    width: 45vw;
+    height: 49vh;
+    overflow: hidden;
+}
+
+.welcome-screens-block {
+    margin-top: -2vh;
+    margin-left: 1.2vw;
+}
+
+.welcome-screen {
+    width: 14.8vw;
+    /*height: 35vh;*/
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+/*
 .welcome-links {
     padding-top: 5%;
     margin: 0 auto;
 }
 
 .welcome-link {
-    /*padding-right: 30%;*/
+    /*padding-right: 30%;*//*
     color:darkgray;
     font-size: 40px;
     text-align: center;
 }
 
-/* unvisited link*/
+/* unvisited link*//*
 .welcome-link a:link {
     color: #f99f00;
     text-decoration: none;
@@ -104,7 +172,7 @@ body {
 }
 
 .welcome-link a:visited {
-    color: #f5c300;
+    color: #b89000;
     text-decoration: none;
 }
 
@@ -116,7 +184,7 @@ body {
 .welcome-link:active {
     color: white;
 
-}
+}*/
 
 .welcome-scroll {
     margin: auto;

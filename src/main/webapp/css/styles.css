@@ -63,9 +63,8 @@ body {
     background-size: cover;
 }
 
-
-.welcome-logo {
-    background: url('/images/Logo1.png') no-repeat center center;
+.welcome-left {
+    background: url('/images/bglogo.png') no-repeat center center;
     background-size: cover;
     margin-top: 3vh;
     width: 48vw;
@@ -111,6 +110,40 @@ body {
     margin-bottom: 10vh;
     margin-left: -1vw;
     max-width: 15vw;
+}
+
+.welcome-right {
+    background-color: rgba(0,0,0, .7);
+    background-size: cover;
+    margin-top: 3vh;
+    padding-left: 0.5vw;
+    width: 48vw;
+    height: 88vh;
+}
+
+.welcome-video-block {
+    margin-left: 0.5vw;
+
+}
+
+.welcome-video {
+    padding-top: 2vh;
+    position: relative;
+    width: 45vw;
+    height: 49vh;
+    overflow: hidden;
+}
+
+.welcome-screens-block {
+    margin-top: -2vh;
+    margin-left: 1.2vw;
+}
+
+.welcome-screen {
+    width: 14.8vw;
+    /*height: 35vh;*/
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 /*

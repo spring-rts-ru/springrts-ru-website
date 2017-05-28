@@ -66,24 +66,22 @@ body {
 .welcome-left {
     background: url('/images/bglogo.png') no-repeat center center;
     background-size: cover;
-    margin-top: 3vh;
-    width: 48vw;
-    height: 88vh;
+    /*margin-left: 15px;*/
+    /*margin-top: 25px;*/
+    /*width: 900px;*/
+    /*height: 850px;*/
 }
 
 .welcome-text {
-    font-family: "Segoe Print";
+    font-family: "Segoe Print", serif;
     color: #ffffff;
-    font-size: 2.2vw;
-    margin-top: 30vh;
-    margin-bottom: 10vh;
-    margin-left: -2vw;
+    /*font-size: 40px;*/
+    /*margin-top: 290px;*/
+    /*margin-bottom: 100px;*/
+    /*margin-left: -40px;*/
     /*font-weight: bold;*/
 }
 
-.welcome-text-block {
-    padding-top: 5%;
-}
 .btn-welcome.focus,.btn-welcome:focus{background-color:#c9302c;border-color: #260003
 }
 .btn-welcome:hover{background-color:#c9302c;border-color:#ac2925}
@@ -96,55 +94,59 @@ body {
 
 .btn-welcome .badge{color:#d9534f;}
 .btn-welcome {
-    font-size: 1.5vw;
-    font-family: Gungsuh;
+    /*font-size: 30px;*/
+    font-family: Gungsuh, serif;
     color: white;
     white-space: normal !important;
     word-wrap: normal !important;
     /*background-color: #ff1c1e; !important;*/
     border-color: #260003;!important;
     border-radius: 50px 50px 50px 50px !important;
-    padding: 0.6vh !important;
+    padding: 8px !important;
+    padding-top: 0px !important;
+
     background: radial-gradient(farthest-side ellipse at top left, #b41416, #5f0003);
-    box-shadow: 0 0 1vh 0 #190003; !important;
-    margin-bottom: 10vh;
-    margin-left: -1vw;
-    max-width: 15vw;
+    box-shadow: 0 0 10px 0 #190003; !important;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    /*max-width: 30px;*/
 }
 
 .welcome-right {
     background-color: rgba(0,0,0, .7);
     background-size: cover;
-    margin-top: 3vh;
-    padding-left: 0.5vw;
-    width: 48vw;
-    height: 88vh;
+    /*padding-left: 10px;*/
+    /*margin-top: 25px;*/
+    /*width: 900px;*/
+    /*height: 850px;*/
 }
 
 .welcome-video-block {
-    margin-left: 0.5vw;
+    margin-left: 10px;
+    margin-right: 10px;
+
 
 }
 
 .welcome-video {
-    padding-top: 2vh;
+    /*padding-top: 25px;*/
     position: relative;
-    width: 45vw;
-    height: 49vh;
+    width: 890px;
+    height: 460px;
     overflow: hidden;
 }
 
-.welcome-screens-block {
-    margin-top: -2vh;
-    margin-left: 1.2vw;
-}
+/*.welcome-screens-block {*/
+    /*!*margin-top: -2vh;*!*/
+    /*!*margin-left: 10px;*!*/
+/*}*/
 
-.welcome-screen {
-    width: 14.8vw;
-    /*height: 35vh;*/
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
+/*.welcome-screen {*/
+    /*!*width: 280px;*!*/
+    /*!*height: 35vh;*!*/
+    /*!*padding-right: 0 !important;*!*/
+    /*!*padding-left: 0 !important;*!*/
+/*}*/
 
 /*
 .welcome-links {

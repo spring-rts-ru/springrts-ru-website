@@ -2,7 +2,7 @@ name := "springrts-ru-website"
 
 version := "1.0"
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.6"
 
 libraryDependencies += "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided"
 

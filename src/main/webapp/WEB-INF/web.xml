@@ -5,7 +5,7 @@
           http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
 
-    <display-name>springrts.ru</display-name>
+    <display-name>www.springrts.ru</display-name>
 
     <!--<servlet>-->
         <!--<servlet-name>wicket</servlet-name>-->

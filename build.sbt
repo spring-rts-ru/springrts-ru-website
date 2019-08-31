@@ -2,13 +2,13 @@ name := "springrts-ru-website"
 
 version := "1.0"
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.12.9"
 
 libraryDependencies += "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided"
 
-libraryDependencies += "org.apache.wicket" % "wicket" % "7.9.0"
+libraryDependencies += "org.apache.wicket" % "wicket" % "8.5.0"
 
-libraryDependencies += "org.apache.wicket" % "wicket-spring" % "7.9.0"
+libraryDependencies += "org.apache.wicket" % "wicket-spring" % "8.5.0"
 
 libraryDependencies += "org.postgresql" % "postgresql" % "42.1.1"
 

@@ -1,8 +1,8 @@
 package springrtsru
 
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector
-import org.apache.wicket.{RuntimeConfigurationType, Page}
-import org.apache.wicket.core.request.handler.ListenerInterfaceRequestHandler
+import org.apache.wicket.{Page, RuntimeConfigurationType}
+import org.apache.wicket.core.request.handler.ListenerRequestHandler
 import org.apache.wicket.core.request.mapper.MountedMapper
 import org.apache.wicket.protocol.http.WebApplication
 import org.apache.wicket.request.{IRequestHandler, Url}
@@ -14,7 +14,7 @@ import org.springframework.context.ApplicationContext
 import org.springframework.stereotype.Component
 import springrtsru.pages._
 import springrtsru.pages.games._
-import springrtsru.pages.howto.{InstallNOTAPage, InstallBAPage}
+import springrtsru.pages.howto.{InstallBAPage, InstallNOTAPage}
 
 import scala.beans.BeanProperty
 
@@ -54,13 +54,14 @@ class SpringrtsRuApplication extends WebApplication {
   }
 
   override def getConfigurationType: RuntimeConfigurationType = RuntimeConfigurationType.DEVELOPMENT
+//  override def getConfigurationType: RuntimeConfigurationType = RuntimeConfigurationType.DEPLOYMENT
 
   private class MountedMapperWithoutPageComponentInfo(mountPath: String, pageClass: Class[_ <: IRequestablePage])
     extends MountedMapper(mountPath, pageClass, new PageParametersEncoder()) {
     override def encodePageComponentInfo(url: Url, info: PageComponentInfo): Unit = {}
 
     override def mapHandler(requestHandler: IRequestHandler): Url =
-      if (requestHandler.isInstanceOf[ListenerInterfaceRequestHandler]) {
+      if (requestHandler.isInstanceOf[ListenerRequestHandler]) {
         null
       } else {
         super.mapHandler(requestHandler)
